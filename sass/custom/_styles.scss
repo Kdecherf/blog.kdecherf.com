@@ -1,0 +1,120 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+html {
+   background-image: url("/assets/thetalkingfowl/images/back.png");
+}
+
+body > header {
+   text-shadow: white 0px 1px 0px;
+   background: none;
+   h1 {
+      font-size: 30px;
+      a {
+         color: #C3481E !important;
+         font-family: $sans;
+         font-weight: bold;
+      }
+   }
+   h2 {
+      color: #666666;
+      font-size: 14px;
+      font-style: italic;
+   }
+}
+
+aside.sidebar section {
+   font-size: 12px;
+   h1 {
+      font-size: 14px;
+   }
+}
+
+div#main {
+   background: none;
+   div#content {
+      background: none;
+      section {
+         h1 {
+            font-size: 18px;
+            font-family: $sans;
+         }
+         div#disqus_thread {
+            font-size: 13px;
+            font-family: $sans;
+         }
+      }
+   }
+}
+
+nav {
+   line-height: 24px;
+   height: 27px;
+   padding-top: 1px !important;
+   font-size: 16px !important;
+}
+
+article {
+   header {
+      margin-bottom: 20px;
+      padding-top: 15px;
+      padding-bottom: 5px;
+      h1, h1 a {
+         font-size: 24px;
+         line-height: 32px;
+         color: #444444;
+         font-weight: normal;
+         text-shadow: white 0px 1px 0px;
+      }
+      p.meta {
+         position: relative;
+         font-size: 11px;
+      }
+   }
+   
+   div.entry-content {
+      font-family: $sans;
+      font-size: 13px;
+      color: #444444;
+      line-height: 16px;
+      p {
+         font-family: $sans;
+         font-size: 13px;
+         color: #444444;
+         line-height: 16px;
+      }
+      ul {
+         margin-left: 35px;
+         li {
+            margin-bottom: 6px;
+         }
+      }
+   }
+
+   figure code span {
+      font-size: 12px;
+   }
+
+   div.sharing {
+      text-align: center;
+      left: 44% !important;
+      float: left;
+      div.shr_class {
+         margin-left: auto !important;
+         margin-right: auto !important;
+      }
+   }
+
+   footer {
+      padding-bottom: 10px;
+      p.meta {
+         color: #666666;
+         font-size: 12px;
+      }
+   }
+}
+
+body > footer {
+   font-size: 13px;
+   color: #666666;
+}
