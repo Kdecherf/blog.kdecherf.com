@@ -2,7 +2,7 @@
 date: '2009-02-16 16:32:59'
 layout: post
 title: Microsoft dévoile le nouveau Windows Mobile
-categories: [Unclassified]
+comments: true
 ---
 
 Microsoft a devoile aujourd'hui, au _Mobile World Congress 2009_, la nouvelle version de son systeme d'exploitation pour mobiles : **Windows Mobile 6.5**.

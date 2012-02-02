@@ -2,8 +2,8 @@
 date: '2009-02-17 20:23:48'
 layout: post
 title: 'Hyper-V : Red Hat enfin supporté'
-categories: [Unclassified]
 tags: [linux,virtualisation]
+comments: true
 ---
 
 Microsoft et Red Hat ont signé, le 16 Février, un contrat afin de supporter officiellement **Red Hat** sur la technologie de virtualisation Microsoft **Hyper-V**.

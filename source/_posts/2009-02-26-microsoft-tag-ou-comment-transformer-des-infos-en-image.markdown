@@ -1,147 +1,56 @@
 ---
 date: '2009-02-26 02:04:32'
 layout: post
-slug: microsoft-tag-ou-comment-transformer-des-infos-en-image
-status: publish
 title: Microsoft Tag ou Comment transformer des infos en image
-wordpress_id: '188'
-categories:
-- Articles
+categories: [Articles]
+comments: true
 ---
 
 Il existe un outil, encore peu connu mais fort utile, qui permet de transformer un lien hypertexte ou du texte en image. _Comment est-ce possible ?_ Avec **Microsoft Tag** !
 
-
-
-
 Si vous avez été aux Techdays, vous avez forcément du voir ces carrés de couleur ! Intéressant, mais encore ?
 
-
-
-
-![example](http://blog.kdecherf.com/wp-content/uploads/2009/02/example.jpg)
-
-
-
+{% img center /images/2009/02/example.jpg 'Microsoft Tag' 'Microsoft Tag' %}
 
 Je vais brièvement vous présenter à quoi sert ce service, pour qui et comment l'utiliser.
 
-
-
-
-
-
-
 **A quoi ça sert ?**
-
-
-
 
 Ce principe de tag peut servir pour pleins de choses. L'exemple le plus typique, et visible sur quelques sites internet, est de renvoyer vers un lien. Exemples : le plan d'accès pour une Pizzeria, l'agenda de conférence aux Techdays. Vous pouvez également créer des Tags pour envoyer du texte ou une vCard !
 
-
-
-
-
-
-
 **Pour qui ?**
 
-
-
-
-Pour tout le monde ! Et je tiens à préciser que ce service est **gratuit**__.
-
-
-
-
-
-
+Pour tout le monde ! Et je tiens à préciser que ce service est **gratuit**.
 
 **Comment créer un Tag ?**
-
-
-
 
 Rendez-vous sur le site de [Microsoft Tag](http://tag.microsoft.com/). Créez un compte à l'aide de votre LiveID (_créez-vous un LiveID le cas échéant_).   
 Une fois connecté à votre compte, vous avez la liste des tags existants (dans votre cas, vide) et un lien pour en créer un nouveau.
 
-
-
-
-![create-new-tag3](http://blog.kdecherf.com/wp-content/uploads/2009/02/create-new-tag3.jpg)
-
-
-
-
-
-
+![create-new-tag3](/images/2009/02/create-new-tag3.jpg)
 
 A ce moment là, vous pouvez créer 4 types de Tag : **Lien**, **Texte**, **vCard** ou **Dialer**. Je passe, ici, les détails de chaque type. J'ajoute simplement que vous pouvez spécifier un commentaire, une date de fin et même un mot de passe !
 
-
-
-
 Une fois votre tag créé, vous avez une nouvelle entrée dans votre tableau. Cliquez sur l'icone de la colonne _Render_ pour avoir votre Tag.
 
-
-
-
-![get-tag-render](http://blog.kdecherf.com/wp-content/uploads/2009/02/get-tag-render.jpg)
-
-
-
+![get-tag-render](/images/2009/02/get-tag-render.jpg)
 
 Ici, vous pouvez choisir le format de rendu (XPS, PDF ou WMF), la taille d'impression et le détail du cadre. Pour ce dernier point, il vous est possible d'ajouter un cadre d'aide et un cadre de téléchargement de l'application mobile ou de juste afficher votre image.
 
-
-
-
 Une fois téléchargé, vous pouvez vous amuser avec votre Tag : l'imprimer pour en faire des affiches ou le découper pour le mettre sur votre site ;-)
 
+![final-render](/images/2009/02/final-render.jpg)
 
-
-
-![final-render](http://blog.kdecherf.com/wp-content/uploads/2009/02/final-render.jpg)
-
-
-
-
-_Note : ce Tag est le Tag-URL de cet article.  
-_
-
-
-
+_Note : ce Tag est le Tag-URL de cet article._
 
 Et voilà, je crois que j'ai fait le tour. Passons côté utilisateur.
 
-
-
-
-
-
-
 **Comment s'en servir ?**
-
-
-
 
 Les tags sont à capturer avec un téléphone portable. Comme vous pouvez le voir, si l'utilisateur n'a pas encore l'application il est invité à visiter [http://gettag.mobi](http://gettag.mobi/)  
 L'application est disponible pour Windows Mobile, iPhone, Sambios, Blackberry, PalmOS, en version Java et même ... pour Android ! _A noter, ces applications sont fournies en version beta._
 
-
-
-
 Donc l'utilisateur exécute l'application, cette dernière va initialiser la caméra puis capturer le premier tag reconnu (reconnaissance très rapide sur mon HTC Dual Touch). Là, l'application va se connecter à internet pour avoir les infos du tag (_ndlr : le tag n'est autre qu'un identifiant pour la base de données Microsoft Tag_). Dans le cadre d'une URL votre navigateur mobile préféré va s'ouvrir, dans le cadre d'un texte il va s'afficher sous forme de " popup " et dans le cadre d'une vCard elle va pouvoir être directement importée sur votre mobile (_utile pour le CV !_).
-
-
-
-
-
-
 
 N'hésitez pas à tester l'application sur les 2 tags présents. Le premier est un Tag-Text et le deuxième est un Tag-URL.  
 N'hésitez pas non plus à m'écrire si vous avez des questions ou des commentaires.
-
-
-
