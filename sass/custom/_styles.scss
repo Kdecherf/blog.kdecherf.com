@@ -83,7 +83,7 @@ article {
          color: #444444;
          line-height: 16px;
       }
-      ul {
+      ul, ol {
          margin-left: 35px;
          li {
             margin-bottom: 6px;
@@ -97,14 +97,19 @@ article {
 
    div.sharing {
       text-align: center;
-      left: 44% !important;
-      float: left;
+      left: auto;
+      right: auto;
+      margin: auto !important;
       div.shr_class {
-         margin-left: auto !important;
-         margin-right: auto !important;
+         margin: auto;
+         div.shr-bookmarks ul.shr-socials {
+            margin: auto !important;
+            float: none !important;
+            width: 420px !important;
+         }
       }
    }
-
+   
    footer {
       padding-bottom: 10px;
       p.meta {
