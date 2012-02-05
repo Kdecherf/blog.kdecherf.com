@@ -15,7 +15,7 @@ C'est à la [_TechEd India_](http://www.microsoft.com/india/teched2009/) que _Vi
 
 Pourquoi un SDK ? Parce que la plateforme Windows Azure se dessine en une architecture spécifique. On peut résumer cette architecture en un schéma du genre :
 
-![drawing2](http://blog.kdecherf.com/wp-content/uploads/2009/05/drawing2.png)
+![drawing2](/images/2009/05/drawing2.png)
 
 Il y a donc 2 rôles importants : **Web** et **Worker**. Web s'occupe de tout ce qui est site web tandis que Worker peut être apparenté aux tâches de fond. Ces deux rôles accédent à une zone de stockage de données persistentes : Queues, Tables ou encore Blobs.
 
