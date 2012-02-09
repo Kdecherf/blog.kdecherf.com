@@ -1,88 +1,51 @@
 ---
 date: '2009-06-15 21:13:20'
 layout: post
-slug: fail2ban-notifier-chaque-connexion-ssh
-status: publish
 title: 'Fail2ban : notifier chaque connexion SSH'
-wordpress_id: '731'
-categories:
-- Articles
-tags:
-- fail2ban
+categories: [Articles]
+tags: [fail2ban]
+comments: true
 ---
 
 Bien que Fail2Ban fasse correctement son travail, il peut arriver qu'une intrusion se fasse avec succès. Il peut être utile, par précaution ou aussi pour du suivi, de savoir quand quelqu'un se connecte sur SSH.
 
-
-
-
-![fail2ban_logo](http://blog.kdecherf.com/wp-content/uploads/2009/06/fail2ban_logo.png)
-
-
-
-
-
-
+{% img center /images/2009/06/fail2ban_logo.png 'Fail2ban' 'Fail2ban' %}
 
 Si vous connaissez bien Fail2ban, vous savez que tout se fait via des actions et des filtres, donc notre objectif ne sera pas dur à atteindre. Commençons par ajouter notre filtre dans _/etc/fail2ban/jail.conf_ :
 
-
-
-
 Le formatage des mails utilisé ici est disponible [sur ce billet](http://blog.kdecherf.com/2009/03/27/fail2ban-email-alerte-facon-nagios/).
 
-
-[bash][ssh-notify]
+``` bash
+[ssh-notify]
 
 enabled  = true
 filter   = sshd-notify
 action   = mail-notify[name=SSH, dest=%(emailt)s, from=%(fromt)s, server=%(servert)s, serverip=%(serveript)s]
 maxretry = 1
 bantime  = 1
-logpath  = /var/log/sshd/current[/bash]
+logpath  = /var/log/sshd/current
+```
 
-
-
-
-
-
-
-
-	
   * _maxretry = 1_ : Executer " actionban " à chaque connexion
-
-	
   * _bantime = 1_ : Ne pas garder l'état de bannissement
-
-	
   * _logpath = .._ : A modifier en fonction de votre système, journal courant des connexions SSH
-
-
-
 
 Continuons avec _/etc/fail2ban/filter.d/sshd-notify.conf_ qui contient l'expression régulière pour les connexions SSH correctement établies :
 
-
-
-
 **UPDATE :** la regex a été mise à jour en reprenant le [manuel](http://www.fail2ban.org/wiki/index.php/MANUAL_0_8#Filters), _HOST_ est devenu obligatoire.
 
-
-[bash][Definition]
+``` bash
+[Definition]
 
 failregex = Accepted [-/\w]+ for .* from <HOST>
 
-ignoreregex =[/bash]
-
-
-
-
-
+ignoreregex =
+```
 
 Il ne reste plus que le fichiers des actions à créer. Éditez _/etc/fail2ban/action.d/mail-notify.conf_ :
 
-
-[bash][Definition]
+``` bash
+[Definition]
 
 actionstart =
 actionstop =
@@ -98,25 +61,11 @@ actionunban =
 name = default
 # Destination/Addressee of the mail
 #
-dest = root[/bash]
-
-
-
-
-
-
+dest = root
+```
 
 Vous pouvez dès à présent redémarrer Fail2ban, désormais à chaque connexion vous devriez recevoir un email de ce genre :
 
-
-
-
-![ssh-fail2ban-notify](http://blog.kdecherf.com/wp-content/uploads/2009/06/ssh-fail2ban-notify.png)
-
-
-
+![ssh-fail2ban-notify](/images/2009/06/ssh-fail2ban-notify.png)
 
 Enjoy it ;-)
-
-
-
