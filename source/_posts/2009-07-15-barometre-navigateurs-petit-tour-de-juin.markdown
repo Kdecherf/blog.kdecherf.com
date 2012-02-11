@@ -11,7 +11,7 @@ Bien que je n'ai pas la notoriété d'un blog super visité je vais quand même 
 
 {% img center /images/2009/07/pie.png 'Barometre' 'Barometre' %}
 
-<table>
+<table class="post">
  <tr>
   <th>Navigateur</th>
   <th>Pages vues</th>
