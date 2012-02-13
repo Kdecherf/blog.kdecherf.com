@@ -82,8 +82,12 @@ article {
          font-size: 13px;
          color: #444444;
          line-height: 16px;
+         text-align: justify;
          img {
-            background-color: #ffffff;
+            background-color: #ffffff !important;
+         }
+         code {
+            line-height: 1.6em;
          }
       }
       ul, ol {
