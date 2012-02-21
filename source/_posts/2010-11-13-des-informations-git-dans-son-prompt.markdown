@@ -1,26 +1,17 @@
 ---
 date: '2010-11-13 19:59:52'
 layout: post
-slug: des-informations-git-dans-son-prompt
-status: publish
 title: Des informations Git dans son prompt
-wordpress_id: '1540'
-categories:
-- Tips
-tags:
-- git
+categories: [Tips]
+comments: true
 ---
 
-N'avez-vous pas remarqué comme il est vite ennuyeux de devoir faire un _git branch_ ou un _git status_ pour savoir dans quelle branche on était et dans quel état était le dépôt ? Voilà une petite astuce pour ajouter ces deux informations directement dans votre prompt.
+N'avez-vous pas remarqué comme il est vite ennuyeux de devoir faire un `git branch` ou un `git status` pour savoir dans quelle branche on était et dans quel état était le dépôt ? Voilà une petite astuce pour ajouter ces deux informations directement dans votre prompt.
 
+Ajoutez ceci à la fin de votre fichier `~/.bashrc` :
 
-
-
-
-Ajoutez ceci à la fin de votre fichier _~/.bashrc_ :
-
-
-[bash]function parse_git_branch {
+``` bash
+function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
@@ -47,33 +38,16 @@ case $TERM in
         ;;
 esac
 
-PS1="${TITLEBAR}$RED\$(date +%H:%M) $GREEN\u@\h $BLUE\w$YELLOW\$(parse_git_branch)\$(parse_git_status) $BLUE\$ $NC"[/bash]
-
-
+PS1="${TITLEBAR}$RED\$(date +%H:%M) $GREEN\u@\h $BLUE\w$YELLOW\$(parse_git_branch)\$(parse_git_status) $BLUE\$ $NC"
+```
 
 Cette modification ajoute le nom de la branche en cours ainsi qu'un * si des fichiers trackés ont été modifiés mais pas ajoutés et + si des fichiers ont été modifiés mais le commit n'a pas encore été fait.  
 
 Le prompt est inspiré du prompt Gentoo. Quant à la barre des titres, elle est inspirée d'Ubuntu.
 
-
-
-
-[![](http://blog.kdecherf.com/wp-content/uploads/2010/11/Screenshot-55-1.png)](http://blog.kdecherf.com/wp-content/uploads/2010/11/Screenshot-55-1.png)
-
-
-
+![Screenshot](/images/2010/11/Screenshot-55-1.png)
 
 _Enjoy it !_
 
-
-
-
-
-
   * [Liste des couleurs Bash](https://wiki.archlinux.org/index.php/Color_Bash_Prompt#List_of_colors_for_prompt_and_Bash)
-
-
   * Source (_en partie_) : [Show Your GIT Branch Name In Your Prompt](http://www.jonmaddox.com/2008/03/13/show-your-git-branch-name-in-your-prompt/)
-
-
-

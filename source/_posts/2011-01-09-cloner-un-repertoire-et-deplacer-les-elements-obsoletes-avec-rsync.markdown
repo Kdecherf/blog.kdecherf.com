@@ -1,25 +1,16 @@
 ---
 date: '2011-01-09 15:40:30'
 layout: post
-slug: cloner-un-repertoire-et-deplacer-les-elements-obsoletes-avec-rsync
-status: publish
 title: Clôner un répertoire et déplacer les éléments obsolètes avec rsync
-wordpress_id: '1785'
-categories:
-- Tips
-tags:
-- rsync
+categories: [Tips]
 ---
 
 Depuis le temps que je devais le faire, hier j'ai mis en place ma petite stratégie de sauvegarde avec un script perso et rsync. Je voulais avoir un clône parfait de mes dossiers : ne pas garder les éléments qui ne sont plus dans la source. Et si jamais on supprime un élément par erreur et qu'il est définitivement perdu lors de la sauvegarde ?
 
+La solution la plus simple est de simuler une première sauvegarde avec l'option `--dry-run` (-n) afin d'obtenir la liste des fichiers qui vont être supprimés du dossier de destination puis de les déplacer avant de lancer la sauvegarde. Ainsi, on arrive à un script ressemblant à ça :
 
-
-
-La solution la plus simple est de simuler une première sauvegarde avec l'option --dry-run (-n) afin d'obtenir la liste des fichiers qui vont être supprimés du dossier de destination puis de les déplacer avant de lancer la sauvegarde. Ainsi, on arrive à un script ressemblant à ça :
-
-
-[bash]#!/bin/bash
+``` bash
+#!/bin/bash
 
 echo "Generating list of files to be rejected..."
 # Préfixe de dossier à retirer lors du nettoyage (utile pour les chemins absolus)
@@ -45,17 +36,10 @@ rsync -avn --delete-after $SOURCE $DEST | grep ^deleting | sed s/"^deleting "/""
  fi
 done
 # Ici on peut lancer le vrai rsync
-[/bash]
-
+```
 
 Exemple de résultat :
 
-
-
-
-![](http://blog.kdecherf.com/wp-content/uploads/2011/01/Screenshot-113-1.png)
-
-
-
+![Screenshot](/images/2011/01/Screenshot-113-1.png)
 
 Enjoy it !
