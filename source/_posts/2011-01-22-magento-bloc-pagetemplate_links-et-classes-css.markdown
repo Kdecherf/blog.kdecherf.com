@@ -29,7 +29,7 @@ Vous avez surement déjà utilisé un bloc de ce type, il vous permet d'ajouter 
 
 Ce bloc, si pratique, a une faiblesse. Du moins avec le template par défaut `app/design/frontend/base/default/template/page/template/links.phtml`
 
-``` php
+``` html+php
 <?php $_links = $this->getLinks(); ?>
 <?php if(count($_links)>0): ?>
 <ul class="links"<?php if($this->getName()): ?> id="<?php echo $this->getName() ?>"<?php endif;?>>
@@ -46,7 +46,7 @@ On remarquera qu'il n'est pas possible, du moins pour les premiers et derniers �
 
 La solution consiste à traiter le contenu de la méthode `getLiParams()` afin d'y inclure les classes `first` et/ou `last` en fonction de la position du lien, évitant ainsi de générer un attribut html en double. En mettant le code PHP directement dans le fichier phtml, cela donne :
 
-``` php
+``` html+php
 <?php $_links = $this->getLinks(); ?>
 <?php if (count($_links) > 0): ?>
     <ul class="links"<?php if ($this->getName()): ?> id="<?php echo $this->getName() ?>"<?php endif; ?>>
@@ -90,7 +90,7 @@ La solution consiste à traiter le contenu de la méthode `getLiParams()` afin d
 
 De manière plus propre, on pourra mettre ce bout de code en tant qu'Helper dans un module perso. L'appel devient donc :
 
-``` php
+``` html+php
 <?php $_links = $this->getLinks(); ?>
 <?php if(count($_links)>0): ?>
 <ul class="links"<?php if($this->getName()): ?> id="<?php echo $this->getName() ?>"<?php endif;?>>

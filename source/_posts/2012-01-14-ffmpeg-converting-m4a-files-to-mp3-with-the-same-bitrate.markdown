@@ -9,18 +9,11 @@ comments: true
 
 Hello World,
 
-
-
-
 Today I show you a (really) tiny tip to convert M4A files to MP3 keeping bitrate with FFmpeg.
 
+By using the command `ffmpeg -i` thefile we obtain data about all streams of the file (codec, bitrate, ...), like this:
 
-
-
-By using the command ffmpeg -i thefile we obtain data about all streams of the file (codec, bitrate, ...), like this:
-
-
-``` bash
+```
 $ ffmpeg -i test.m4a
 [...]
 Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'test.m4a':
@@ -53,21 +46,14 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'test.m4a':
       creation_time   : 2012-01-06 13:08:47
 ```
 
-
-
 Well, the line we need to use for the bitrate is `Stream #0.2(eng): Audio: aac, 44100 Hz, stereo, s16, 319 kb/s`. Now we can play with grep and awk to extract _319_ (_according to the example line_):
-
 
 ``` bash
 $ ffmpeg -i test.m4a 2>&1 | grep Audio | awk -F', ' '{print $5}' | cut -d' ' -f1
 319
 ```
 
-
-
 This output will be used for the -ab argument:
-
-
 
 ``` bash
 ffmpeg -i test.m4a -ab `ffmpeg -i test.m4a 2>&1 | grep Audio | awk -F', ' '{print $5}' | cut -d' ' -f1`k test.mp3
@@ -75,7 +61,7 @@ ffmpeg -i test.m4a -ab `ffmpeg -i test.m4a 2>&1 | grep Audio | awk -F', ' '{prin
 
 Finally, we verify the new file:
 
-``` bash
+```
 $ ffmpeg -i test.mp3
 [...]
 Input #0, mp3, from 'test.mp3':
@@ -92,7 +78,5 @@ Input #0, mp3, from 'test.mp3':
   Duration: 00:59:04.93, start: 0.000000, bitrate: 320 kb/s
     Stream #0.0: Audio: mp3, 44100 Hz, stereo, s16, 320 kb/s
 ```
-
-
 
 Enjoy it !
