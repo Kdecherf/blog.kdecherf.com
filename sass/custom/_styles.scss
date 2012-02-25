@@ -48,10 +48,16 @@ div#main {
 }
 
 nav {
-   line-height: 24px;
+   line-height: 27px;
    height: 27px;
-   padding-top: 1px !important;
    font-size: 16px !important;
+   ul {
+      padding-top: 0px !important;
+   }
+}
+
+body > nav form .search {
+   padding: 2px 6px;
 }
 
 article {
