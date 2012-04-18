@@ -24,9 +24,9 @@ body > header {
 }
 
 aside.sidebar section {
-   font-size: 12px;
+   font-size: 14px;
    h1 {
-      font-size: 14px;
+      font-size: 16px;
    }
 }
 
@@ -66,7 +66,7 @@ article {
       padding-top: 15px;
       padding-bottom: 5px;
       h1, h1 a {
-         font-size: 24px;
+         font-size: 26px;
          line-height: 32px;
          color: #444444;
          font-weight: normal;
@@ -80,14 +80,14 @@ article {
    
    div.entry-content {
       font-family: $serif;
-      font-size: 13px;
+      font-size: 16px;
       color: #444444;
-      line-height: 16px;
+      line-height: 17px;
       p {
          font-family: $serif;
-         font-size: 13px;
+         font-size: 16px;
          color: #444444;
-         line-height: 16px;
+         line-height: 17px;
          text-align: justify;
          img {
             background-color: #ffffff !important;
@@ -143,7 +143,7 @@ article {
       padding-bottom: 10px;
       p.meta {
          color: #666666;
-         font-size: 12px;
+         font-size: 14px;
       }
    }
 }
