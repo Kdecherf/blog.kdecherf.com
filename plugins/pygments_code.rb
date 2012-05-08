@@ -6,22 +6,22 @@ PYGMENTS_CACHE_DIR = File.expand_path('../../.pygments-cache', __FILE__)
 FileUtils.mkdir_p(PYGMENTS_CACHE_DIR)
 
 module HighlightCode
-  def highlight(str, lang)
+  def highlight(str, lang, emphasize)
     lang = 'ruby' if lang == 'ru'
     lang = 'objc' if lang == 'm'
     lang = 'perl' if lang == 'pl'
     lang = 'yaml' if lang == 'yml'
-    str = pygments(str, lang).match(/<pre>(.+)<\/pre>/m)[1].to_s.gsub(/ *$/, '') #strip out divs <div class="highlight">
+    str = pygments(str, lang, emphasize).match(/<pre>(.+)<\/pre>/m)[1].to_s.gsub(/ *$/, '') #strip out divs <div class="highlight">
     tableize_code(str, lang)
   end
 
-  def pygments(code, lang)
+  def pygments(code, lang, emphasize)
     if defined?(PYGMENTS_CACHE_DIR)
-      path = File.join(PYGMENTS_CACHE_DIR, "#{lang}-#{Digest::MD5.hexdigest(code)}.html")
+      path = File.join(PYGMENTS_CACHE_DIR, "#{lang}-#{Digest::MD5.hexdigest(code)}-#{Digest::MD5.hexdigest(emphasize)}.html")
       if File.exist?(path)
         highlighted_code = File.read(path)
       else
-        highlighted_code = Pygments.highlight(code, :lexer => lang, :formatter => 'html', :options => {:encoding => 'utf-8'})
+        highlighted_code = Pygments.highlight(code, :lexer => lang, :formatter => 'html', :options => {:encoding => 'utf-8', :hl_lines => emphasize})
         File.open(path, 'w') {|f| f.print(highlighted_code) }
       end
     else
