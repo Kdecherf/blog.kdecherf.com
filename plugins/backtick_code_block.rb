@@ -34,10 +34,14 @@ module BacktickCodeBlock
       if str.match(/\A( {4}|\t)/)
         str = str.gsub(/^( {4}|\t)/, '')
       end
-      if @lang.nil? || @lang == 'plain'
+      if @lang.nil? 
+        code = str.gsub('<','&lt;').gsub('>','&gt;')
+        "<pre><code>#{code}</code></pre>"
+      else
+       if @lang == 'plain'
         code = tableize_code(str.gsub('<','&lt;').gsub('>','&gt;'))
         "<figure class='code'>#{@caption}#{code}</figure>"
-      else
+       else
         if @lang.include? "-raw"
           raw = "``` #{@options.sub('-raw', '')}\n"
           raw += str
@@ -46,6 +50,7 @@ module BacktickCodeBlock
           code = highlight(str, @lang, @emphasize)
           "<figure class='code'>#{@caption}#{code}</figure>"
         end
+       end
       end
     end
   end
