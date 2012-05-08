@@ -60,6 +60,4 @@ According to the [OTN BCL document for Java SE](http://www.oracle.com/technetwor
 _Enjoy it!_
 
 
-### Bonus
-
-![Image of the story](/images/2012/04/oracle.png)
+[_Bonus_](http://le.kdecherf.com/post/21207105768/le-me-installing-jdk-on-three-servers)

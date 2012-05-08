@@ -17,12 +17,12 @@ Pas de problème, je vais compiler le noyau sans chroot ... Mais heu ... Comment
 A cela nous combinons l'inverse de l'astuce qui se trouve [ici](http://tinkering-is-fun.blogspot.com/2009/12/compiling-linux-kernel-for-x86-on-x8664.html) et on obtient ceci :
 
 ``` bash
-$ apt-get install gcc-multilib
-$ mkdir ~/bin
-$ (echo '#!/bin/sh'; echo 'exec gcc -m64 "$@"';) > ~/bin/x86_64-linux-gnu-gcc
-$ chmod +x ~/bin/x86_64-linux-gnu-gcc
-$ for i in ar ld nm objcopy strip; do ln -s `which $i` ~/bin/x86_64-linux-gnu-$i
-$ done
+apt-get install gcc-multilib
+mkdir ~/bin
+(echo '#!/bin/sh'; echo 'exec gcc -m64 "$@"';) > ~/bin/x86_64-linux-gnu-gcc
+chmod +x ~/bin/x86_64-linux-gnu-gcc
+for i in ar ld nm objcopy strip; do ln -s `which $i` ~/bin/x86_64-linux-gnu-$i
+done
 ```
 
 Et maintenant, vous pouvez compiler tranquillement votre noyau x86\_64 :

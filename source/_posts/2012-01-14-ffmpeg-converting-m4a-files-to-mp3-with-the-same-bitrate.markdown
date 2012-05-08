@@ -48,14 +48,14 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'test.m4a':
 
 Well, the line we need to use for the bitrate is `Stream #0.2(eng): Audio: aac, 44100 Hz, stereo, s16, 319 kb/s`. Now we can play with grep and awk to extract _319_ (_according to the example line_):
 
-``` bash
+```
 $ ffmpeg -i test.m4a 2>&1 | grep Audio | awk -F', ' '{print $5}' | cut -d' ' -f1
 319
 ```
 
 This output will be used for the -ab argument:
 
-``` bash
+```
 ffmpeg -i test.m4a -ab `ffmpeg -i test.m4a 2>&1 | grep Audio | awk -F', ' '{print $5}' | cut -d' ' -f1`k test.mp3
 ```
 
