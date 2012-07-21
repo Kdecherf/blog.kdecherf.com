@@ -1,5 +1,5 @@
 ---
-date: 2012-01-23 14:56
+date: 2012-06-30 19:25
 layout: page
 title: "About Me"
 sharing: false
