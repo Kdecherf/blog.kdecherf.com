@@ -3,7 +3,6 @@ layout: post
 title: "Incremental backup with rsync"
 date: 2012-06-30 16:03 
 comments: true
-published: false
 categories: [Articles] 
 ---
 
