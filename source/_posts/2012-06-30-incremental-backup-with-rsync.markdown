@@ -8,7 +8,7 @@ categories: [Articles]
 
 Hello World,
 
-It's most a tip than an article but today I create a little script for you to make incremental backups using rsync.  
+It's more a tip than an article but today I create a little script for you to make incremental backups using rsync.  
 An incremental backup is a backup that only contains modified files since the last backup. In this article I invert this principle to backup in a separate folder old versions of a modified or deleted file.
 
 For this script we only need three options of rsync:
