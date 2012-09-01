@@ -2,7 +2,6 @@
 date: '2009-10-18 03:02:54'
 layout: post
 title: 'Netcraft : Internet compte 230 millions de sites'
-categories: [Unclassified]
 comments: true
 ---
 

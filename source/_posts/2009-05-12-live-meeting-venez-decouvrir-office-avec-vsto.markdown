@@ -2,7 +2,6 @@
 date: '2009-05-12 16:34:37'
 layout: post
 title: 'Live Meeting : Venez découvrir Office avec VSTO'
-categories: [Unclassified]
 comments: true
 ---
 

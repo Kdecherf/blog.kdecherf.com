@@ -2,7 +2,6 @@
 date: '2009-07-10 10:36:12'
 layout: post
 title: 'Apple Safari : les 5 petites failles de Juillet'
-categories: [Unclassified]
 comments: true
 ---
 

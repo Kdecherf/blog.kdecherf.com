@@ -2,7 +2,6 @@
 date: '2009-08-12 17:55:56'
 layout: post
 title: 'PatchDay Microsoft du mois d''Août : 9 correctifs'
-categories: [Unclassified]
 comments: true
 ---
 

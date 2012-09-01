@@ -2,7 +2,6 @@
 date: '2009-12-09 01:46:49'
 layout: post
 title: Découvrez Silverlight 4 en webcasts
-categories: [Unclassified]
 comments: true
 ---
 

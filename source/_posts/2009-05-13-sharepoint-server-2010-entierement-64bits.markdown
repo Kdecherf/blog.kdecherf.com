@@ -2,7 +2,6 @@
 date: '2009-05-13 02:35:32'
 layout: post
 title: 'Sharepoint Server 2010 : entièrement 64bits'
-categories: [Unclassified]
 comments: true
 ---
 

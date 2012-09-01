@@ -2,7 +2,6 @@
 date: '2009-04-15 02:37:09'
 layout: post
 title: 'Avril : 8 failles pour Microsoft'
-categories: [Unclassified]
 tags: [windows]
 comments: true
 ---

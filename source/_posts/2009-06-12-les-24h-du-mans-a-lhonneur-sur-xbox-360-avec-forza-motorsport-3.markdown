@@ -2,7 +2,6 @@
 date: '2009-06-12 20:09:28'
 layout: post
 title: Les 24H du Mans à l'honneur sur XBox 360 avec Forza Motorsport 3
-categories: [Unclassified]
 comments: true
 ---
 

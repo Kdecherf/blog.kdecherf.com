@@ -2,7 +2,6 @@
 date: '2009-05-06 17:37:37'
 layout: post
 title: 'nVidia : la puissance de CUDA dans un pc de bureau Dell'
-categories: [Unclassified]
 comments: true
 ---
 

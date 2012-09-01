@@ -2,7 +2,6 @@
 date: '2010-01-12 22:05:16'
 layout: post
 title: 'Zend Framework : Sortie des versions 1.9.7, 1.8.5 et 1.7.9'
-categories: [Unclassified]
 comments: true
 ---
 

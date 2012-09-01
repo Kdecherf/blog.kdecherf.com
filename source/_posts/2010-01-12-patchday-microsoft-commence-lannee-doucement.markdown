@@ -2,7 +2,6 @@
 date: '2010-01-12 22:20:57'
 layout: post
 title: 'PatchDay : Microsoft commence l''année doucement'
-categories: [Unclassified]
 comments: true
 ---
 

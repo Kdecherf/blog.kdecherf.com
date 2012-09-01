@@ -2,7 +2,6 @@
 date: '2009-04-21 14:47:21'
 layout: post
 title: 'Nouvelle-Zélande : MSN, Xerox et pleins d''autres ... piratés'
-categories: [Unclassified]
 comments: true
 ---
 

@@ -2,7 +2,6 @@
 date: '2009-12-08 02:38:23'
 layout: post
 title: 'Nouveau sur Google Webmasters Tools : Performances'
-categories: [Unclassified]
 comments: true
 ---
 

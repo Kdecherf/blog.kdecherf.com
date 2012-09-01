@@ -2,7 +2,6 @@
 date: '2009-07-08 11:02:03'
 layout: post
 title: 'Imagine Cup 2009 : finale mondiale'
-categories: [Unclassified]
 tags: [imagine cup]
 comments: true
 ---

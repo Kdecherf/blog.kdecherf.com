@@ -2,7 +2,6 @@
 date: '2009-03-27 14:04:15'
 layout: post
 title: 'Live Meeting : venez découvrir WPF et Silverlight'
-categories: [Unclassified]
 comments: true
 ---
 

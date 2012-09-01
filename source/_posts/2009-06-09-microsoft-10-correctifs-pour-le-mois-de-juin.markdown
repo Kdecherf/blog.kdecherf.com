@@ -2,7 +2,6 @@
 date: '2009-06-09 20:56:56'
 layout: post
 title: 'Microsoft : 10 correctifs pour le mois de Juin'
-categories: [Unclassified]
 comments: true
 ---
 

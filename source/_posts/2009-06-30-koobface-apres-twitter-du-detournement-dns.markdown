@@ -2,7 +2,6 @@
 date: '2009-06-30 01:53:06'
 layout: post
 title: 'Koobface : Après Twitter, du détournement DNS'
-categories: [Unclassified]
 comments: true
 ---
 

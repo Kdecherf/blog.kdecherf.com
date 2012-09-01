@@ -2,7 +2,6 @@
 date: '2009-07-03 15:05:51'
 layout: post
 title: 'Trend Micro HouseCall : Version 7 Bêta disponible'
-categories: [Unclassified]
 comments: true
 ---
 

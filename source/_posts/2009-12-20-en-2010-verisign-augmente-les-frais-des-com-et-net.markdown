@@ -2,7 +2,6 @@
 date: '2009-12-20 17:40:08'
 layout: post
 title: En 2010, Verisign augmente les frais des .com et .net
-categories: [Unclassified]
 comments: true
 ---
 

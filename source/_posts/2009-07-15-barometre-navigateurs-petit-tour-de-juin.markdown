@@ -2,7 +2,6 @@
 date: '2009-07-15 02:19:11'
 layout: post
 title: 'Baromètre navigateurs : petit tour de Juin'
-categories: [Unclassified]
 tags: [internet]
 comments: true
 ---

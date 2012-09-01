@@ -2,7 +2,6 @@
 date: '2009-06-11 12:44:57'
 layout: post
 title: Safari 4.0 corrige 36 failles
-categories: [Unclassified]
 comments: true
 ---
 

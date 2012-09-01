@@ -2,7 +2,6 @@
 date: '2009-04-03 13:14:22'
 layout: post
 title: Redécouvrez les TechDays 2009 en vidéo !
-categories: [Unclassified]
 tags: [techdays]
 comments: true
 ---

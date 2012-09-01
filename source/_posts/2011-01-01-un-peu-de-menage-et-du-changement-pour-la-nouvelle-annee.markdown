@@ -2,7 +2,6 @@
 date: '2011-01-01 18:59:23'
 layout: post
 title: Un peu de ménage et du changement pour la nouvelle année
-categories: [Unclassified]
 comments: true
 ---
 

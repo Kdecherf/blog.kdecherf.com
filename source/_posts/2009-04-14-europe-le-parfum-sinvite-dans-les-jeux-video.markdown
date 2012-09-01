@@ -2,7 +2,6 @@
 date: '2009-04-14 21:48:41'
 layout: post
 title: 'Europe : Le parfum s''invite dans les jeux vidéo'
-categories: [Unclassified]
 comments: true
 ---
 

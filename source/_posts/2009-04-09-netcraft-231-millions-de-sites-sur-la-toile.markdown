@@ -2,7 +2,6 @@
 date: '2009-04-09 15:20:21'
 layout: post
 title: 'Netcraft : 231 millions de sites sur la toile'
-categories: [Unclassified]
 tags: [internet]
 comments: true
 ---

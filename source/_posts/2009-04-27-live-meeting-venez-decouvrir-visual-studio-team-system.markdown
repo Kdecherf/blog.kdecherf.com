@@ -2,7 +2,6 @@
 date: '2009-04-27 17:12:04'
 layout: post
 title: 'Live Meeting : Venez découvrir Visual Studio Team System'
-categories: [Unclassified]
 comments: true
 ---
 

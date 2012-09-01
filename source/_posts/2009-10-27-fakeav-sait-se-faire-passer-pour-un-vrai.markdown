@@ -2,7 +2,6 @@
 date: '2009-10-27 17:00:44'
 layout: post
 title: FakeAV sait se faire passer pour un vrai
-categories: [Unclassified]
 comments: true
 ---
 

@@ -2,7 +2,6 @@
 date: '2009-05-15 00:03:19'
 layout: post
 title: 'Windows Azure : du PHP dans le Cloud !'
-categories: [Unclassified]
 tags: [cloud computing,php]
 comments: true
 ---

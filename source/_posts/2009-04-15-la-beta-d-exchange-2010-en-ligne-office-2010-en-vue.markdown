@@ -2,7 +2,6 @@
 date: '2009-04-15 19:18:02'
 layout: post
 title: La beta d'Exchange 2010 en ligne, Office 2010 en vue
-categories: [Unclassified]
 tags: [office]
 comments: true
 ---

@@ -2,7 +2,6 @@
 date: '2009-10-13 20:55:09'
 layout: post
 title: 'PatchDay : 13 bulletins en ce 13 octobre pour Microsoft'
-categories: [Unclassified]
 comments: true
 ---
 

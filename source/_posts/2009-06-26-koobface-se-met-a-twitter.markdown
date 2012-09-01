@@ -2,7 +2,6 @@
 date: '2009-06-26 17:11:53'
 layout: post
 title: Koobface se met à Twitter
-categories: [Unclassified]
 comments: true
 ---
 

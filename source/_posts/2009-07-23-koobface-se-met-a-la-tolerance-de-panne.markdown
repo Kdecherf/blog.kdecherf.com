@@ -2,7 +2,6 @@
 date: '2009-07-23 14:37:58'
 layout: post
 title: Koobface se met à la tolérance de panne
-categories: [Unclassified]
 comments: true
 ---
 

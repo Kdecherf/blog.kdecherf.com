@@ -2,7 +2,6 @@
 date: '2010-01-17 19:21:13'
 layout: post
 title: 'RSA : 768 bits c''est has been, passe à 1024'
-categories: [Unclassified]
 comments: true
 ---
 

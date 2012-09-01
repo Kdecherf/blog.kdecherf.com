@@ -2,7 +2,6 @@
 date: '2010-01-23 19:25:54'
 layout: post
 title: 'TechDays 2010 : j''y serai ... et vous ?'
-categories: [Unclassified]
 comments: true
 ---
 

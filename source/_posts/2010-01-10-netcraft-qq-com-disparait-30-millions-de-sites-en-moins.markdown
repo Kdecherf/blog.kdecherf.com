@@ -2,7 +2,6 @@
 date: '2010-01-10 14:29:49'
 layout: post
 title: 'Netcraft - qq.com disparait : 30 millions de sites en moins'
-categories: [Unclassified]
 comments: true
 ---
 

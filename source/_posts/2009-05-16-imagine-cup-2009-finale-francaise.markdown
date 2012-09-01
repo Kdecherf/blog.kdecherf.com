@@ -2,7 +2,6 @@
 date: '2009-05-16 16:54:19'
 layout: post
 title: 'Imagine Cup 2009 : Finale Française'
-categories: [Unclassified]
 tags: [imagine cup]
 comments: true
 ---

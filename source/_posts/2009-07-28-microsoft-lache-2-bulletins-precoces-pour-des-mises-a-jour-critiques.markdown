@@ -2,7 +2,6 @@
 date: '2009-07-28 23:58:31'
 layout: post
 title: Microsoft lâche 2 bulletins précoces pour des mises à jour critiques
-categories: [Unclassified]
 comments: true
 ---
 

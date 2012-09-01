@@ -2,7 +2,6 @@
 date: '2009-04-09 00:27:05'
 layout: post
 title: 'Déploiement : Martin DOP est de retour parmi les siens'
-categories: [Unclassified]
 comments: true
 ---
 

@@ -2,7 +2,6 @@
 date: '2009-07-21 23:55:27'
 layout: post
 title: Disponibilité de Windows 7 RTM
-categories: [Unclassified]
 comments: true
 ---
 

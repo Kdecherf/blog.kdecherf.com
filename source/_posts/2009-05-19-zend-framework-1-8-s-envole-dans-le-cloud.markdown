@@ -2,7 +2,6 @@
 date: '2009-05-19 21:18:05'
 layout: post
 title: Zend Framework 1.8 s'envole dans le Cloud
-categories: [Unclassified]
 tags: [cloud computing,zend]
 comments: true
 ---

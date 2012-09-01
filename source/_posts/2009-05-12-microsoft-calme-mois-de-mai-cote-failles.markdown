@@ -2,7 +2,6 @@
 date: '2009-05-12 23:15:34'
 layout: post
 title: 'Microsoft : calme mois de mai côté failles'
-categories: [Unclassified]
 comments: true
 ---
 

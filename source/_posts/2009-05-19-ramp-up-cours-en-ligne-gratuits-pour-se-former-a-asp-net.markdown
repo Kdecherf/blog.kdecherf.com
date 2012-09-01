@@ -2,7 +2,6 @@
 date: '2009-05-19 17:32:00'
 layout: post
 title: 'Ramp Up : cours en ligne gratuits pour se former à ASP .NET'
-categories: [Unclassified]
 comments: true
 ---
 

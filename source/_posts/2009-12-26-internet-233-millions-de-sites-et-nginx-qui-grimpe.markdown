@@ -2,7 +2,6 @@
 date: '2009-12-26 23:11:53'
 layout: post
 title: 'Internet : 233 millions de sites et nginx qui grimpe'
-categories: [Unclassified]
 comments: true
 ---
 

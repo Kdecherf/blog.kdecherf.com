@@ -2,7 +2,6 @@
 date: '2009-05-19 15:59:04'
 layout: post
 title: 'vSphere Tour 2009 : VMWare et le Cloud-Computing dans votre ville'
-categories: [Unclassified]
 tags: [cloud computing,virtualisation]
 comments: true
 ---

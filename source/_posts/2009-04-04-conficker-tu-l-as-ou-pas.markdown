@@ -2,7 +2,6 @@
 date: '2009-04-04 01:43:57'
 layout: post
 title: 'Conficker : Tu l''as ... ou pas ?'
-categories: [Unclassified]
 comments: true
 ---
 

@@ -2,7 +2,6 @@
 date: '2009-04-28 22:55:56'
 layout: post
 title: La nouvelle grippe profite ... au spam
-categories: [Unclassified]
 comments: true
 ---
 

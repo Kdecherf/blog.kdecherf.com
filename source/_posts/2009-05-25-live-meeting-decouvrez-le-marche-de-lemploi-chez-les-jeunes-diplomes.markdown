@@ -2,7 +2,6 @@
 date: '2009-05-25 14:35:13'
 layout: post
 title: 'Live Meeting : Découvrez le marché de l''emploi chez les jeunes diplômés'
-categories: [Unclassified]
 comments: true
 ---
 

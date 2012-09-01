@@ -2,7 +2,6 @@
 date: '2009-04-22 18:51:04'
 layout: post
 title: 'Windows Live Messenger : Syndiquez vos réseaux sociaux favoris'
-categories: [Unclassified]
 comments: true
 ---
 

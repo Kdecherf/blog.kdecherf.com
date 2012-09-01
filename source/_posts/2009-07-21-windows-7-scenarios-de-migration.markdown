@@ -2,7 +2,6 @@
 date: '2009-07-21 14:38:19'
 layout: post
 title: 'Windows 7 : scénarios de migration'
-categories: [Unclassified]
 comments: true
 ---
 

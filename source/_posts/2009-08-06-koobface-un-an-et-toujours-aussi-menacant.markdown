@@ -2,7 +2,6 @@
 date: '2009-08-06 23:40:27'
 layout: post
 title: 'Koobface : un an et toujours aussi menaçant'
-categories: [Unclassified]
 comments: true
 ---
 

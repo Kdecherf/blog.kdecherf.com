@@ -2,7 +2,6 @@
 date: '2009-04-03 06:05:36'
 layout: post
 title: SharePoint Designer 2007 désormais gratuit
-categories: [Unclassified]
 comments: true
 ---
 

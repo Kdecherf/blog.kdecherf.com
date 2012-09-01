@@ -2,7 +2,6 @@
 date: '2009-08-07 18:14:41'
 layout: post
 title: 'PatchDay Apple d''Août : 11 bulletins de sécurité'
-categories: [Unclassified]
 comments: true
 ---
 

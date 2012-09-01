@@ -2,7 +2,6 @@
 date: '2009-09-03 15:45:45'
 layout: post
 title: Découvrez les nouveautés de Microsoft Office 2010 en vidéo
-categories: [Unclassified]
 comments: true
 ---
 

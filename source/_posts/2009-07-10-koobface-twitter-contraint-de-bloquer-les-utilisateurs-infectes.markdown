@@ -2,7 +2,6 @@
 date: '2009-07-10 19:40:43'
 layout: post
 title: 'Koobface : Twitter contraint de bloquer les utilisateurs infectés'
-categories: [Unclassified]
 comments: true
 ---
 

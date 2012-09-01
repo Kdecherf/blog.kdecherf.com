@@ -2,7 +2,6 @@
 date: '2009-05-04 22:58:18'
 layout: post
 title: Koobface ou comment casser des CAPTCHA ... à la main (d'oeuvre)
-categories: [Unclassified]
 comments: true
 ---
 

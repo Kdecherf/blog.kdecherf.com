@@ -2,7 +2,6 @@
 date: '2009-05-18 15:16:33'
 layout: post
 title: 'Open XML : Ouvrez un .docx avec votre navigateur web'
-categories: [Unclassified]
 comments: true
 ---
 

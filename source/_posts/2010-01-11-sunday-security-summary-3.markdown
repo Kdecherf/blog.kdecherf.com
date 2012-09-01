@@ -2,7 +2,6 @@
 date: '2010-01-11 10:37:51'
 layout: post
 title: 'Sunday Security Summary #3'
-categories: [Unclassified]
 comments: true
 ---
 

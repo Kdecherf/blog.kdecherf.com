@@ -2,7 +2,6 @@
 date: '2010-02-26 18:01:38'
 layout: post
 title: 'Microsoft : 5 000 serveurs tout équipés gratuits'
-categories: [Unclassified]
 comments: true
 ---
 

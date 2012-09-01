@@ -2,7 +2,6 @@
 date: '2009-09-18 11:42:35'
 layout: post
 title: 'Etudiants : obtenez Windows 7 pour moins de 30 dollars'
-categories: [Unclassified]
 comments: true
 ---
 
