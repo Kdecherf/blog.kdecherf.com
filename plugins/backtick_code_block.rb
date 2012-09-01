@@ -31,10 +31,14 @@ module BacktickCodeBlock
          end
       end
 
+      if @lang.nil?
+         @lang = 'raw'
+      end
+
       if str.match(/\A( {4}|\t)/)
         str = str.gsub(/^( {4}|\t)/, '')
       end
-      if @lang.nil? 
+      if @lang == 'raw'
         code = str.gsub('<','&lt;').gsub('>','&gt;')
         "<pre><code>#{code}</code></pre>"
       else
