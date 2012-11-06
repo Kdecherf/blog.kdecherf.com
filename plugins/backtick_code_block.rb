@@ -2,35 +2,38 @@ require './plugins/pygments_code'
 
 module BacktickCodeBlock
   include HighlightCode
-  #AllOptions = /([^\s]+)\s+(.+?)(https?:\/\/\S+)\s*(.+)?/i
-  #LangCaption = /([^\s]+)\s*(.+)?/i
-  LangEmphasize = /([^\s]+)\s*(.+)?/i
+  AllOptions = /([^\s]+)\s+(.+?)(https?:\/\/\S+)\s*(.+)?/i
+  LangEmphasize = /([^\s]+)\s\~\~([0-9,]+)\s*(.+)?/i
+  LangCaption = /([^\s]+)\s*(.+)?/i
   def render_code_block(input)
-    @options = nil
-    @caption = nil
-    @lang = nil
-    #@url = nil
-    @title = nil
-    @emphasize = ''
     input.gsub(/^`{3} *([^\n]+)?\n(.+?)\n`{3}/m) do
+      @options = nil
+      @caption = nil
+      @lang = nil
+      @url = nil
+      @title = nil
+      @emphasize = ''
+
       @options = $1 || ''
       str = $2
 
-#if @options =~ AllOptions
-#@lang = $1
-#@caption = "<figcaption><span>#{$2}</span><a href='#{$3}'>#{$4 || 'link'}</a></figcaption>"
-#elsif @options =~ LangCaption
-#@lang = $1
-#@caption = "<figcaption><span>#{$2}</span></figcaption>"
-#end
-
-      if @options =~ LangEmphasize
+      if @options =~ AllOptions
+         @lang = $1
+         @caption = "<figcaption><span>#{$2}</span><a href='#{$3}'>#{$4 || 'link'}</a></figcaption>"
+      elsif @options =~ LangEmphasize
+         @lang = $1
+         caption = $3
+         @emphasize = $2.gsub(',', ' ')
+         if !caption.nil?
+            @caption = "<figcaption><span>#{caption}</span></figcaption>"
+         end
+      elsif @options =~ LangCaption
          @lang = $1
          if !$2.nil?
-            @emphasize = $2.gsub(',', ' ')
+            @caption = "<figcaption><span>#{$2}</span></figcaption>"
          end
       end
-
+      
       if @lang.nil?
          @lang = 'raw'
       end
