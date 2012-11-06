@@ -37,7 +37,7 @@ Je me penche sur la méthode _Integer.toHexString()_ en regardant la Javadoc :
 
 TOUT S'EXPLIQUE. Du coup, on doit rajouter un zéro à la main quand il le faut :
 
-``` java 7,8,9,10
+``` java ~~7,8,9,10
       MessageDigest md = MessageDigest.getInstance("SHA-512");
 
       md.update(myString.getBytes());
