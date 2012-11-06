@@ -193,6 +193,28 @@ pre, code {
 
 figure.code {
    margin-bottom: 1.5em;
+   figcaption {
+    position: relative;
+    @extend .code-title;
+   }
+}
+
+.code-title {
+  text-align: center;
+  font-size: 13px;
+  line-height: 2em;
+  text-shadow: #cbcccc 0 1px 0;
+  color: #474747;
+  font-weight: normal;
+  margin-bottom: 0;
+  @include border-top-radius(5px);
+  font-family: "Helvetica Neue", Arial, "Lucida Grande", "Lucida Sans Unicode", Lucida, sans-serif;
+  background: #aaaaaa image-url("code_bg.png") top repeat-x;
+  border: 1px solid #565656;
+  border-top-color: #cbcbcb;
+  border-left-color: #a5a5a5;
+  border-right-color: #a5a5a5;
+  border-bottom: 0;
 }
 
 .hightlight tr, .highlight td { vertical-align: top; }
