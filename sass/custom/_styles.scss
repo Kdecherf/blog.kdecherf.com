@@ -23,6 +23,9 @@ body > header {
    }
 }
 
+body.no-sidebar aside.sidebar {
+   display: none;
+}
 aside.sidebar section {
    font-size: 14px;
    h1 {
@@ -158,6 +161,10 @@ pre {
     padding: 6px 10px;
     line-height: 19px;
     margin-bottom: 20px;
+}
+
+body #content > div > article {
+   padding: 1em 20px;
 }
 
 div.entry-content > pre {
