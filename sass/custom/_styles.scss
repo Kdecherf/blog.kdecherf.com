@@ -12,7 +12,7 @@ body > header {
       font-size: 30px;
       a {
          color: #C3481E !important;
-         font-family: $serif;
+         font-family: $libertine;
          font-weight: bold;
       }
    }
@@ -82,15 +82,15 @@ article {
    }
    
    div.entry-content {
-      font-family: $sans;
-      font-size: 14px;
+      font-family: $libertine;
+      font-size: 15px;
       color: #444444;
-      line-height: 17px;
+      line-height: 20px;
       p {
-         font-family: $sans;
-         font-size: 14px;
+         font-family: $libertine;
+         font-size: 15px;
          color: #444444;
-         line-height: 17px;
+         line-height: 20px;
          text-align: justify;
          img {
             background-color: #ffffff !important;
