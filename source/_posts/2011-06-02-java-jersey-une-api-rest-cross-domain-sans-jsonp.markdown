@@ -75,8 +75,7 @@ J'y viens, côté code maintenant nous considérons avoir une API REST déjà fa
 private String _corsHeaders;
 
 private Response makeCORS(ResponseBuilder req, String returnMethod) {
-   ResponseBuilder rb = req.ok()
-      .header("Access-Control-Allow-Origin", "*")
+   ResponseBuilder rb = req.header("Access-Control-Allow-Origin", "*")
       .header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
 
    if (!"".equals(returnMethod)) {
@@ -124,4 +123,8 @@ Point de vue compatibilité avec cette petite norme laissez tomber Internet Expl
   * [Présentation de l'objet XDomainRequest sur MSDN](http://msdn.microsoft.com/en-us/library/cc288060\(v=vs.85\).aspx)
   * [RFC 2616 : Protocole HTTP](http://tools.ietf.org/html/rfc2616)
 
-_Enjoy it !_
+
+**Mise à jour :** 2012/12/23 - Correction d'une erreur d'étourderie sur le premier bloc ligne 4, l'objet ``ResponseBuilder`` n'a pas de méthode ``ok()``
+
+
+_Enjoy it!_

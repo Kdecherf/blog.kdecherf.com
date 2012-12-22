@@ -76,8 +76,7 @@ Well, now we modify our API to be CORS-compliant using Java and Jersey. You can 
 private String _corsHeaders;
 
 private Response makeCORS(ResponseBuilder req, String returnMethod) {
-   ResponseBuilder rb = req.ok()
-      .header("Access-Control-Allow-Origin", "*")
+   ResponseBuilder rb = req.header("Access-Control-Allow-Origin", "*")
       .header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
 
    if (!"".equals(returnMethod)) {
@@ -119,6 +118,7 @@ These code snippets are given only as an example, you can change it to build _Ac
 
 With this standard you can miss Internet Explorer 6 and 7. Internet Explorer 8 is saved by a new _XDomainRequest_ object replacing _XMLHttpRequest_ but seems to be not compatible with preflight requests. Other browsers are globally compatible with their last versions.
 
+
 **More information:**
 
   * [W3C Worksheet about CORS](http://www.w3.org/TR/cors/)
@@ -126,4 +126,8 @@ With this standard you can miss Internet Explorer 6 and 7. Internet Explorer 8 i
   * [XDomainRequest object on MSDN](http://msdn.microsoft.com/en-us/library/cc288060\(v=vs.85\).aspx)
   * [RFC 2616: HTTP Protocol](http://tools.ietf.org/html/rfc2616)
 
-_Enjoy it !_
+
+**UPDATE:** 2012/12/23 - fixing typo on line 4, ``ResponseBuilder`` has no ``ok()`` method (_Thanks [Frankie Frank](#comment-658615663)_)
+
+
+_Enjoy it!_
