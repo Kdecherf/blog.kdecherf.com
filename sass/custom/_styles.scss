@@ -156,6 +156,19 @@ body > footer {
    color: #666666;
 }
 
+body > div.preview.alert-msg {
+   position: absolute;
+   top: 190px;
+   left: 275px;
+   background-color: #F2DEDE;
+   border-color: #EED3D7;
+   color: #B94A48;
+   border-radius: 4px 4px 4px 4px;
+   padding: 8px 35px 8px 14px;
+   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+   font-size: 15px;
+}
+
 pre {
     border: 1px solid #ccc;
     padding: 6px 10px;
