@@ -42,9 +42,9 @@ sourcedir=/tmp/qt-everywhere-opensource-src-4.8.4
 destdir=/tmp/hack/usr
 mkdir -p hack/usr/include/qt4/{QtCore,QtDeclarative,QtGui,QtScript}
 mkdir -p hack/usr/src/qt4/{corelib,declarative,gui,script}
-for i in QtCore QtDeclarative QtGui QtScript; do\ncp -r $sourcedir/include/${i}/private/ \\n$destdir/include/qt4/${i}/\ndone
+for i in QtCore QtDeclarative QtGui QtScript; do cp -r $sourcedir/include/${i}/private/ $destdir/include/qt4/${i}/ ; done
 find $destdir/include/qt4/ -name *.h -exec sed -i 's|#include "../../../src/|#include "../../../src/qt4/|' {} \;
-for i in corelib declarative gui script; do\ncp -r $sourcedir/src/${i} $destdir/src/qt4/\ndone
+for i in corelib declarative gui script; do cp -r $sourcedir/src/${i} $destdir/src/qt4/ ; done
 ```
 
 At this moment, we have all necessary files installed in a fake root (`/tmp/hack`). Now it's time to use our magical tool: `cave import`.  
