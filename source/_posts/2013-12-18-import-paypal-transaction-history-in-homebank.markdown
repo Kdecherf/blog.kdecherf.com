@@ -6,6 +6,10 @@ comments: true
 categories: [Tips]
 ---
 
+<div class="alert-info">
+  <strong>UPDATE 2014/03/16:</strong> updated sed line to remove the header of initial csv file.
+</div>
+
 Wow, it's been a long time since my last post. Few days ago I found a cool free and open-source (_and cross-platform_) software for personal accounting: HomeBank[1].
 
 This tool works well but the 'Import' feature requests a "proprietary" CSV format described here[2]. As I have a Paypal account for e-shopping I wanted to track these transactions too. So I made a tiny gawk script to convert a Paypal transaction history into the HomeBank CSV format.
@@ -60,7 +64,7 @@ We need some processing of the Paypal CSV file before using the gawk script: we 
 
 Here is the oneliner to convert the CSV file (_with the previous script saved in the same folder as `paypal-homebank.awk`_):
 ```
-sed -e 's/",/";/g' -e 's/"//g' -e "s@\([0-9]\{2\}\)/\([0-9]\{2\}\)/\([0-9]\{4\}\)@\1-\2-\3@" paypal-export.csv | awk -F';' -f paypal-homebank.awk > import.csv
+sed -e 's/",/";/g' -e 's/"//g' -e "s@\([0-9]\{2\}\)/\([0-9]\{2\}\)/\([0-9]\{4\}\)@\1-\2-\3@" -e "1d" paypal-export.csv | awk -F';' -f paypal-homebank.awk > import.csv
 ```
 
 _Enjoy!_
