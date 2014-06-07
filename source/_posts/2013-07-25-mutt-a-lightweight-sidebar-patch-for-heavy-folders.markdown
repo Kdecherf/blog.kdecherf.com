@@ -6,6 +6,10 @@ comments: true
 categories: [Tips]
 ---
 
+<div class="alert-info">
+  <strong>UPDATE 2014/06/07:</strong> patched the patch for Mutt 1.5.23
+</div>
+
 Hey, I'm back after "several" busy days to show you a little tip of my virtual set _"Leave Gmail"_. In case you have several folders with a lot of emails (_more than 10,000 per folder_) like me and you want to use the sidebar patch [1] for your beloved Mutt, read this.
 
 ![Mutt Sidebar Patch](/images/2013/07/mutt-sidebar.png)
@@ -74,7 +78,7 @@ diff -u mutt1/mutt-1.5.21/init.h mutt2/mutt-1.5.21/init.h
    ** Format string for the sidebar. The sequences `%N', `%F' and `%S'
 ```
 
-My complete patch based on `patch-1.5.21.sidebar.20130219` is available as a Gist [2].
+My patches are available on Github and work with Mutt 1.5.21[2] or Mutt 1.5.23[3].
 
 Now my sidebar doesn't hang and lets me play with my 492,885 emails.
 
@@ -83,5 +87,6 @@ _Enjoy!_
 References
 
 [1] [http://www.lunar-linux.org/mutt-sidebar/](http://www.lunar-linux.org/mutt-sidebar/)  
-[2] [https://gist.github.com/anonymous/6081749](https://gist.github.com/anonymous/6081749)
+[2] [https://gist.github.com/Kdecherf/674307aac44997e9a853](https://gist.github.com/Kdecherf/674307aac44997e9a853)  
+[3] [https://gist.github.com/Kdecherf/0ca09fc730033d4bf516](https://gist.github.com/Kdecherf/0ca09fc730033d4bf516)
 
