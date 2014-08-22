@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Kevin Decherf'
 SITENAME = u'kdecherf (git)-[blog] %'
+SITESUBTITLE = u'#FridayDeploymentWin'
 SITEURL = ''
 
 THEME = 'themes/fresh-sundown'
