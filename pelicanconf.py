@@ -6,6 +6,8 @@ AUTHOR = u'Kevin Decherf'
 SITENAME = u'kdecherf (git)-[blog] %'
 SITEURL = ''
 
+THEME = 'themes/fresh-sundown'
+
 MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra','fenced_code']
 
 PATH = 'content'
