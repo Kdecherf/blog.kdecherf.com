@@ -1,0 +1,3 @@
+[submodule "themes/fresh-sundown"]
+	path = themes/fresh-sundown
+	url = https://github.com/Kdecherf/fresh-sundown.git
