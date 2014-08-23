@@ -9,7 +9,7 @@ SITEURL = ''
 
 THEME = 'themes/fresh-sundown'
 
-MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra','fenced_code']
+MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra','fenced_code','codehilite']
 
 PATH = 'content'
 
