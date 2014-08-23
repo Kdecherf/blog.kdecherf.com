@@ -1,7 +1,7 @@
 Date: 2009-06-16 01:00:45
 Title: Twitter + Curl : poster le même statut à la suite
 Category: Tips
-Tags: [curl,twitter]
+Tags: curl,twitter
 
 Dans certains cas, la même chose doit être tweetée (rapport d'erreur sur le même serveur, connexion ...) mais par défaut c'est interdit sur Twitter. Voici donc une solution simple mais efficace pour passer outre cette limitation. _Cet article est destiné aux personnes utilisant des robots de monitoring sur Twitter via Curl (Nagios, Fail2ban)._
 

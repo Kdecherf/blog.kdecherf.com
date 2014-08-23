@@ -1,7 +1,7 @@
 Date: 2009-03-01 00:19:06
 Title: Créer un Chroot SFTP natif avec OpenSSH
 Category: Tips
-Tags: [openssh,sftp]
+Tags: openssh,sftp
 
 Pour des raisons de sécurité, il est souvent nécessaire d'appliquer des règles de chroot (aussi nommé _jail_ dans le monde \*BSD) afin de parquer un utilisateur dans une zone donnée. Par défaut, pour faire un chroot sur SSH il faut patcher OpenSSH puis installer des binaires sur chaque espace. C'est une méthode très longue et souvent ennuyeuse.
 

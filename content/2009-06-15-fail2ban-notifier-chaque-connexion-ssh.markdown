@@ -1,7 +1,7 @@
 Date: 2009-06-15 21:13:20
 Title: Fail2ban : notifier chaque connexion SSH
 Category: Articles
-Tags: [fail2ban]
+Tags: fail2ban
 
 Bien que Fail2Ban fasse correctement son travail, il peut arriver qu'une intrusion se fasse avec succès. Il peut être utile, par précaution ou aussi pour du suivi, de savoir quand quelqu'un se connecte sur SSH.
 

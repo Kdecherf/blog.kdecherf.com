@@ -1,7 +1,7 @@
 Date: 2009-03-19 14:05:15
 Title: MySQL : INSERT et SELECT en même temps sur la même table
 Category: Tips
-Tags: [mysql]
+Tags: mysql
 
 Peut-être vous est-il arrivé d'avoir la terrible erreur _1093 (HY000): You can't specify target table 'foo' for update in FROM clause_ en faisant une commande du genre
 

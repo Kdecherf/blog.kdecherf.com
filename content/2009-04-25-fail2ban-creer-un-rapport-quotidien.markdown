@@ -1,7 +1,7 @@
 Date: 2009-04-25 15:55:43
 Title: Fail2ban : Créer un rapport quotidien
 Category: Articles
-Tags: [fail2ban]
+Tags: fail2ban
 
 Après l'article pour [transformer les mails Fail2ban façon Nagios](/2009/03/27/fail2ban-email-alerte-facon-nagios/), voici un petit article pour générer des rapports journaliers de l'activité de votre chien de garde favori.
 

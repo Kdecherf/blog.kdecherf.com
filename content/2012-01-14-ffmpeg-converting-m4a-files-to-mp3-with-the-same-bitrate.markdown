@@ -1,7 +1,7 @@
 Date: 2012-01-14 19:54:23
 Title: FFmpeg: converting M4A files to MP3 with the same bitrate
 Category: Tips
-Tags: [linux]
+Tags: linux
 
 Hello World,
 
