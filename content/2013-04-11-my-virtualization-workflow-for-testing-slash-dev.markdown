@@ -1,6 +1,7 @@
 Title: My virtualization workflow for testing/dev
 Date: 2013-04-11 19:45:00
 Category: Articles
+Slug: my-virtualization-workflow-for-testing-slash-dev
 
 I work all the day with virtual machines for packaging and testing tools at Clever Cloud. Since I am a KVM lover, I began with libvirt to easily manage my virtual machines but using XML files and virt-manager made me crazy.
 

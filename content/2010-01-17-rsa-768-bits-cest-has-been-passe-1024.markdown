@@ -1,6 +1,7 @@
 Date: 2010-01-17 19:21:13
 Title: RSA : 768 bits c'est has been, passe à 1024
 Category: Articles
+Slug: rsa-768-bits-cest-has-been-passe-1024
 
 Il fallait s'y attendre, le 12 décembre dernier une équipe de chercheurs dirigée par T. Kleinjung a réussi à factoriser une clé RSA de **768 bits**, le projet aura duré **un an et demi**.
 
