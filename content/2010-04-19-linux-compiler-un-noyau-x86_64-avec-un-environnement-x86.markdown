@@ -1,10 +1,6 @@
----
-date: '2010-04-19 21:53:05'
-layout: post
-title: 'Linux : Compiler un noyau x86_64 avec un environnement x86'
-categories: [Tips]
-comments: true
----
+Date: 2010-04-19 21:53:05
+Title: Linux : Compiler un noyau x86_64 avec un environnement x86
+Category: Tips
 
 Cela fait un long moment que je n'ai rien posté, je reviens donc avec une petite astuce qui, je l'espère, pourra vous être utile.
 

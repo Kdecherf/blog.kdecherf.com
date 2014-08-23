@@ -1,10 +1,6 @@
----
-layout: post
-title: "Rendre temporairement accessible un site hébergé sur sa machine"
-date: 2012-04-10 17:22
-comments: true
-categories: [Articles] 
----
+Title: Rendre temporairement accessible un site hébergé sur sa machine
+Date: 2012-04-10 17:22
+Category: Articles 
 
 Avec le passage de mon blog de Wordpress à Jekyll/Octopress, j'ai été confronté à un problème existentiel : comment diffuser un billet en cours de rédaction pour lecture "privée" sans le publier ?
 
@@ -35,7 +31,7 @@ La première étape est donc de migrer votre serveur web actuel sur un port loca
 
 Si vous utilisez HAProxy comme reverse proxy, la configuration pour notre exemple doit ressembler à ça :
 
-```
+``` text
 [...]
 frontend webfront
         bind ippubliqueduserveur:80
@@ -64,7 +60,7 @@ backend cluster_local
 ### Tunnel SSH
 
 En suivant l'exemple, la commande ssh à lancer sur le laptop pour rediriger le port 8001 du serveur sur le port 4000 [du laptop] est :
-```
+``` text
 ssh -N -R127.0.0.1:8001:127.0.0.1:4000 monserveur
 ```
 
@@ -76,7 +72,7 @@ Une fois que le tunnel est prêt, on peut finir la configuration du reverse prox
 
 Dans l'exemple je vais rediriger preview.kdecherf.com vers le port 8001 (_qui redirigera sur le port 4000 de mon laptop_).
 
-```
+``` text
 [...]
 
 frontend webfront
@@ -116,7 +112,7 @@ Et voilà, tout simplement. Libre à vous d'ajouter des clusters et des ACL pour
 
 Tous ceux qui ont déjà mis en ligne une version de test d'un site ont surement connu cette sensation désagréable quand on remarque que Google est déjà passé par là (_merci Chrome, entres autres_). Plutôt que de devoir penser à mettre un robots.txt à chaque fois qu'on veut rendre accessible un site, on va plutôt utiliser une autre ACL d'HAProxy pour servir le fichier depuis un autre cluster :
 
-```
+``` text
 [...]
 frontend webfront
         bind ippubliqueduserveur:80

@@ -1,11 +1,7 @@
----
-date: '2009-02-16 21:00:32'
-layout: post
-title: 'Comparatif PHP : Localisation des dates'
-categories: [Articles]
-tags: [php]
-comments: true
----
+Date: 2009-02-16 21:00:32
+Title: Comparatif PHP : Localisation des dates
+Category: Articles
+Tags: [php]
 Nombreux sont les développeurs qui souhaitent afficher une date sur leurs pages avec les jours et mois en français. Actuellement ce n'est pas implémenté dans PHP, tout est retourné en anglais.
 
 Cependant, il existe 2 solutions pour localiser les dates : la **localisation numérique** et le **remplacement de mots**. Nous allons comparer ces 2 solutions.

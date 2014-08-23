@@ -1,15 +1,10 @@
----
-date: '2009-05-05 01:35:47'
-layout: post
-title: La (cyber)vie d'un geek ne tient qu'à un fil ... ou un routeur
-categories: [Articles]
-tags: [internet]
-comments: true
----
+Date: 2009-05-05 01:35:47
+Title: La (cyber)vie d'un geek ne tient qu'à un fil ... ou un routeur
+Category: Articles
 
 S'il y a bien quelque chose auquel il ne faut pas toucher chez un geek, outre son ordinateur, c'est bien **Internet** !
 
-{% img center /images/2009/05/frustrated_1.jpg 'frustrated' 'frustrated' %}
+![frustrated](/images/2009/05/frustrated_1.jpg)
 
 Combien d'entre nous ont subis de lourds dommages psychologiques à cause d'un dysfonctionnement de notre lien vital vers le (cyber)monde ?
 

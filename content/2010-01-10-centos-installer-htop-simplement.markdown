@@ -1,14 +1,10 @@
----
-date: '2010-01-10 23:56:52'
-layout: post
-title: 'CentOS : installer Htop simplement'
-categories: [Tips]
-comments: true
----
+Date: 2010-01-10 23:56:52
+Title: CentOS : installer Htop simplement
+Category: Tips
 
 Distribution axée sur des dépôts stables, CentOS n'aime pas trop les dépôts d'applis en développement. C'est donc normal qu'un _yum search htop_ nous retourne un vilain _Match not found_.
 
-{% img center /images/2010/01/htop.png 'htop' 'htop' %}
+![htop](/images/2010/01/htop.png)
 
 La solution ultime réside dans l'installation du paquet _rpmforge_ qui va s'occuper de rajouter des dépôts de développement. Si vous êtes paranoïaque quant à la tenue d'une base RPM viable et que vous ne voulez que le paquet htop, voici une méthode plus simple :
 

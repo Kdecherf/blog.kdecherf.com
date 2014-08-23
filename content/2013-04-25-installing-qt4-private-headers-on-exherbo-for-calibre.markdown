@@ -1,14 +1,8 @@
----
-layout: post
-title: "Installing Qt4 private headers on Exherbo for Calibre"
-date: 2013-04-25 16:21
-comments: true
-categories: [Tips]
----
+Title: Installing Qt4 private headers on Exherbo for Calibre
+Date: 2013-04-25 16:21
+Category: Tips
 
 Hey folks, another tip for another issue. The last week-end I played with Calibre to convert ePub books into PDF files (_nevermind, it was for someone else_). Calibre comes with `ebook-convert` but for some obscur reasons it uses private headers of Qt4.
-
-<!-- more -->
 
 Since it's a really really bad practice to use private headers (_they are not intended to be used by third-party applications_) and Exherbo's community does not like this kind of practice, `x11-libs/qt:4` does not provide its private headers.
 
@@ -18,7 +12,7 @@ The idea here is to disable the patch, install Qt4 private headers and ending wi
 
 For a quick fix, I edited the exheres of calibre in `/var/db/paludis/repositories/media/`:
 
-``` diff disable-qt_hack-patch.patch
+``` diff
 --- a/packages/app-text/calibre/calibre-0.9.27.exheres-0
 +++ b/packages/app-text/calibre/calibre-0.9.27.exheres-0
 @@ -6,5 +6,5 @@ require calibre
@@ -34,7 +28,7 @@ We need to install the private headers, but I don't want to install non-tracked 
 
 First, I found the install process of private headers from the `qt4-private-headers` package of ArchLinux[2] and used it in a temporary folder:
 
-```
+``` bash
 cd /tmp
 wget http://releases.qt-project.org/qt4/source/qt-everywhere-opensource-src-4.8.4.tar.gz
 tar -xvzf qt-everywhere-opensource-src-4.8.4.tar.gz
@@ -52,7 +46,7 @@ This tool allows us to emulate real packages with final files, it's really usefu
 
 Just type: `cd /tmp/hack ; cave import shit-incoming/qt4-fucking-private-headers -x`
 
-```
+``` bash
 $ cave show shit-incoming/qt4-fucking-private-headers
 * shit-incoming/qt4-fucking-private-headers
     ::installed-unpackaged    0 {:0}

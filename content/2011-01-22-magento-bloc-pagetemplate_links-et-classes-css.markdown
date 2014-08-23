@@ -1,14 +1,10 @@
----
-date: '2011-01-22 23:25:40'
-layout: post
-title: 'Magento : bloc page/template_links et classes CSS'
-categories: [Tips]
-comments: true
----
+Date: 2011-01-22 23:25:40
+Title: Magento : bloc page/template_links et classes CSS
+Category: Tips
 
 C'est au cours d'une mission sur Magento que j'ai remarqué un fonctionnement plutôt limitant du bloc `page/template_links`. En effet on ne peut pas assigner de classes personnalisées à la balise `li`. Voici la solution (pour les plus fainéants :)).
 
-{% img center /images/2010/01/magento_logo.gif 'Magento' 'Magento' %}
+![Magento](/images/2010/01/magento_logo.gif)
 
 **Problème**  
 Vous avez surement déjà utilisé un bloc de ce type, il vous permet d'ajouter des liens depuis les fichiers xml de configuration du thème :

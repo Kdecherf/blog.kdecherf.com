@@ -1,13 +1,10 @@
----
-layout: post
-title: "Oracle, I download your JDK by eating magic cookies"
-date: 2012-04-12 21:15
-comments: true
-categories: [Tips]
----
+Title: Oracle, I download your JDK by eating magic cookies
+Date: 2012-04-12 21:15
+Category: Tips
 
 <div class="alert-info">
-<strong>UPDATE 2014/07/18:</strong> Replacing <code>gpw_e24</code> by <code>oraclelicense</code>, easier.<br />
+<strong>UPDATE 2014/07/18:</strong> Replacing <code>gpw_e24</code> by <code>oraclelicense</code>, easier.</div>
+<div class="alert-info">
 <strong>UPDATE 2013/05/26:</strong> As noted by <em>frog end</em> and <em>Kip</em> in comments, wget 1.12 (<em>mainly on CentOS systems</em>) is unable to handle SAN SSL certificates (<em>Subject Alternative Name</em>) and will fail on <code>edelivery.oracle.com</code>. Use <code>--no-check-certificate</code> to avoid this issue.
 </div>
 

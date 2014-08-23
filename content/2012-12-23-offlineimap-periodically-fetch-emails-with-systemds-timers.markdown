@@ -1,10 +1,6 @@
----
-layout: post
-title: "OfflineIMAP: Periodically fetch emails with systemd's timers"
-date: 2012-12-23 17:25
-comments: true
-categories: [Tips] 
----
+Title: OfflineIMAP: Periodically fetch emails with systemd's timers
+Date: 2012-12-23 17:25
+Category: Tips
 
 When I switched from Gmail web interface to Mutt+OfflineIMAP, I used the ``autorefresh`` feature of OfflineIMAP.
 
@@ -12,11 +8,9 @@ But after only few hours of run, the process consumes more than a gigabyte of me
 
 A lot of people prefer to use a cronjob to replace ``autorefresh`` and execute the process only once on each fetch, but since I'm using systemd I can directly use a timer to do the same thing.
 
-<!-- more -->
+First of all, we need to write a little service for offlineimap, named `offlineimap.service`:
 
-First of all, we need to write a little service for offlineimap:
-
-``` ini offlineimap.service
+``` ini
 [Unit]
 Description=OfflineIMAP Service
 After=network.target
@@ -31,9 +25,9 @@ ExecStart=/usr/bin/offlineimap
 **Note 2:** If you use a systemd service to start gpg-agent [1], add the following line in the ``Unit`` section: ``Requires=gpg-agent.service``
 
 
-The timer is shorter:
+The timer is shorter and named `offlineimap.timer`:
 
-``` ini offlineimap.timer
+``` ini
 [Timer]
 OnUnitInactiveSec=120s
 Unit=offlineimap.service

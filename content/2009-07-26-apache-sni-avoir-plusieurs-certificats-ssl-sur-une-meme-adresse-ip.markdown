@@ -1,14 +1,10 @@
----
-date: '2009-07-26 00:05:26'
-layout: post
-title: 'Apache + SNI : avoir plusieurs certificats SSL sur une même adresse IP'
-categories: [Articles]
-comments: true
----
+Date: 2009-07-26 00:05:26
+Title: Apache + SNI : avoir plusieurs certificats SSL sur une même adresse IP
+Category: Articles
 
 De nombreux utilisateurs de serveurs web ont déjà été confrontés au drame : ne pas pouvoir mettre plus d'un certificat SSL sur une même adresse IP. La solution à ce fâcheux problème porte un nom : **SNI** (_Server Name Indication_).
 
-{% img center /images/2009/05/apache_logo.jpg %}
+![Apache](/images/2009/05/apache_logo.jpg)
 
 **Origine du problème**
 

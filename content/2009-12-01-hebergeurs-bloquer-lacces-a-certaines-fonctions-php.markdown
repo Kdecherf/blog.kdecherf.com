@@ -1,10 +1,6 @@
----
-date: '2009-12-01 16:35:03'
-layout: post
-title: 'Hébergeurs : bloquer l''accès à certaines fonctions PHP'
-categories: [Tips]
-comments: true
----
+Date: 2009-12-01 16:35:03
+Title: Hébergeurs : bloquer l'accès à certaines fonctions PHP
+Category: Tips
 
 Si *safe_mode* est efficace, il n'en est pas moins trop efficace au point d'empêcher le bon fonctionnement d'un certain nombre de sites ...
 

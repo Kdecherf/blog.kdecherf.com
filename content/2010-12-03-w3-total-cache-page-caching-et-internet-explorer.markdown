@@ -1,10 +1,6 @@
----
-date: '2010-12-03 18:08:09'
-layout: post
-title: 'W3 Total Cache : Page caching et Internet Explorer'
-categories: [Tips]
-comments: true
----
+Date: 2010-12-03 18:08:09
+Title: W3 Total Cache : Page caching et Internet Explorer
+Category: Tips
 
 Utilisateurs Wordpress, si vous avez installé [W3 Total Cache](http://wordpress.org/extend/plugins/w3-total-cache/), que vous utilisez la mise en cache de pages et que votre thème dispose de feuilles de styles alternatives pour Internet Explorer, alors ce billet peut vous être utile.
 

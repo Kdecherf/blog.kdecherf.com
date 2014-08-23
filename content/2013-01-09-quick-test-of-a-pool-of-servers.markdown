@@ -1,16 +1,11 @@
----
-layout: post
-title: "Quick test of a pool of webservers"
-date: 2013-01-09 20:40
-comments: true
-categories: [Tips]
----
+Title: Quick test of a pool of webservers
+Date: 2013-01-09 20:40
+Category: Tips
 
 > Hm, this website is down... But wait, it has a bunch of servers!
 
 Yesterday mutt hanged when opening PGP-signed emails because the default keyserver was partially down. Partially? GPG was taking always the same _[down]_ server although there is a pool of a dozen of servers for the given address.
 
-<!-- more -->
 
 I used the following oneliner to test if the webserver of each address of the domain (_which using DNS Round-Robin_) is up or not:
 

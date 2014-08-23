@@ -1,10 +1,6 @@
----
-date: '2009-03-22 04:01:05'
-layout: post
-title: 'Phishing : TinyURL victime de son succès'
-categories: [Articles]
-comments: true
----
+Date: 2009-03-22 04:01:05
+Title: Phishing : TinyURL victime de son succès
+Category: Articles
 
 Les méthodes changent, mais la finalité reste la même. Les cybercriminels n'hésitent pas à profiter des services mis à disposition des internautes. Après l'usurpation d'identité sur Facebook, attention au phishing via les _raccourcisseur_ d'URL tel que TinyURL.
 

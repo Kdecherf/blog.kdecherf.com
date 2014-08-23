@@ -1,15 +1,11 @@
----
-date: '2009-04-25 15:55:43'
-layout: post
-title: 'Fail2ban : Créer un rapport quotidien'
-categories: [Articles]
-tags: [fail2ban]
-comments: true
----
+Date: 2009-04-25 15:55:43
+Title: Fail2ban : Créer un rapport quotidien
+Category: Articles
+Tags: [fail2ban]
 
 Après l'article pour [transformer les mails Fail2ban façon Nagios](/2009/03/27/fail2ban-email-alerte-facon-nagios/), voici un petit article pour générer des rapports journaliers de l'activité de votre chien de garde favori.
 
-{% img center /images/2009/04/fail2ban_logo.png 'fail2ban' 'fail2ban' %}
+![fail2ban](/images/2009/04/fail2ban_logo.png)
 
 L'idée générale de l'article est de changer le système par défaut de Fail2Ban qui vous envoie un email à chaque bannissement. Si vous regardez les actions disponibles vous pouvez y trouver _mail-buffered_. Cette action attend 5 bannissements (par défaut) avant de vous envoyer un email.
 

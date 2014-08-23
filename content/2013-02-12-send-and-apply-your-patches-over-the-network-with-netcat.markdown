@@ -1,17 +1,12 @@
----
-layout: post
-title: "Send and apply your patches over the network with netcat"
-date: 2013-02-12 14:20
-comments: true
-categories: [Tips] 
----
+Title: Send and apply your patches over the network with netcat
+Date: 2013-02-12 14:20
+Category: Tips 
 
 For some of my works and mainly for testing them, I use virtual machines and containers (_that will be subject to another post_). 
 Since I used to make the development outside the testing environnement, I need to quickly and easily transfer patches and test them.
 
 If you are in a similar case, this tip is for you.
 
-<!-- more -->
 
 My case was an improvement of the php-memcached library. I assume that you have a git version of your project on both sides.
 

@@ -1,10 +1,6 @@
----
-layout: post
-title: "Import Paypal transaction history in HomeBank"
-date: 2013-12-18 15:08
-comments: true
-categories: [Tips]
----
+Title: Import Paypal transaction history in HomeBank
+Date: 2013-12-18 15:08
+Category: Tips
 
 <div class="alert-info">
   <strong>UPDATE 2014/03/16:</strong> updated sed line to remove the header of initial csv file.
@@ -14,11 +10,9 @@ Wow, it's been a long time since my last post. Few days ago I found a cool free 
 
 This tool works well but the 'Import' feature requests a "proprietary" CSV format described here[2]. As I have a Paypal account for e-shopping I wanted to track these transactions too. So I made a tiny gawk script to convert a Paypal transaction history into the HomeBank CSV format.
 
-<!-- more -->
-
 The best export format from Paypal will be the "complete transaction history" comma-delimited CSV because we need all currency conversion transactions. This export has more than 35 fields and some duplicate transactions for currency conversion and pre-authorization, so we need to do some cleaning.
 
-``` bash paypal-homebank.awk
+``` awk
 BEGIN {
    currency="EUR"
    ignore="Carte bancaire"
@@ -63,7 +57,8 @@ The second particular point about this script is the variable `ignore`. _Carte b
 We need some processing of the Paypal CSV file before using the gawk script: we need to remove ``"``, replace ``,`` with ``;`` and reorder the date according to the destination format, it is done with `sed`.
 
 Here is the oneliner to convert the CSV file (_with the previous script saved in the same folder as `paypal-homebank.awk`_):
-```
+
+``` bash
 sed -e 's/",/";/g' -e 's/"//g' -e "s@\([0-9]\{2\}\)/\([0-9]\{2\}\)/\([0-9]\{4\}\)@\1-\2-\3@" -e "1d" paypal-export.csv | awk -F';' -f paypal-homebank.awk > import.csv
 ```
 

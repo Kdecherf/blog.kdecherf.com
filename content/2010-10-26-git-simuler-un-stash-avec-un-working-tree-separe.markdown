@@ -1,10 +1,6 @@
----
-date: '2010-10-26 19:01:05'
-layout: post
-title: 'Git : simuler un stash avec un working tree séparé'
-categories: [Tips]
-comments: true
----
+Date: 2010-10-26 19:01:05
+Title: Git : simuler un stash avec un working tree séparé
+Category: Tips
 
 Dans certaines situations nous pouvons être amené à devoir modifier des fichiers sans les pousser sur le dépôt Git (_exemple : fichiers de configuration en production_). Ces modifications non commitées sont donc perdues à chaque checkout effectué sur l'arbre de travail.
 

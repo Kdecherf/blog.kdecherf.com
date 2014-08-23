@@ -1,14 +1,10 @@
----
-date: '2011-01-07 14:39:06'
-layout: post
-title: Linux & EMP NS Connection
-categories: [Tips]
-comments: true
----
+Date: 2011-01-07 14:39:06
+Title: Linux & EMP NS Connection
+Category: Tips
 
 En ce début d'année, j'ai été amené à donner une formation de quelques jours à une promotion d'une centaine de personnes. J'avais à ma disposition des vidéoprojecteurs en réseau (de marque Epson), l'utilisation se faisant via un outil disponible uniquement sous Mac et Windows : EMP NS Connection.
 
-{% img center /images/2011/01/Screenshot-103-1.png 'Screenshot' 'Screenshot' %}
+![Screenshot](/images/2011/01/Screenshot-103-1.png)
 
 Le hic dans mon cas c'est que je donnais une formation Linux et ... je tourne sous Linux. Une première solution s'offre à moi : un [projet libre](http://epsonconnector.sourceforge.net/) datant de 2008 ... mais sans succès.
 

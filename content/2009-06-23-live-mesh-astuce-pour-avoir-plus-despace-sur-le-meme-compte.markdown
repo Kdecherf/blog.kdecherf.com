@@ -1,15 +1,11 @@
----
-date: '2009-06-23 23:53:31'
-layout: post
-title: 'Live Mesh : Astuce pour avoir plus d''espace sur le même compte'
-categories: [Articles]
-tags: [live mesh]
-comments: true
----
+Date: 2009-06-23 23:53:31
+Title: Live Mesh : Astuce pour avoir plus d'espace sur le même compte
+Category: Articles
+Tags: [live mesh]
 
 Entre 2 examens de fin d'année j'ai réactivé un service que je n'utilisais plus depuis quelques mois : **Live Mesh**. Ce service gratuit de Microsoft vous propose un espace en ligne de 5 Go avec bureau en ligne, utilitaire de synchronisation et même la prise de contrôle à distance. Ce midi donc, j'ai trouvé (sans le vouloir) une solution pour " avoir plus d'espace " sur son compte.
 
-{% img center /images/2009/06/image_26_1.png 'Live Mesh' 'Live Mesh' %}
+![Live Mesh](/images/2009/06/image_26_1.png)
 
 _Il est important de dire qu'à l'origine je voulais juste séparer les différents types de données que j'avais à synchroniser tout en les regroupant sur un même compte (voir ci-dessous)._
 

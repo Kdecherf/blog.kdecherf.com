@@ -1,10 +1,6 @@
----
-date: '2011-06-02 17:35:07'
-layout: post
-title: 'Java/Jersey : une API REST Cross-Domain sans JSONP'
-categories: [Articles]
-comments: true
----
+Date: 2011-06-02 17:35:07
+Title: Java/Jersey : une API REST Cross-Domain sans JSONP
+Category: Articles
 
 An english version of this post is available [here](/2011/06/19/java-jersey-a-cors-compliant-rest-api/).
 

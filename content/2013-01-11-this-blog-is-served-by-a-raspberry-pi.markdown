@@ -1,17 +1,12 @@
----
-layout: post
-title: "This blog is served by a Raspberry Pi"
-date: 2013-01-11 17:23
-comments: true
-categories: [Articles] 
----
+Title: This blog is served by a Raspberry Pi
+Date: 2013-01-11 17:23
+Category: Articles 
 Yesterday I switched the primary source of my blog to _Kaho_, my Raspberry Pi behind a broadband connection.
 
 > _Why? Just for fun._
 
 ![You are here](/images/2013/01/rasp-you-are-here.jpg)
 
-<!-- more -->
 
 In fact there is another server between you and the Raspberry Pi as illustrated below to prevent overloads and downtimes (_fonts are served by the main server to save bandwidth_):
 

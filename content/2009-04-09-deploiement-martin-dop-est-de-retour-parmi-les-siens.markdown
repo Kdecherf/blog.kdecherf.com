@@ -1,13 +1,10 @@
----
-date: '2009-04-09 00:27:05'
-layout: post
-title: 'Déploiement : Martin DOP est de retour parmi les siens'
-comments: true
----
+Date: 2009-04-09 00:27:05
+Title: Déploiement : Martin DOP est de retour parmi les siens
+Category: Articles
 
 Son Fan Club était déjà présent aux TechDays '09 avec la distribution de badges (voir ci-dessous). _Disparu il y a 10 ans, Martin DOP a été retrouvé._
 
-{% img center /images/2009/04/martin-dop.jpg 'martin-dop' 'martin-dop' %}
+![Martin Dop](/images/2009/04/martin-dop.jpg)
 
 > 
 > Martin Dop, ingénieur informaticien, a travaillé au déploiement d'une solution pendant près d’une dizaine d’années. Durant cette période, l'homme a perdu tout contact avec le monde extérieur, s'enfermant dans son bureau pour effectuer des recherches qui viennent d'aboutir à un résultat concluant.

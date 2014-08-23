@@ -1,15 +1,9 @@
----
-layout: post
-title: "Mount a LUKS partition with a password-protected GPG-encrypted key using systemd"
-date: 2012-11-06 22:12
-comments: true
-categories: [Articles]
----
+Title: Mount a LUKS partition with a password-protected GPG-encrypted key using systemd
+Date: 2012-11-06 22:12
+Category: Articles
 
 I recently took a good resolution for my laptop: increase the security of some sensitive data using LUKS.
 Because I'm using a password-protected gpg-encrypted key, I can't use any automatic mount tool like dracut or automount so I use a bunch of systemd service files.
-
-<!-- more -->
 
 _**Note:** I'm using the user part of systemd, but this article is not about its configuration._
 
@@ -17,9 +11,9 @@ _**Note:** I'm using the user part of systemd, but this article is not about its
 GPG-Agent
 ---------
 
-The first tool I need is `gpg-agent` which is not system-wide, so I create the following tiny unit file:
+The first tool I need is `gpg-agent` which is not system-wide, so I create an unit file named `gpg-agent.service`:
 
-``` ini gpg-agent.service
+``` ini
 [Unit]
 Description=GPG Agent Daemon
 
@@ -43,7 +37,7 @@ LUKS
 
 I've found [1] a script for mounting a LUKS partition with automount. I've customized it for my own use:
 
-``` bash luks.sh
+``` bash
 #!/bin/sh
 
 key="{keyname}"
@@ -90,9 +84,9 @@ exit 0
 
 _**Note:** I'm using sudo to be able to call cryptsetup and mount with root privileges (without password)._
 
-Now with this script, we can make a new systemd service for LUKS:
+Now with this script, we can make a new unit file for LUKS named `luks.service`:
 
-``` ini luks.service
+``` ini
 [Unit]
 Description=Mount LUKS
 Requires=gpg-agent.service
@@ -114,9 +108,9 @@ Mount LUKS as a requirement for X
 
 This section is optional. Some of important files for the boot of my X session are on the LUKS partition so I need to mount it before X starts.
 
-I don't use any login manager (_like gdm or lightdm_) and I start X after the tty login. To make sure everything is set up, I do it via a systemd service:
+I don't use any login manager (_like gdm or lightdm_) and I start X after the tty login. To make sure everything is set up, I do it via another unit file named `xsession.service`:
 
-``` ini ~~3,4 xsession.service
+``` ini hl_lines="3 4"
 [Unit]
 Description=XSession Service
 After=luks.service

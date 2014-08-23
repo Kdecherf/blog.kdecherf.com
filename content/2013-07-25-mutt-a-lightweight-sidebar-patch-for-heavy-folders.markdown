@@ -1,10 +1,6 @@
----
-layout: post
-title: "Mutt: a lightweight sidebar patch for heavy folders"
-date: 2013-07-25 20:01
-comments: true
-categories: [Tips]
----
+Title: Mutt: a lightweight sidebar patch for heavy folders
+Date: 2013-07-25 20:01
+Category: Tips
 
 <div class="alert-info">
   <strong>UPDATE 2014/06/07:</strong> patched the patch for Mutt 1.5.23
@@ -13,8 +9,6 @@ categories: [Tips]
 Hey, I'm back after "several" busy days to show you a little tip of my virtual set _"Leave Gmail"_. In case you have several folders with a lot of emails (_more than 10,000 per folder_) like me and you want to use the sidebar patch [1] for your beloved Mutt, read this.
 
 ![Mutt Sidebar Patch](/images/2013/07/mutt-sidebar.png)
-
-<!-- more -->
 
 The sidebar patch adds a sidebar _[obviously]_ which shows a list of folders with some counters into Mutt.  
 It works well but when you have folders with dozens of thousand emails your client will hang on each keystroke like during an IMAP sync. It's really annoying.

@@ -1,14 +1,11 @@
----
-date: '2009-06-16 01:00:45'
-layout: post
-title: 'Twitter + Curl : poster le même statut à la suite'
-categories: [Tips]
-tags: [curl,twitter]
----
+Date: 2009-06-16 01:00:45
+Title: Twitter + Curl : poster le même statut à la suite
+Category: Tips
+Tags: [curl,twitter]
 
 Dans certains cas, la même chose doit être tweetée (rapport d'erreur sur le même serveur, connexion ...) mais par défaut c'est interdit sur Twitter. Voici donc une solution simple mais efficace pour passer outre cette limitation. _Cet article est destiné aux personnes utilisant des robots de monitoring sur Twitter via Curl (Nagios, Fail2ban)._
 
-{% img center /images/2009/06/twitter-logo.jpg 'Twitter' 'Twitter' %}
+![Twitter](/images/2009/06/twitter-logo.jpg)
 
 > 
 > _Twitter will ignore attempts to perform a duplicate update. With each update attempt, the application compares the update text with the authenticating user's last successful update, and ignores any attempts that would result in duplication. Therefore, a user cannot submit the same status twice in a row. The status element in the response will return the id from the previously successful update if a duplicate has been silently ignored._

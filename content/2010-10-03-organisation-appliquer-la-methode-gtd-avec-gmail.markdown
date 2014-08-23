@@ -1,16 +1,12 @@
----
-date: '2010-10-03 12:51:11'
-layout: post
-title: 'Organisation : appliquer la méthode GTD avec Gmail'
-categories: [Articles]
-comments: true
----
+Date: 2010-10-03 12:51:11
+Title: Organisation : appliquer la méthode GTD avec Gmail
+Category: Articles
 
 Trop d'emails à lire ? Des soucis d'organisation de votre compte Gmail ? Emails perdus dans la masse de vos archives ? Voici un billet qui pourrait vous être utile.  Pour commencer, je vais faire un très léger rappel/résumé de la méthode **[GTD](http://en.wikipedia.org/wiki/Getting_Things_Done)** (_Getting Things Done_).
 
 #### Rappel
 
-{% img center /images/2010/09/GTD-Map-1.jpg 'GTD' 'GTD' %}
+![GTD](/images/2010/09/GTD-Map-1.jpg)
 
 La méthode GTD est une méthode d'organisation inventée par David Allen, je vous conseille d'ailleurs d'acheter le livre si vous ne l'avez pas. L'image ci-dessus est une version light de cette technique de tri dont voici les grandes lignes traduites :
 	

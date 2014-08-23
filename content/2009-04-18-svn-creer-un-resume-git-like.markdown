@@ -1,11 +1,7 @@
----
-date: '2009-04-18 23:29:33'
-layout: post
-title: 'SVN : Créer un résumé Git-Like'
-categories: [Tips]
-tags: [git,svn]
-comments: true
----
+Date: 2009-04-18 23:29:33
+Title: SVN : Créer un résumé Git-Like
+Category: Tips
+Tags: [git,svn]
 
 Si vous êtes comme moi à aimer connaître le nombre de lignes ajoutées et supprimées depuis telle révision mais que vous êtes sous **SVN** et pas sous **Git** alors cet article est fait pour vous.
 

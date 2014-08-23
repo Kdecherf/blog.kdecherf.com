@@ -1,10 +1,6 @@
----
-date: '2011-06-19 19:35:11'
-layout: post
-title: 'Java/Jersey: A CORS-Compliant REST API (die JSONP die)'
-categories: [Articles]
-comments: true
----
+Date: 2011-06-19 19:35:11
+Title: Java/Jersey: A CORS-Compliant REST API (die JSONP die)
+Category: Articles
 
 Une traduction française est disponible [ici](/2011/06/02/java-jersey-une-api-rest-cross-domain-sans-jsonp/).
 

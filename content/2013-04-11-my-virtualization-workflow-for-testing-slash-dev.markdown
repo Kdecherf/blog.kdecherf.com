@@ -1,16 +1,10 @@
----
-layout: post
-title: "My virtualization workflow for testing/dev"
-date: 2013-04-11 19:45:00
-comments: true
-categories: [Articles]
----
+Title: My virtualization workflow for testing/dev
+Date: 2013-04-11 19:45:00
+Category: Articles
 
 I work all the day with virtual machines for packaging and testing tools at Clever Cloud. Since I am a KVM lover, I began with libvirt to easily manage my virtual machines but using XML files and virt-manager made me crazy.
 
 For this reason and others (*eg. deleting some dependencies on my system*) I decided to write tiny bash scripts to quickly boot virtual machines and manage a simple network without libvirt.
-
-<!-- more -->
 
 My workflow is quite simple: I have some template images (*pre-installed systems*) for several systems (*eg. Exherbo, Ubuntu and CentOS*) and I make a copy of these images to create a new machine and quickly make my stuff.
 And as I have no complex needs for the networking, I use a little NAT-ed private bridge with a /24 network and a DHCP server.

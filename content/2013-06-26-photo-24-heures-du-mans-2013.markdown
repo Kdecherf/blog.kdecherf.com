@@ -1,18 +1,12 @@
----
-layout: post
-title: "Photo: 24 Heures du Mans 2013"
-date: 2013-06-26 14:45
-comments: true
-categories: [Photography]
----
+Title: Photo: 24 Heures du Mans 2013
+Date: 2013-06-26 14:45
+Category: Photography
 
 Aujourd'hui je vais sortir un peu de mon thème habituel pour vous parler de deux autres passions qui occupent mon temps libre à l'occasion : les 24 Heures du Mans et la photo.  
 _Ce que j'avais à dire ne rentrait pas dans un tweet alors voilà un petit billet._
 
 Les 24 Heures du Mans est une course mythique de 24 heures (_vous l'aurez compris_) organisée au Mans par l'ACO depuis 1923.  
 Et oui, cette année on fêtait leurs 90 ans et pour l'occasion l'ACO avait organisé un concours qui m'a permis d'obtenir un pass Pitwalk. J'en ai donc profité pour mitrailler un peu plus que d'habitude (_~ 3,600 photos_) :)
-
-<!-- more -->
 
 Contrairement à ce que l'on pourrait croire ce n'était pas la 90ème édition mais la 81ème qui se déroulait ce week-end[1] : la course avait été annulée en 1936 suite à une grêve empêchant les travaux de voirie nécessaires à la course et de 1940 à 1948 suite à la Seconde Guerre Mondiale. A noter également que le Golf des 24 Heures du Mans situé à l'intérieur du virage de Mulsanne avait été transformé en camp militaire, camp de concentration puis camp de prisonniers allemands durant cette période.
 

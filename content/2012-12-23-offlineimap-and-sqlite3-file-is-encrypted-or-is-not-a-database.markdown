@@ -1,10 +1,6 @@
----
-layout: post
-title: "OfflineIMAP and Sqlite3: «file is encrypted or is not a database»"
-date: 2012-12-23 15:00
-comments: true
-categories: [Tips]
----
+Title: OfflineIMAP and Sqlite3: «file is encrypted or is not a database»
+Date: 2012-12-23 15:00
+Category: Tips
 
 Have you already seen this error with OfflineIMAP and Sqlite3?
 
@@ -16,7 +12,6 @@ Have you already seen this error with OfflineIMAP and Sqlite3?
 
 Oh god, one of your databases is corrupted. This corruption is usually caused by an interruption during processing an account. But don't worry, the fix is quite simple.
 
-<!-- more -->
 
 First go on ``.offlineimap/Account-<YourAccountName>/LocalStatus-sqlite``, open the file ``INBOX`` with sqlite3 and type ``pragma integrity_check;`` (_and press Enter_):
 

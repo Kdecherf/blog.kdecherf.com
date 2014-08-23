@@ -1,10 +1,6 @@
----
-layout: post
-title: "Multithreaded Python Simple HTTP Server"
-date: 2012-07-29 15:42
-comments: true
-categories: [Tips]
----
+Title: Multithreaded Python Simple HTTP Server
+Date: 2012-07-29 15:42
+Category: Tips
 
 Hey geeks, did you already have this conversation?
 
@@ -15,16 +11,14 @@ Hey geeks, did you already have this conversation?
 
 This time is now over!
 
-<!--more-->
-
 Let me make a little test for you:
 
-```
+``` bash
 for ((i=0;i<5;i++)); do curl -s -0 http://localhost:8060/2G > ~/tmp/bigfile${i} &; done
 ```
 
 Server output:
-```
+``` text
 sakura.local - - [29/Jul/2012 15:41:01] "GET /2G HTTP/1.0" 200 -
 sakura.local - - [29/Jul/2012 15:42:01] "GET /2G HTTP/1.0" 200 -
 sakura.local - - [29/Jul/2012 15:43:05] "GET /2G HTTP/1.0" 200 -
@@ -67,7 +61,7 @@ This script can take one argument like `python -m SimpleHTTPServer` to specify t
 
 
 And now all requests are served at same time:
-``` raw
+``` text
 sakura.local - - [29/Jul/2012 17:11:41] "GET /2G HTTP/1.0" 200 -
 sakura.local - - [29/Jul/2012 17:11:41] "GET /2G HTTP/1.0" 200 -
 sakura.local - - [29/Jul/2012 17:11:41] "GET /2G HTTP/1.0" 200 -

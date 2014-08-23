@@ -1,14 +1,9 @@
----
-layout: post
-title: "ElasticSearch: Human readable search with cURL and Python"
-date: 2013-02-12 14:25
-comments: true
-categories: [Tips]
----
+Title: ElasticSearch: Human readable search with cURL and Python
+Date: 2013-02-12 14:25
+Category: Tips
 
 At Clever Cloud, we use LogStash and ElasticSearch to index and make search on your logs. Since geeks are in love with command-line stuff, I made a little script to prettify the output of ES searches according to the LogStash fields.
 
-<!-- more -->
 
 The following scripts are intended to be used against LogStash-generated data but it gives you an idea on how to make your own "prettifier".
 

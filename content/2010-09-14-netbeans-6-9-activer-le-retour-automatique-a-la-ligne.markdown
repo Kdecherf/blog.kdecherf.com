@@ -1,10 +1,6 @@
----
-date: '2010-09-14 11:00:42'
-layout: post
-title: 'NetBeans 6.9 : activer le retour automatique à la ligne'
-categories: [Tips]
-comments: true
----
+Date: 2010-09-14 11:00:42
+Title: NetBeans 6.9 : activer le retour automatique à la ligne
+Category: Tips
 
 S'il y a bien quelque chose qui peut vite devenir frustrant sous NetBeans, c'est bien la ligne à ralonge qui oblige à faire du scroll horizontal. Fonctionnalité demandée depuis plus de 2 ans, l'équipe peine à rendre disponible le retour automatique à la ligne sur ce célèbre IDE. Cependant, il existe un paramètre permettant de l'activer (_testé et approuvé sur la version 6.9_).
 

@@ -1,16 +1,12 @@
----
-date: '2009-02-26 02:04:32'
-layout: post
-title: Microsoft Tag ou Comment transformer des infos en image
-categories: [Articles]
-comments: true
----
+Date: 2009-02-26 02:04:32
+Title: Microsoft Tag ou Comment transformer des infos en image
+Category: Articles
 
 Il existe un outil, encore peu connu mais fort utile, qui permet de transformer un lien hypertexte ou du texte en image. _Comment est-ce possible ?_ Avec **Microsoft Tag** !
 
 Si vous avez été aux Techdays, vous avez forcément du voir ces carrés de couleur ! Intéressant, mais encore ?
 
-{% img center /images/2009/02/example.jpg 'Microsoft Tag' 'Microsoft Tag' %}
+![Microsoft Tag](/images/2009/02/example.jpg)
 
 Je vais brièvement vous présenter à quoi sert ce service, pour qui et comment l'utiliser.
 

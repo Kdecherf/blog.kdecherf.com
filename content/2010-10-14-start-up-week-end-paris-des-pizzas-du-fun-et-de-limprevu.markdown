@@ -1,10 +1,6 @@
----
-date: '2010-10-14 15:37:34'
-layout: post
-title: 'Start-Up Week-end Paris : des pizzas, du fun et ... de l''imprévu'
-categories: [Articles]
-comments: true
----
+Date: 2010-10-14 15:37:34
+Title: Start-Up Week-end Paris : des pizzas, du fun et ... de l'imprévu
+Category: Articles
 
 Ce week-end (8 au 10) a eu lieu la 3ème édition du [Start-Up Week-end Paris](http://paris.startupweekend.org/) à Télécom ParisTech. Pendant tout un week-end, des personnes d'horizons différents (_marketeux, devs, ..._) se retrouvent pour monter des projets qui, par la suite, peuvent se concrétiser ... ou pas. Oui, on a 54 heures pour monter une boîte !
 

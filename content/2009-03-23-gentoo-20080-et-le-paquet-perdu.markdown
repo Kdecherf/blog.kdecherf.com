@@ -1,11 +1,7 @@
----
-date: '2009-03-23 12:14:53'
-layout: post
-title: Gentoo 2008.0 et le paquet perdu
-categories: [Tips]
-tags: [gentoo]
-comments: true
----
+Date: 2009-03-23 12:14:53
+Title: Gentoo 2008.0 et le paquet perdu
+Category: Tips
+Tags: [gentoo]
 
 Les amoureux de la distribution Gentoo Linux vous le diront, chaque release a eu sa part de bug à l'installation. Sur la 2008.0 lors de la première mise à jour complète du système, il y avait 2 paquets qui se bloquaient pour des versions interdites.
 

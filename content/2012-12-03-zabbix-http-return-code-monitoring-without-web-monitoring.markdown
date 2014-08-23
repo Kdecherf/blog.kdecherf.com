@@ -1,16 +1,11 @@
----
-layout: post
-title: "Zabbix: HTTP Return Code Monitoring Without Web Monitoring"
-date: 2012-12-03 10:05
-comments: true
-categories: [Tips] 
----
+Title: Zabbix: HTTP Return Code Monitoring Without Web Monitoring
+Date: 2012-12-03 10:05
+Category: Tips 
 
 Several days ago I wanted to monitor the HTTP Return Code of an API in Zabbix. My first attempt with Scenarios in Web Monitoring was a fail.
 
 The proper way to do it is to use generated items for each Scenario [1]. But if you want to monitor a resource with only one step, you can also use the following tip:
 
-<!-- more -->
 
 First, add a new item to your host with this key:
 

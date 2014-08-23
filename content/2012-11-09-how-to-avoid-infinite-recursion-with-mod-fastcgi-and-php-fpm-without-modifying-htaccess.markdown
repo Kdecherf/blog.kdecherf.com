@@ -1,23 +1,17 @@
----
-layout: post
-title: "How to avoid infinite recursion with mod_fastcgi and PHP-FPM without modifying .htaccess"
-date: 2012-11-09 15:46
-comments: true
-categories: [Tips] 
----
+Title: How to avoid infinite recursion with mod_fastcgi and PHP-FPM without modifying .htaccess
+Date: 2012-11-09 15:46
+Category: Tips 
 
 Do you know this error?
-```
+``` text
 the Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary
 ```
 
 It’s really frustrating since the usual fix is to add a `RewriteCond` rule in the .htaccess [1]. However, it's not feasible when you're a hosting platform.
 
-<!-- more -->
-
 My goal was to add this rule without asking the user to do it himself. The solution was to add a RewriteRule server-wide and force inheritance which is not set by default.
 
-```
+``` text
 <VirtualHost ...>
    # Your settings
    <Directory /your/directory>

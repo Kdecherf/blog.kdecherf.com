@@ -1,15 +1,11 @@
----
-date: '2009-06-15 21:13:20'
-layout: post
-title: 'Fail2ban : notifier chaque connexion SSH'
-categories: [Articles]
-tags: [fail2ban]
-comments: true
----
+Date: 2009-06-15 21:13:20
+Title: Fail2ban : notifier chaque connexion SSH
+Category: Articles
+Tags: [fail2ban]
 
 Bien que Fail2Ban fasse correctement son travail, il peut arriver qu'une intrusion se fasse avec succès. Il peut être utile, par précaution ou aussi pour du suivi, de savoir quand quelqu'un se connecte sur SSH.
 
-{% img center /images/2009/06/fail2ban_logo.png 'Fail2ban' 'Fail2ban' %}
+![fail2ban](/images/2009/06/fail2ban_logo.png)
 
 Si vous connaissez bien Fail2ban, vous savez que tout se fait via des actions et des filtres, donc notre objectif ne sera pas dur à atteindre. Commençons par ajouter notre filtre dans _/etc/fail2ban/jail.conf_ :
 

@@ -1,11 +1,7 @@
----
-date: '2009-04-14 01:58:50'
-layout: post
-title: 'PHP : Nettoyer des accents simplement avec Iconv'
-categories: [Tips]
-tags: [php]
-comments: true
----
+Date: 2009-04-14 01:58:50
+Title: PHP : Nettoyer des accents simplement avec Iconv
+Category: Tips
+Tags: [php]
 
 Après un ralentissement de mon activité, je reviens avec une nouvelle astuce PHP. Cette fois-ci, je m'attarde sur une méthode très puissante pour nettoyer des accents avec **Iconv**.
 

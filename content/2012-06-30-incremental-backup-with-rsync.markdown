@@ -1,10 +1,6 @@
----
-layout: post
-title: "Incremental backup with rsync"
-date: 2012-06-30 16:03 
-comments: true
-categories: [Articles] 
----
+Title: Incremental backup with rsync
+Date: 2012-06-30 16:03 
+Category: Articles 
 
 Hello World,
 

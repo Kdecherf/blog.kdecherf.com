@@ -1,10 +1,6 @@
----
-date: '2010-08-01 19:07:52'
-layout: post
-title: Encore une stratégie de sauvegarde sécurisée
-categories: [Articles]
-comments: true
----
+Date: 2010-08-01 19:07:52
+Title: Encore une stratégie de sauvegarde sécurisée
+Category: Articles
 
 Un beau midi, dégustant des patates dans un [petit restaurant Nantais](http://gm-potatoesbar.com/restaurant-nantes-patate-pomme-terre-accueil.html) (_que je recommande au passage_), me voilà à parler avec [Keruspe](http://twitter.com/Keruspe) de sécurité des données personnelles. On a tous un disque dur externe chez soi qui s'occupe de sauvegarder nos belles photos de vacances ou encore la bonne musique (_qui a été durement et légalement acquise_). Mais voilà, que faire en cas de cambriolage ?
 

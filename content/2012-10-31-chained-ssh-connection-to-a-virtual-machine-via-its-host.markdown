@@ -1,10 +1,6 @@
----
-layout: post
-title: "Chained SSH connection to a virtual machine via its host"
-date: 2012-10-31 19:41
-comments: true
-categories: [Tips]
----
+Title: Chained SSH connection to a virtual machine via its host
+Date: 2012-10-31 19:41
+Category: Tips
 
 After some weeks without any post, I'm back with a tip about chained SSH connection in a highly virtualized world.
 

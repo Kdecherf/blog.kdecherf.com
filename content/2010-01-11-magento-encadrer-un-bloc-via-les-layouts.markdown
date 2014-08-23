@@ -1,14 +1,10 @@
----
-date: '2010-01-11 14:11:32'
-layout: post
-title: 'Magento : encadrer un bloc via les layouts'
-categories: [Tips]
-comments: true
----
+Date: 2010-01-11 14:11:32
+Title: Magento : encadrer un bloc via les layouts
+Category: Tips
 
 **Magento**, mastodonte de l'_e-Commerce_, se veut être (_sans aucun doute_) la plateforme la moins bien documentée officiellement. Travaillant actuellement dessus, je ferai part ici de mes quelques astuces qui peuvent vous aider ...
 
-{% img center /images/2010/01/magento_logo.gif 'magento' 'magento' %}
+![Magento](/images/2010/01/magento_logo.gif)
 
 Ma première astuce concerne les blocs et les superbes layouts XML. Considérons le bloc statique *left_anchor* déclaré dans le layout comme suit :
 

@@ -1,10 +1,6 @@
----
-date: '2010-11-13 19:59:52'
-layout: post
-title: Des informations Git dans son prompt
-categories: [Tips]
-comments: true
----
+Date: 2010-11-13 19:59:52
+Title: Des informations Git dans son prompt
+Category: Tips
 
 N'avez-vous pas remarqué comme il est vite ennuyeux de devoir faire un `git branch` ou un `git status` pour savoir dans quelle branche on était et dans quel état était le dépôt ? Voilà une petite astuce pour ajouter ces deux informations directement dans votre prompt.
 

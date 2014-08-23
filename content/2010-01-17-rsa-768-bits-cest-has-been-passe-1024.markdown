@@ -1,14 +1,11 @@
----
-date: '2010-01-17 19:21:13'
-layout: post
-title: 'RSA : 768 bits c''est has been, passe à 1024'
-comments: true
----
+Date: 2010-01-17 19:21:13
+Title: RSA : 768 bits c'est has been, passe à 1024
+Category: Articles
 
 Il fallait s'y attendre, le 12 décembre dernier une équipe de chercheurs dirigée par T. Kleinjung a réussi à factoriser une clé RSA de **768 bits**, le projet aura duré **un an et demi**.
 
 
-Pour ceux qui ne connaissent pas, l'algorithme **RSA** (_Rivest Shamir Adleman_) est un algorithme de chiffrement asymétrique à clé publique. Cet algorithme a été introduit en 1977 par_ _[_Ron Rivest_](http://fr.wikipedia.org/wiki/Ron_Rivest)_, _[_Adi Shamir_](http://fr.wikipedia.org/wiki/Adi_Shamir)_ _et_ _[_Len Adleman_](http://fr.wikipedia.org/wiki/Len_Adleman).
+Pour ceux qui ne connaissent pas, l'algorithme **RSA** (_Rivest Shamir Adleman_) est un algorithme de chiffrement asymétrique à clé publique. Cet algorithme a été introduit en 1977 par [_Ron Rivest_](http://fr.wikipedia.org/wiki/Ron_Rivest), [_Adi Shamir_](http://fr.wikipedia.org/wiki/Adi_Shamir) et [_Len Adleman_](http://fr.wikipedia.org/wiki/Len_Adleman).
 
 Je ne vais pas m'étendre sur la présentation de cet algorithme, [Wikipedia](http://fr.wikipedia.org/wiki/Rivest_Shamir_Adleman) le fait très bien. Si vous voulez en savoir plus sur le mechanisme de fonctionnement, vous pouvez toujours vous référer à [l'article](http://www.siteduzero.com/tutoriel-3-2170-la-cryptographie-asymetrique-rsa.html) du Site du Zéro.
 

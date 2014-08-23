@@ -1,10 +1,6 @@
----
-date: '2009-12-05 04:26:55'
-layout: post
-title: Une V2 pour la route
-categories: [Articles]
-comments: true
----
+Date: 2009-12-05 04:26:55
+Title: Une V2 pour la route
+Category: Articles
 
 Depuis le début, le blog m'a toujours servi à tester des serveurs et services en pré-production et je dois avouer que ça lui réussi plutôt bien (_tant que je ne casse rien_). Etant forcé de changer de serveur pour le boulot, il ne déroge pas la règle et est donc le premier site à tester ce nouveau jouet (C'est Noël en plus !).
 

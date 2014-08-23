@@ -1,20 +1,14 @@
----
-date: '2009-06-22 23:14:13'
-layout: post
-title: Recevoir ses alertes Fail2ban sur Twitter
-categories: [Articles]
-tags: [fail2ban,twitter]
----
+Date: 2009-06-22 23:14:13
+Title: Recevoir ses alertes Fail2ban sur Twitter
+Category: Articles
+Tags: [fail2ban,twitter]
 
 Dans la série des articles inutiles mais utiles, voici comment recevoir ses alertes Fail2ban sur Twitter.
 
-![fail2ban_logo2](http://blog.kdecherf.com/wp-content/uploads/2009/06/fail2ban_logo2.png)  
-![twitter-logo1](http://blog.kdecherf.com/wp-content/uploads/2009/06/twitter-logo1.jpg)
-
 **Prérequis :**
 	
-  * [Twitter + Curl : poster le même statut à la suite](http://blog.kdecherf.com/2009/06/16/twitter-curl-poster-le-meme-statut-a-la-suite/)
-  * [Fail2ban : notifier chaque connexion SSH](http://blog.kdecherf.com/2009/06/15/fail2ban-notifier-chaque-connexion-ssh/)
+  * [Twitter + Curl : poster le même statut à la suite](/2009/06/16/twitter-curl-poster-le-meme-statut-a-la-suite/)
+  * [Fail2ban : notifier chaque connexion SSH](/2009/06/15/fail2ban-notifier-chaque-connexion-ssh/)
 
 **Notifier les bannissements :**
 

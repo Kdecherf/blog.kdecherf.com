@@ -1,11 +1,7 @@
----
-date: '2009-03-01 03:13:16'
-layout: post
-title: 'Comparatif PHP : Unicode et echappement HTML'
-categories: [Articles]
-tags: [php]
-comments: true
----
+Date: 2009-03-01 03:13:16
+Title: Comparatif PHP : Unicode et echappement HTML
+Category: Articles
+Tags: [php]
 
 Me voilà de retour pour un nouveau comparatif PHP. Le titre n'est peut-être pas super explicite alors je vais m'expliquer.
 
