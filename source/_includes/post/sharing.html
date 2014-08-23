@@ -1,0 +1,36 @@
+<div class="sharing">
+  {% if site.twitter_tweet_button %}
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="{{ site.twitter_user }}" data-counturl="{{ site.url }}{{ page.url }}" >Tweet</a>
+  {% endif %}
+  {% if site.google_plus_one %}
+  <div class="g-plusone" data-size="{{ site.google_plus_one_size }}"></div>
+  {% endif %}
+  {% if site.facebook_like %}
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  {% endif %}
+  {% if site.flattr_user %}
+    {% include post/flattr_button.html %}
+  {% endif %}
+  {% if site.shareholic_banner %}
+ <!-- Start Shareaholic Sexybookmark HTML-->
+
+ <div class="shr_class shareaholic-show-on-load">
+ </div>
+
+ <!-- End Shareaholic Sexybookmark HTML -->
+ <!-- Start Shareaholic Sexybookmark script -->
+
+ <script type="text/javascript">
+ var SHRSB_Settings = {"shr_class":{"src":"{{ site.shareholic_path }}","link":"","service":"5,7,78,88,2,205,201","apikey":"6ffe2cbf142c45bd4cd03b01ec46b8658","localize":true,"shortener":"google","shortener_key":"","designer_toolTips":true,"twitter_template":"${title} - ${short_link}"}};
+</script>
+
+<script type="text/javascript">
+(function() {
+ var sb = document.createElement("script"); sb.type = "text/javascript";sb.async = true;
+ sb.src = ("https:" == document.location.protocol ? "https://dtym7iokkjlif.cloudfront.net" : "http://cdn.shareaholic.com") + "/media/js/jquery.shareaholic-publishers-sb.min.js";
+ var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(sb, s);
+ })();
+</script>
+<!-- End Shareaholic Sexybookmark script -->
+  {% endif %}
+</div>
