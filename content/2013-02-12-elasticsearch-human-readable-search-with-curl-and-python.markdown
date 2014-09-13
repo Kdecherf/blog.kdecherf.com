@@ -7,7 +7,7 @@ At Clever Cloud, we use LogStash and ElasticSearch to index and make search on y
 
 The following scripts are intended to be used against LogStash-generated data but it gives you an idea on how to make your own "prettifier".
 
-``` bash search.sh
+``` bash
 #!/bin/bash
 
 curl -XPOST -d "{\"query\":{\"bool\":{\"must\":[{\"query_string\":{\"default_field\":\"@source_host\",\"query\":\"$1\"}}],\"must_not\":[],\"should\":[]}},\"from\":0,\"size\":$LIMIT,\"sort\":[{\"@timestamp\":{\"order\":\"desc\"}}],\"facets\":{}}" http://yourelasticcluster:9200/yourindex/_search 2>/dev/null | prettify.py
@@ -15,7 +15,7 @@ curl -XPOST -d "{\"query\":{\"bool\":{\"must\":[{\"query_string\":{\"default_fie
 > The script takes only one argument: the hostname (or IP if @source\_host is set with the client IP address).  
 > Change `$LIMIT` according to your needs (_1,000 is a good value_).
 
-``` python prettify.py
+``` python
 #!/bin/env python
 
 import json,sys

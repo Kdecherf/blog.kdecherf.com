@@ -10,7 +10,7 @@ Unfortunately, this feature is not available on the frontend.
 Well, the fix to add new items in this menu is quite simple. In the following figure, I add two links: "Settings" and "Graphs".
 
 
-``` diff host-menu.patch
+``` diff
 --- js/init.js
 +++ js/init.js
 @@ -47,6 +47,8 @@
