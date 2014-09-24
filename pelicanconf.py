@@ -1,11 +1,21 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import urllib, hashlib
 
 AUTHOR = u'Kevin Decherf'
 SITENAME = u'kdecherf (git)-[blog] %'
 SITESUBTITLE = u'#FridayDeploymentWin'
 SITEURL = ''
+
+# Conf for pulling Gravatar Image
+EMAIL = u'kevin@kdecherf.com'
+DEFAULT_GRV_URL = u'http://www.example.com/default.jpg'
+GRV_SIZE = 120
+
+# construct gravatar URL
+GRV_URL = "http://www.gravatar.com/avatar/" + hashlib.md5(EMAIL.lower()).hexdigest() + "?"
+GRV_URL += urllib.urlencode({'s':str(GRV_SIZE)})
 
 THEME = 'themes/fresh-sundown'
 
