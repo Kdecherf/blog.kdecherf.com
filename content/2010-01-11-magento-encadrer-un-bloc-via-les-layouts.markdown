@@ -4,8 +4,6 @@ Category: Tips
 
 **Magento**, mastodonte de l'_e-Commerce_, se veut être (_sans aucun doute_) la plateforme la moins bien documentée officiellement. Travaillant actuellement dessus, je ferai part ici de mes quelques astuces qui peuvent vous aider ...
 
-![Magento](/images/2010/01/magento_logo.gif)
-
 Ma première astuce concerne les blocs et les superbes layouts XML. Considérons le bloc statique *left_anchor* déclaré dans le layout comme suit :
 
 ``` xml
