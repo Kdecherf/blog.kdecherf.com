@@ -1,3 +1,6 @@
 [submodule "themes/fresh-sundown"]
 	path = themes/fresh-sundown
 	url = https://github.com/Kdecherf/fresh-sundown.git
+[submodule "themes/cleanelican"]
+	path = themes/cleanelican
+	url = https://github.com/Kdecherf/cleanelican.git
