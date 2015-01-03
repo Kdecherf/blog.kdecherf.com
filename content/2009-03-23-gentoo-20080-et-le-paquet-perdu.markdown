@@ -7,17 +7,21 @@ Les amoureux de la distribution Gentoo Linux vous le diront, chaque release a eu
 
 Pour en sortir, il fallait faire :
 
-> emerge -f e2fsprogs e2fsprogs-libs  
-> emerge &#45;&#45;unmerge e2fsprogs ss com\_err  
-> emerge -va e2fsprogs e2fsprogs-libs
+``` shell-session
+emerge -f e2fsprogs e2fsprogs-libs
+emerge --unmerge e2fsprogs ss com_err
+emerge -va e2fsprogs e2fsprogs-libs
+```
 
 Jusque là, cela reste une manipulation avec avertissement mais banale. Ceci étant, en cas de plantage le système peut être fortement endommagé.
 
-J'ai une petite pensée pour une personne qui a eu ce problème : l'ordinateur s'est éteint durant l'exécution du dernier emerge ce qui a causé la perte de commandes comme _fsck_. Conséquence : la distribution refuse de booter.
+J'ai une petite pensée pour une personne qui a eu ce problème : l'ordinateur s'est éteint durant l'exécution du dernier emerge ce qui a causé la perte de commandes comme `fsck`. Conséquence : la distribution refuse de booter.
 
-Heureusement, c'est fini ! Désormais quand vous installez une Gentoo, commencez par mettre à jour _portage_ puis ensuite faites votre classique _emerge -DuvaN world_
+Heureusement, c'est fini ! Désormais quand vous installez une Gentoo, commencez par mettre à jour `portage` puis ensuite faites votre classique `emerge -DuvaN world`
 
-> emerge -va portage  
-> emerge -DuvaN world
+``` shell-session
+emerge -va portage
+emerge -DuvaN world
+```
 
 Et là surprise ! Il n'y a plus d'erreur mais 2 nouvelles lignes et Portage met à jour tout seul les paquets qui bloquaient :)

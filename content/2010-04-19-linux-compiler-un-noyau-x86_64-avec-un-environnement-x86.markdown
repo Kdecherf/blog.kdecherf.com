@@ -12,7 +12,7 @@ Pas de problème, je vais compiler le noyau sans chroot ... Mais heu ... Comment
 
 A cela nous combinons l'inverse de l'astuce qui se trouve [ici](http://tinkering-is-fun.blogspot.com/2009/12/compiling-linux-kernel-for-x86-on-x8664.html) et on obtient ceci :
 
-``` bash
+``` shell-session
 apt-get install gcc-multilib
 mkdir ~/bin
 (echo '#!/bin/sh'; echo 'exec gcc -m64 "$@"';) > ~/bin/x86_64-linux-gnu-gcc
@@ -25,7 +25,7 @@ Et maintenant, vous pouvez compiler tranquillement votre noyau x86\_64 :
 
 **UPDATE : **Pensez à ajouter ~/bin à votre variable $PATH !
 
-``` bash
+``` shell-session
 usr/src/linux $ make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- menuconfig
 usr/src/linux $ make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu-
 ```

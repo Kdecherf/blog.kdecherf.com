@@ -7,15 +7,15 @@ Me voilà de retour pour un nouveau comparatif PHP. Le titre n'est peut-être pa
 
 A mes débuts, j'ai eu pas mal de problèmes de _charset_. Entre les bases ISO-8859-1, des bouts de code UTF-8 et compagnie je finissais souvent par avoir les caractères que l'on a vu au moins une fois dans sa vie :)
 
-Il fallait aussi compter sur les divergences des navigateurs qui ne choisissaient jamais le bon encodage (_finalement c'était de ma faute, pour dire_). Enfin bref, il m'est venu l'idée d'une fonction de conversion universelle qui transforme du texte aussi bien ISO-8859-1/15 qu'UTF-8 vers le format universel des caractères échappés en HTML (_&eacute;_ et compagnie ...) dont voici la [source](http://www.phpcs.com/codes/CONVERSION-UNIVERSELLE-CARACTERES_42236.aspx). Cool ! Oui mais en fait non. Pourquoi ?
+Il fallait aussi compter sur les divergences des navigateurs qui ne choisissaient jamais le bon encodage (_finalement c'était de ma faute, pour dire_). Enfin bref, il m'est venu l'idée d'une fonction de conversion universelle qui transforme du texte aussi bien ISO-8859-1/15 qu'UTF-8 vers le format universel des caractères échappés en HTML (`&eacute;` et compagnie ...) dont voici la [source](http://www.phpcs.com/codes/CONVERSION-UNIVERSELLE-CARACTERES_42236.aspx). Cool ! Oui mais en fait non. Pourquoi ?
 
 ### Avantages et inconvénients
 
-Commençons par l'échappement HTML. Le principe est de convertir tous les caractères spéciaux en leurs équivalents HTML (_&eacute; &agrave;_ ...). L'avantage premier est d'afficher les caractères correctement pour n'importe quel encodage choisi par le navigateur.
+Commençons par l'échappement HTML. Le principe est de convertir tous les caractères spéciaux en leurs équivalents HTML (_`&eacute;`, `&agrave;`, ..._). L'avantage premier est d'afficher les caractères correctement pour n'importe quel encodage choisi par le navigateur.
 
 Cependant il y a quelques inconvénients, dans le cadre d'une fonction comme la mienne il faut convertir tous les textes à l'affichage et cela consomme énormément de ressources et ajoute du poids considérable à la page (_nous le verrons en détail plus bas_).
 
-Concernant l'affichage direct du texte tel qu'il a été saisi ... l'avantage premier est de n'avoir aucun traitement intermédiaire. Cela implique cependant de bien vérifier qu'on impose l'encodage choisi pour éviter du _multi-charset _dans les bases de données. Par imposer l'encodage j'entends : balise Meta-Tag, en-tête Apache et connexion MySQL.
+Concernant l'affichage direct du texte tel qu'il a été saisi ... l'avantage premier est de n'avoir aucun traitement intermédiaire. Cela implique cependant de bien vérifier qu'on impose l'encodage choisi pour éviter du _multi-charset_ dans les bases de données. Par imposer l'encodage j'entends : balise Meta-Tag, en-tête Apache et connexion MySQL.
 
 ### Comparatif par l'exemple
 
@@ -75,17 +75,7 @@ Commande PHP qui va bien pour MySQL (_à faire après un mysql_connect_)
 ?>
 ```
 
-
-
-
-
-
-
-
 J'espère que cet article vous a été utile tant bien sur le choix d'envoyer du texte pur ou encodé que sur le choix ISO/UTF.
-
-
-
 
 _Note : à l'époque ma fonction partait d'un bon principe mais on voit que cela peut se révéler très très lourd._
 

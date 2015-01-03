@@ -3,9 +3,9 @@ Title: Créer un Chroot SFTP natif avec OpenSSH
 Category: Tips
 Tags: openssh,sftp
 
-Pour des raisons de sécurité, il est souvent nécessaire d'appliquer des règles de chroot (aussi nommé _jail_ dans le monde \*BSD) afin de parquer un utilisateur dans une zone donnée. Par défaut, pour faire un chroot sur SSH il faut patcher OpenSSH puis installer des binaires sur chaque espace. C'est une méthode très longue et souvent ennuyeuse.
+Pour des raisons de sécurité, il est souvent nécessaire d'appliquer des règles de chroot (aussi nommé `jail` dans le monde \*BSD) afin de parquer un utilisateur dans une zone donnée. Par défaut, pour faire un chroot sur SSH il faut patcher OpenSSH puis installer des binaires sur chaque espace. C'est une méthode très longue et souvent ennuyeuse.
 
-Cependant depuis quelques versions, OpenSSH intègre nativement l'option _ChrootDirectory_. Comme son nom l'indique, c'est pour créer un environnement parqué pour les utilisateurs. Malheureusement cette méthode ne s'applique que pour le serveur interne SFTP. Méthode et explication.
+Cependant depuis quelques versions, OpenSSH intègre nativement l'option `ChrootDirectory`. Comme son nom l'indique, c'est pour créer un environnement parqué pour les utilisateurs. Malheureusement cette méthode ne s'applique que pour le serveur interne SFTP. Méthode et explication.
 
 Note : cette solution n'est valable que pour **OpenSSH 4.9** et supérieur.
 
@@ -13,7 +13,7 @@ Note : cette solution n'est valable que pour **OpenSSH 4.9** et supérieur.
 
 La mise en place du chroot est très rapide.
 
-Quelques lignes à modifier dans */etc/ssh/sshd_config*
+Quelques lignes à modifier dans `/etc/ssh/sshd_config` :
 
 ``` bash
 Subsystem       sftp    internal-sftp
@@ -37,7 +37,9 @@ Exemple : nous avons le compte _john_ chrooté dans _/home/john_ (ce répertoire
 
 Le répertoire doit avoir l'état suivant :
 
-> drwxr-xr-x 2 root   root   4096 Feb 28 23:56 john
+``` text
+drwxr-xr-x 2 root   root   4096 Feb 28 23:56 john
+```
 
 Ceci fait, l'utilisateur peut accéder à son répertoire via SFTP sans pouvoir lister les répertoires parents.
 
@@ -46,9 +48,11 @@ Seul hic à ce stade : il ne peut pas créer directement de répertoire dans _/h
 Deux solutions : donner un accès 777 au répertoire mais cela reste dangereux ou alors créer les répertoires au besoin du client sachant que les répertoires enfants n'ont pas besoin d'appartenir à root.
 
 Voici un exemple :
-> total 8  
-> drwxr-x--- 2 john john 4096 Mar  1 00:00 bar  
-> drwxr-x--- 2 john john 4096 Mar  1 00:00 foo  
+``` text
+total 8  
+drwxr-x--- 2 john john 4096 Mar  1 00:00 bar  
+drwxr-x--- 2 john john 4096 Mar  1 00:00 foo  
+```
 
 Ainsi, l'utilisateur _john_ pourra librement **lire et ecrire **dans les répertoires _foo_ et _bar_ sans que les autres ne puissent lire le contenu et sans qu'il ne puisse monter au dela de son _homedir_.
 
@@ -62,4 +66,4 @@ Vous souhaitez ajouter l'utilisateur _titi _(_oui ... je suis en manque d'imagin
   * Ajoutez les répertoires demandés par l'utilisateur puis pensez à changer le propriétaire de ceux-ci en _titi:_ (owner + group) et de supprimer les droits pour les autres (o-rx ou 750) sur ces répertoires
   * ET voilà ! L'utilisateur est enfermé dans sa prison :)
 
-Une note très importante cependant à propos de cette méthode : **ce paramètrage n'est valable que pour SFTP et supprime aux utilisateurs du groupe _ftpusers _la possibilité d'utiliser SSH.**
+Une note très importante cependant à propos de cette méthode : **ce paramètrage n'est valable que pour SFTP et supprime aux utilisateurs du groupe _ftpusers_ la possibilité d'utiliser SSH.**

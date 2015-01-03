@@ -24,11 +24,11 @@ Pour tous les systèmes gérant les dépendances, il suffit d'ajouter la dépend
 
 Il n'y a pas grand chose de plus à faire si ce n'est interdire l'utilisation de la version 2 du protocole SSL dans les fichiers de configuration Apache :
 
-```
+``` apache
                 SSLProtocol all -SSLv2
                 SSLEngine on
                 SSLCertificateFile yourkey.crt
                 SSLCertificateKeyFile yourkey.key[/text]
 ```
 
-Et voilà, logiquement vous pouvez désormais utiliser différents certificats SSL sur une même adresse IP
+Et voilà, logiquement vous pouvez désormais utiliser différents certificats SSL sur une même adresse IP.

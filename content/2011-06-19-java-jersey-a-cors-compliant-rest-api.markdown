@@ -5,6 +5,10 @@ Slug: java-jersey-a-cors-compliant-rest-api
 
 Une traduction française est disponible [ici](/2011/06/02/java-jersey-une-api-rest-cross-domain-sans-jsonp/).
 
+<div class="alert-info">
+  <strong>UPDATE 2012/12/23:</strong> fixing typo on line 4, <code>ResponseBuilder</code> has no <code>ok()</code> method (<em>Thanks <a href="#comment-658615663">Frankie Frank</a></em>).
+</div>
+
 Cross-Domain AJAX request is the developer's nightmare with the awful JSONP workaround. But we can use a simple standard to kick off this bad practice.
 
 ### Reminder
@@ -39,31 +43,37 @@ In this post, I don't use _Access-Control-Allow-Credentials_, _Access-Control-Ex
 For standard requests, the browser will add _Origin_ and _Access-Control-Request-Method_ headers. A preflight request will be executed before the actual request if it contains custom headers, if it uses another HTTP verb than GET or POST or also if the body isn't in text/plain format (ie. application/json).
 
 There is a preflight request made by Firefox :
-    
-    OPTIONS /url HTTP/1.1
-    Host: 127.0.0.1:5555
-    User-Agent: Mozilla/5.0
-    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
-    Accept-Language: en-us,en;q=0.5
-    Accept-Encoding: gzip,deflate
-    Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
-    Keep-Alive: 115
-    Connection: keep-alive
-    Origin: http://127.0.0.1
-    Access-Control-Request-Method: POST
-    Access-Control-Request-Headers: x-requested-with
+
+``` http
+OPTIONS /url HTTP/1.1
+Host: 127.0.0.1:5555
+User-Agent: Mozilla/5.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Connection: keep-alive
+Origin: http://127.0.0.1
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: x-requested-with
+```
 
 We can see _Origin_, _Access-Control-Request-Method_ and _Access-Control-Request-Headers_ headers. After this request, Firefox waits a similar response:
-    
-    X-Powered-By: Servlet/3.0
-    Server: GlassFish Server Open Source Edition 3.0.1
-    Access-Control-Allow-Origin: *
-    Access-Control-Allow-Methods: GET, POST, OPTIONS
-    Access-Control-Allow-Headers: x-requested-with
+
+```
+X-Powered-By: Servlet/3.0
+Server: GlassFish Server Open Source Edition 3.0.1
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS
+Access-Control-Allow-Headers: x-requested-with
+```
 
 After this, Firefox can continue with its requests and adds a custom header:
-    
-    X-Requested-With: XMLHttpRequest
+
+```
+X-Requested-With: XMLHttpRequest
+```
 
 ### And our API ?
 
@@ -122,9 +132,6 @@ With this standard you can miss Internet Explorer 6 and 7. Internet Explorer 8 i
   * [Using CORS with Firefox 3.5](https://developer.mozilla.org/En/HTTP_Access_Control)
   * [XDomainRequest object on MSDN](http://msdn.microsoft.com/en-us/library/cc288060\(v=vs.85\).aspx)
   * [RFC 2616: HTTP Protocol](http://tools.ietf.org/html/rfc2616)
-
-
-**UPDATE:** 2012/12/23 - fixing typo on line 4, ``ResponseBuilder`` has no ``ok()`` method (_Thanks [Frankie Frank](#comment-658615663)_)
 
 
 _Enjoy it!_

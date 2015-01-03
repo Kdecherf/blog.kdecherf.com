@@ -17,7 +17,7 @@ Au niveau design, vous devez impérativement encadrer le contenu par un `<div id
 
 Deux possibilités 'rapides' s'offrent à vous : ajouter le conteneur directement dans le contenu du bloc statique ou encore encadrer le `$this->getChildHtml('left_anchor')` dans le template HTML si vous le pouvez.
 
-Si vous ne pouvez ou ne voulez pas utiliser ces options, il vous reste une troisième alternative : le layout XML. On a à notre disposition un template _wrapper.phtml_ et un type de bloc associé qui nous permet d'encadrer tout et n'importe quoi ... Ainsi le layout donne :
+Si vous ne pouvez ou ne voulez pas utiliser ces options, il vous reste une troisième alternative : le layout XML. On a à notre disposition un template `wrapper.phtml` et un type de bloc associé qui nous permet d'encadrer tout et n'importe quoi ... Ainsi le layout donne :
 
 ``` xml
 <block type="core/template" name="leftanchor" as="leftanchor" template="page/html/wrapper.phtml">

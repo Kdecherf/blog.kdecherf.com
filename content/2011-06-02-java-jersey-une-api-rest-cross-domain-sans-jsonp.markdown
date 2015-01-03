@@ -5,6 +5,10 @@ Slug: java-jersey-une-api-rest-cross-domain-sans-jsonp
 
 An english version of this post is available [here](/2011/06/19/java-jersey-a-cors-compliant-rest-api/).
 
+<div class="alert-info">
+  <strong>UPDATE 2012/12/23:</strong> Correction d'une erreur d'étourderie sur le premier bloc ligne 4, l'objet <code>ResponseBuilder</code> n'a pas de méthode <code>ok()</code>.
+</div>
+
 Ah les joies d'AJAX et du Cross-Domain ... Ou plutôt le cauchemar des développeurs. Aujourd'hui, je vais vous présenter un concept pour rendre rapidement et simplement une API REST Java/Jersey compatible avec la norme W3C CORS pour faire du Cross-Domain sans utiliser JSONP.
 
 ### Contexte
@@ -39,31 +43,34 @@ Dans ce billet, je mets de côté _Access-Control-Allow-Credentials_, _Access-Co
 En condition normale, le navigateur va ajouter les en-têtes _Origin_ et _Access-Control-Request-Method_ lors de la requête. Une requête préliminaire sera faite (_preflight request_) si des en-têtes personnalisés sont présents, si la requête utilise une méthode autre que _GET_ et _POST_ ou encore que le client envoie des données qui ne sont pas au format text/plain (du JSON par exemple).
 
 Voici un exemple de _preflight request_ envoyée par Firefox :
-
-    OPTIONS /monurl HTTP/1.1
-    Host: 127.0.0.1:5555
-    User-Agent: Mozilla/5.0
-    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
-    Accept-Language: en-us,en;q=0.5
-    Accept-Encoding: gzip,deflate
-    Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
-    Keep-Alive: 115
-    Connection: keep-alive
-    Origin: http://127.0.0.1
-    Access-Control-Request-Method: POST
-    Access-Control-Request-Headers: x-requested-with
+``` http
+OPTIONS /monurl HTTP/1.1
+Host: 127.0.0.1:5555
+User-Agent: Mozilla/5.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Connection: keep-alive
+Origin: http://127.0.0.1
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: x-requested-with
+```
 
 On remarque bien les en-têtes _Origin_, _Access-Control-Request-Method_ et _Access-Control-Request-Headers_. Maintenant, Firefox s'attend à recevoir une réponse de ce style de la part du serveur (exemple) :
-    
-    X-Powered-By: Servlet/3.0
-    Server: GlassFish Server Open Source Edition 3.0.1
-    Access-Control-Allow-Origin: *
-    Access-Control-Allow-Methods: GET, POST, OPTIONS
-    Access-Control-Allow-Headers: x-requested-with
+```
+X-Powered-By: Servlet/3.0
+Server: GlassFish Server Open Source Edition 3.0.1
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS
+Access-Control-Allow-Headers: x-requested-with
+```
 
 A ce niveau, Firefox sait qu'il peut faire des requêtes AJAX vers ce serveur, il continue donc avec ses requêtes normales en ajoutant son en-tête personnalisé :
-    
-    X-Requested-With: XMLHttpRequest
+```
+X-Requested-With: XMLHttpRequest
+```
 
 ### Et notre API ?
 
@@ -119,9 +126,6 @@ Point de vue compatibilité avec cette petite norme laissez tomber Internet Expl
   * [Présentation détaillée de l'utilisation de CORS avec Firefox 3.5](https://developer.mozilla.org/En/HTTP_Access_Control)
   * [Présentation de l'objet XDomainRequest sur MSDN](http://msdn.microsoft.com/en-us/library/cc288060\(v=vs.85\).aspx)
   * [RFC 2616 : Protocole HTTP](http://tools.ietf.org/html/rfc2616)
-
-
-**Mise à jour :** 2012/12/23 - Correction d'une erreur d'étourderie sur le premier bloc ligne 4, l'objet ``ResponseBuilder`` n'a pas de méthode ``ok()``
 
 
 _Enjoy it!_

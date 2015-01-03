@@ -12,7 +12,7 @@ I present you in this tip pros and cons of 4 different ways to connect to a virt
 
 It's the basic way to connect to a virtual machine: by hand from its host but it costs one more command than other methods.
 
-```
+``` shell-session
 kdecherf@home ~ % ssh root@my.server.example.org
 Last login: Sun Oct 28 18:36:24 2012 from my.home.example.org
 server ~ # ssh 10.0.0.2
@@ -30,7 +30,7 @@ command="/usr/bin/ssh root@yourhost",no-port-forwarding,no-X11-forwarding,no-age
 
 So when you connect to the server with this key, you will be automatically logged to the virtual machine:
 
-```
+``` shell-session
 kdecherf@home ~ % ssh root@my.server.example.org
 Last login: Sun Oct 28 18:35:18 2012 from my.server.example.org
 virtual ~ #
@@ -54,11 +54,11 @@ And you will be disconnected from the host when you log out.
 
 You can also use ``iptables`` to redirect one port of the host to the SSH server of the virtual server.
 
-```
+``` shell-session
 iptables -t nat -A PREROUTING -m tcp -p tcp --dport 2222 -j DNAT --to-destination 10.0.0.2:22
 ```
 
-```
+``` shell-session
 kdecherf@home ~ % ssh root@my.server.example.org -p 2222
 Last login: Sun Oct 28 18:59:47 2012 from my.server.example.org
 virtual ~ #
@@ -80,7 +80,7 @@ virtual ~ #
 
 The last method is to use the SSH server (_OpenSSH here_) configuration file of the host to chain the connection to the virtual machine:
 
-```
+``` text
 Match User myvirtualuser
          ForceCommand /usr/bin/ssh root@10.0.0.2
          AllowTCPForwarding no
@@ -89,7 +89,7 @@ Match User myvirtualuser
 
 And after the restart of openssh-server:
 
-```
+``` shell-session
 kdecherf@home ~ % ssh myvirtualuser@my.server.example.org
 Last login: Sun Oct 28 19:13:59 2012 from my.server.example.org
 virtual ~ #
