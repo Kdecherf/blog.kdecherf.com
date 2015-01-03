@@ -1,6 +1,7 @@
 Title: Installing Qt4 private headers on Exherbo for Calibre
 Date: 2013-04-25 16:21
 Category: Tips
+Tags: exherbo
 
 Hey folks, another tip for another issue. The last week-end I played with Calibre to convert ePub books into PDF files (_nevermind, it was for someone else_). Calibre comes with `ebook-convert` but for some obscur reasons it uses private headers of Qt4.
 
