@@ -10,7 +10,7 @@ Les 2 codes présentés ci-dessous sortent le même texte, exemple :
 
 > Mardi 17 Février 2009
 
-**Localisation numérique**
+### Localisation numérique
 
 _Le but de cette solution est de sortir les valeurs numériques des jours et des mois afin de les utiliser comme index de tableau._
 
@@ -37,7 +37,7 @@ Ainsi avec ce code nous obtenons :
 > Exec time : 2.811s for 25 000 operations.  
 > Tr / s : 8 892
 
-**Remplacement de mots**
+### Remplacement de mots
 
 _Le but de cette solution est de sortir la date en anglais et de remplacer des éléments anglais par leur traduction française._
 
@@ -63,6 +63,6 @@ Ainsi avec ce code nous obtenons :
 > Exec time : 4.845s for 25 000 operations.  
 > Tr / s : 5 160
 
-**Conclusion**
+### Conclusion
 
 Finalement nous ne voyons pas de grosse différence entre les 2 méthodes même si la première méthode semble plus rapide. Ainsi donc libre à vous d'implémenter la solution qui vous semble la plus simple.

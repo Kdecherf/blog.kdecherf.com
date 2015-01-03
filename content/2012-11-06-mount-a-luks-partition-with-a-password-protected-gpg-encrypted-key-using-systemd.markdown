@@ -8,8 +8,7 @@ Because I'm using a password-protected gpg-encrypted key, I can't use any automa
 _**Note:** I'm using the user part of systemd, but this article is not about its configuration._
 
 
-GPG-Agent
----------
+### GPG-Agent
 
 The first tool I need is `gpg-agent` which is not system-wide, so I create an unit file named `gpg-agent.service`:
 
@@ -32,8 +31,7 @@ If you need the SSH Agent support, append `--enable-ssh-support` to `ExecStart`.
 _**Note:** Don't forget to append `use-agent` in `~/.gnupg/gpg.conf` and customize the agent configuration with `~/.gnupg/gpg-agent.conf`_
 
 
-LUKS
-----
+### LUKS
 
 I've found [1] a script for mounting a LUKS partition with automount. I've customized it for my own use:
 
@@ -103,8 +101,7 @@ WantedBy=default.target
 ```
 
 
-Mount LUKS as a requirement for X
---------------------------------
+### Mount LUKS as a requirement for X
 
 This section is optional. Some of important files for the boot of my X session are on the LUKS partition so I need to mount it before X starts.
 

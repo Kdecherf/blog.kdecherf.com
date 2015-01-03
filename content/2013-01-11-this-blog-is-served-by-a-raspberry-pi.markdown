@@ -17,8 +17,7 @@ Since I switched my blog to Octopress[1], the webserver is only serving static f
 I made some load tests with siege[2] to know how much connections the raspberry pi and my connection can handle in this configuration (_serving small static files_).
 
 
-HAProxy configuration
----------------------
+### HAProxy configuration
 
 As I said, there is a frontend server which dispatches requests on my Raspberry Pi or the local server according to its availability.
 
@@ -48,8 +47,7 @@ backend cluster_blog
 In this configuration, requests on `/fonts` are always forwarded to the local webserver (_to limit latency due to the size of files_) but other requests are forwarded to the Raspberry Pi within the limit of 20 concurrent sessions (_thanks to `balance first` available in HAProxy 1.5_).
 
 
-Broadband connection limit
---------------------------
+### Broadband connection limit
 
 My first test was done with 5 concurrent connections, there is no load (_glances uses 17% of CPU_) and the throughput is low:
 
@@ -97,8 +95,7 @@ Shortest transaction:           0.07
 After these tests, my connection can handle ~40 concurrent connections but can raspberry pi handle more connections?
 
 
-Local test
-----------
+### Local test
 
 Two other tests were done on my local network with 50 and 150 concurrent connections.
 

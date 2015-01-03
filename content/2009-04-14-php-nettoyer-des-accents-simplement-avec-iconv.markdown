@@ -30,7 +30,7 @@ Ce qui donne le résultat suivant :
 Dessin : la loi Hadopi pourrait etre representee tres bientot
 ```
 
-**Explication du code**
+### Explication du code
 
 Concrètement, nous partons du titre au format UTF-8 et nous souhaitons le convertir au format ASCII car il ne comporte pas d'accents (si vous avez un doute, je vous invite à réviser vos jeux de caractères ;-) ).
 

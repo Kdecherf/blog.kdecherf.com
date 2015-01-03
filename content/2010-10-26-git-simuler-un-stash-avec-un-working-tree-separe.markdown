@@ -8,7 +8,7 @@ Une solution simple pour protéger ces fichiers modifiés est l'utilisation de g
 
 Je présente ici deux méthodes différentes.
 
-**Remplacement de fichiers sans conservation de contexte**
+### Remplacement de fichiers sans conservation de contexte
 
 Cette méthode est rapide à mettre en place et utile si les fichiers modifiés ne changeront plus : un dossier contient les fichiers d'origine et les remet sur le working tree après le checkout.
 
@@ -29,7 +29,7 @@ exit 0
 
 git checkout permet de mettre à jour le working tree avec les nouveaux fichiers.
 
-**Remplacement de fichiers avec conservation de contexte**
+### Remplacement de fichiers avec conservation de contexte
 
 Cette méthode va réellement simuler le fonctionnement de stash : les fichiers modifiés sur le working tree vont être mis de côté avant le checkout puis replacés après.
 

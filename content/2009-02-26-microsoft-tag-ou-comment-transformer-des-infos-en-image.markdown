@@ -10,15 +10,15 @@ Si vous avez été aux Techdays, vous avez forcément du voir ces carrés de cou
 
 Je vais brièvement vous présenter à quoi sert ce service, pour qui et comment l'utiliser.
 
-**A quoi ça sert ?**
+### A quoi ça sert ?
 
 Ce principe de tag peut servir pour pleins de choses. L'exemple le plus typique, et visible sur quelques sites internet, est de renvoyer vers un lien. Exemples : le plan d'accès pour une Pizzeria, l'agenda de conférence aux Techdays. Vous pouvez également créer des Tags pour envoyer du texte ou une vCard !
 
-**Pour qui ?**
+### Pour qui ?
 
 Pour tout le monde ! Et je tiens à préciser que ce service est **gratuit**.
 
-**Comment créer un Tag ?**
+### Comment créer un Tag ?
 
 Rendez-vous sur le site de [Microsoft Tag](http://tag.microsoft.com/). Créez un compte à l'aide de votre LiveID (_créez-vous un LiveID le cas échéant_).   
 Une fois connecté à votre compte, vous avez la liste des tags existants (dans votre cas, vide) et un lien pour en créer un nouveau.
@@ -41,7 +41,7 @@ _Note : ce Tag est le Tag-URL de cet article._
 
 Et voilà, je crois que j'ai fait le tour. Passons côté utilisateur.
 
-**Comment s'en servir ?**
+### Comment s'en servir ?
 
 Les tags sont à capturer avec un téléphone portable. Comme vous pouvez le voir, si l'utilisateur n'a pas encore l'application il est invité à visiter [http://gettag.mobi](http://gettag.mobi/)  
 L'application est disponible pour Windows Mobile, iPhone, Sambios, Blackberry, PalmOS, en version Java et même ... pour Android ! _A noter, ces applications sont fournies en version beta._

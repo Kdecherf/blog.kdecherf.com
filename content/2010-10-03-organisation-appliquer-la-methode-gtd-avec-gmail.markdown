@@ -4,7 +4,7 @@ Category: Articles
 
 Trop d'emails à lire ? Des soucis d'organisation de votre compte Gmail ? Emails perdus dans la masse de vos archives ? Voici un billet qui pourrait vous être utile.  Pour commencer, je vais faire un très léger rappel/résumé de la méthode **[GTD](http://en.wikipedia.org/wiki/Getting_Things_Done)** (_Getting Things Done_).
 
-#### Rappel
+### Rappel
 
 ![GTD](/images/2010/09/GTD-Map-1.jpg)
 
@@ -17,18 +17,18 @@ La méthode GTD est une méthode d'organisation inventée par David Allen, je vo
 
 Maintenant que j'ai donné les grandes lignes, on va pouvoir voir comment appliquer cette technique sur une boîte Gmail.
 
-#### Prérequis
+### Prérequis
 
 Ce billet se base sur les fonctionnalités _Priority Inbox_ de Google et _Superstars_ disponible dans les Labs.
 
-#### Boîte de réception
+### Boîte de réception
 
 La boîte de réception est la fameuse corbeille d'arrivée du système GTD. Avec la fonctionnalité _Priority Inbox,_ on va même pouvoir appliquer deux niveaux de tri en entrée.  
 Quand un élément est traité, il doit être archivé. Ainsi ne restent dans la boîte de réception que les éléments formant une TODO-List à court ou moyen terme.
 
 ![GTD](/images/2010/10/Screenshot-13-1.png)
 
-#### Dossier 'suivi' (_starred_)
+### Dossier 'suivi' (_starred_)
 
 Le label _starred_ de Gmail va constituer la boîte de références, et le lab _Superstars_ va permettre d'avoir plusieurs types de références. Dans la boîte de références sont rangés tous les éléments ne formant pas une TODO-List mais pouvant servir plus tard : emails d'information, identifiants de connexion, ...
 
@@ -42,7 +42,7 @@ Ainsi ma boîte de références ressemble à ça :
 
 ![GTD](/images/2010/10/Screenshot-14-1.png)
 
-#### Pour le reste : il y a le reste
+### Pour le reste : il y a le reste
 
 Pour tous les autres éléments : traités, inutiles, autres ... Il suffit d'utiliser la fonction _Archiver_, ils restent ainsi consultables via le label _All Mails_.
 

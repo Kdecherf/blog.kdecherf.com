@@ -8,8 +8,7 @@ I present you in this tip pros and cons of 4 different ways to connect to a virt
 <!--more-->
 
 
-Manual connection from the host
--------------------------------
+### Manual connection from the host
 
 It's the basic way to connect to a virtual machine: by hand from its host but it costs one more command than other methods.
 
@@ -21,8 +20,7 @@ Last login: Sun Oct 28 18:46:48 2012 from my.server.example.org
 virtual ~ #
 ```
 
-Automatic login using authorized\_keys file
--------------------------------------------
+### Automatic login using authorized\_keys file
 
 When you use keys to login to your servers, you can specify a command to be executed when a specific key is used. So you can chain SSH connection like this:
 
@@ -52,8 +50,7 @@ And you will be disconnected from the host when you log out.
  * The ``command`` argument of ``ssh`` will fail
 
 
-Port redirection using iptables
--------------------------------
+### Port redirection using iptables
 
 You can also use ``iptables`` to redirect one port of the host to the SSH server of the virtual server.
 
@@ -79,8 +76,7 @@ virtual ~ #
  * The SSH server of each virtual machine is exposed to the ruthless world
 
 
-Automatic login using sshd\_config file
----------------------------------------
+### Automatic login using sshd\_config file
 
 The last method is to use the SSH server (_OpenSSH here_) configuration file of the host to chain the connection to the virtual machine:
 

@@ -21,7 +21,7 @@ Exemple concret : img.dnswatch.in que je viens de créer.
 
 Orange, Nerim et Belgacom ne répondent pas car ils bloquent l'accès à leurs serveurs depuis l'extérieur (voir ci-dessous). On voit bien que Free a du mal à propager le nouvel enregistrement contrairement aux autres, déjà à jour.
 
-## Reporteurs
+### Reporteurs
 
 Certains FAI refusent les requêtes DNS venant de l'extérieur (exemple : Orange, Nerim, ...). Pour cette raison, j'en appelle aux volontaires qui ont une machine qui tourne derrière l'un des FAI concernés et qui souhaitent participer au projet. Un script (reporting proxy) sera fait sous peu et disponible sur GitHub. Les requêtes entre le master et les proxies seront signées. Plus d'infos [ici](http://dnswatch.in/info.html) (_et à venir_).
 

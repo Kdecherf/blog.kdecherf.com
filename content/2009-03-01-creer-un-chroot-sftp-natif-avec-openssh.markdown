@@ -9,7 +9,7 @@ Cependant depuis quelques versions, OpenSSH intègre nativement l'option _Chroot
 
 Note : cette solution n'est valable que pour **OpenSSH 4.9** et supérieur.
 
-**Mise en place**
+### Mise en place
 
 La mise en place du chroot est très rapide.
 
@@ -29,7 +29,7 @@ Pour expliquer brièvement ces lignes, nous activons le chroot sur le schéma de
 
 A noter que nous devons bien préciser d'utiliser **le serveur sftp interne à OpenSSH** ! Rechargez la configuration OpenSSH et nous pouvons passer à la dernière étape : _gestion des droits_.
 
-**Gestion des droits**
+### Gestion des droits
 
 **Un répertoire utilisateur (racine chroot) doit impérativement être contrôlé (owner:group) par root !** Et nous devons appliquer les droits o+rx pour permettre à l'utilisateur de lister son répertoire racine.
 
@@ -52,7 +52,7 @@ Voici un exemple :
 
 Ainsi, l'utilisateur _john_ pourra librement **lire et ecrire **dans les répertoires _foo_ et _bar_ sans que les autres ne puissent lire le contenu et sans qu'il ne puisse monter au dela de son _homedir_.
 
-**Piqure de rappel**
+### Piqure de rappel
 
 Vous souhaitez ajouter l'utilisateur _titi _(_oui ... je suis en manque d'imagination ce soir_) à votre superbe système de prison SFTP.
 	

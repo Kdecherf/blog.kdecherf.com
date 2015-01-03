@@ -4,9 +4,8 @@ Category: Tips
 
 C'est au cours d'une mission sur Magento que j'ai remarqué un fonctionnement plutôt limitant du bloc `page/template_links`. En effet on ne peut pas assigner de classes personnalisées à la balise `li`. Voici la solution (pour les plus fainéants :)).
 
-![Magento](/images/2010/01/magento_logo.gif)
+### Problème
 
-**Problème**  
 Vous avez surement déjà utilisé un bloc de ce type, il vous permet d'ajouter des liens depuis les fichiers xml de configuration du thème :
 
 ``` xml
@@ -38,7 +37,8 @@ Ce bloc, si pratique, a une faiblesse. Du moins avec le template par défaut `ap
 
 On remarquera qu'il n'est pas possible, du moins pour les premiers et derniers éléments de listes, d'avoir un attribut `class` assigné via le paramètre `liParams` du layout (_cf. exemple du début_) car cela fait doublon.
 
-**La solution**  
+
+### La solution
 
 La solution consiste à traiter le contenu de la méthode `getLiParams()` afin d'y inclure les classes `first` et/ou `last` en fonction de la position du lien, évitant ainsi de générer un attribut html en double. En mettant le code PHP directement dans le fichier phtml, cela donne :
 
