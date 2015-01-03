@@ -17,7 +17,7 @@ GRV_SIZE = 120
 GRV_URL = "http://www.gravatar.com/avatar/" + hashlib.md5(EMAIL.lower()).hexdigest() + "?"
 GRV_URL += urllib.urlencode({'s':str(GRV_SIZE)})
 
-THEME = 'themes/fresh-sundown'
+THEME = 'themes/cleanelican'
 
 MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra','fenced_code','codehilite']
 
