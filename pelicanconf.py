@@ -21,6 +21,9 @@ THEME = 'themes/cleanelican'
 
 MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra','fenced_code','codehilite']
 
+PLUGIN_PATHS = ['plugins/']
+PLUGINS = ['simple_footnotes']
+
 PATH = 'content'
 
 TIMEZONE = 'Europe/Paris'
