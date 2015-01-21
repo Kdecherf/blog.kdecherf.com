@@ -17,7 +17,7 @@ Next, we will install all the required dependencies:
 $ cave resolve app-arch/snappy dev-libs/icu =dev-lang/erlang-16.03.1 dev-libs/v8 sys-apps/repo -x
 ```
 
-We fix the version of Erlang to 16.03.1 (_R16B03-1_) as it is the recommended version by the Couchbase team. There is also a good read about the stability of Erlang R14, R15 and R16[1].
+We fix the version of Erlang to 16.03.1 (_R16B03-1_) as it is the recommended version by the Couchbase team. There is also a [good read](https://gist.github.com/chewbranca/07d9a6eed3da7b490b47) about the stability of Erlang R14, R15 and R16.
 
 
 Starting at `rel-2.2.1.xml`, _memcached_ requires _tcmalloc_ from the Google's project _gperftools_. Just install it:
@@ -38,8 +38,3 @@ $ make
 ```
 
 _Enjoy!_
-
-References:
-
-[1] [https://gist.github.com/chewbranca/07d9a6eed3da7b490b47](https://gist.github.com/chewbranca/07d9a6eed3da7b490b47)
-

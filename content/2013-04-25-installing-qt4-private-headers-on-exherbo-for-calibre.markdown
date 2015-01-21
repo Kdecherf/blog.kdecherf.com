@@ -7,7 +7,7 @@ Hey folks, another tip for another issue. The last week-end I played with Calibr
 
 Since it's a really really bad practice to use private headers (_they are not intended to be used by third-party applications_) and Exherbo's community does not like this kind of practice, `x11-libs/qt:4` does not provide its private headers.
 
-The default source of Calibre will try to use Qt4 private headers but will fail[1]. A patch was added to calibre to disable *qt_hack*, the piece of code which uses the private headers.
+The default source of Calibre will try to use Qt4 private headers but [will fail](https://bugs.launchpad.net/calibre/+bug/1094719). A patch was added to calibre to disable *qt_hack*, the piece of code which uses the private headers.
 
 The idea here is to disable the patch, install Qt4 private headers and ending with the resolve of calibre.
 
@@ -27,7 +27,7 @@ For a quick fix, I edited the exheres of calibre in `/var/db/paludis/repositorie
 After that, the fun part begins.
 We need to install the private headers, but I don't want to install non-tracked files which will be more difficult to remove than with a simple `cave uninstall`.
 
-First, I found the install process of private headers from the `qt4-private-headers` package of ArchLinux[2] and used it in a temporary folder:
+First, I found the install process of private headers from the `qt4-private-headers` [package of ArchLinux](https://projects.archlinux.org/svntogit/community.git/tree/trunk/PKGBUILD?h=packages/qt4-private-headers) and used it in a temporary folder:
 
 ``` bash
 cd /tmp
@@ -62,7 +62,3 @@ Fat, isn't it? Well, now we can resolve calibre with its qt\_hack module.
 When you want to remove these files, just use `cave uninstall shit-incoming/qt4-fucking-private-headers -x`
 
 _Enjoy!_
-
-References:  
-[1] [https://bugs.launchpad.net/calibre/+bug/1094719](https://bugs.launchpad.net/calibre/+bug/1094719)  
-[2] [https://projects.archlinux.org/svntogit/community.git/tree/trunk/PKGBUILD?h=packages/qt4-private-headers](https://projects.archlinux.org/svntogit/community.git/tree/trunk/PKGBUILD?h=packages/qt4-private-headers)

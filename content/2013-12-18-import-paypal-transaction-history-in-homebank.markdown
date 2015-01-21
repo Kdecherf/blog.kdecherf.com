@@ -6,9 +6,9 @@ Category: Tips
   <strong>UPDATE 2014/03/16:</strong> updated sed line to remove the header of initial csv file.
 </div>
 
-Wow, it's been a long time since my last post. Few days ago I found a cool free and open-source (_and cross-platform_) software for personal accounting: HomeBank[1].
+Wow, it's been a long time since my last post. Few days ago I found a cool free and open-source (_and cross-platform_) software for personal accounting: [HomeBank](http://homebank.free.fr).
 
-This tool works well but the 'Import' feature requests a "proprietary" CSV format described here[2]. As I have a Paypal account for e-shopping I wanted to track these transactions too. So I made a tiny gawk script to convert a Paypal transaction history into the HomeBank CSV format.
+This tool works well but the 'Import' feature requests a "proprietary" CSV format described [here](http://homebank.free.fr/help/misc-csvformat.html). As I have a Paypal account for e-shopping I wanted to track these transactions too. So I made a tiny gawk script to convert a Paypal transaction history into the HomeBank CSV format.
 
 The best export format from Paypal will be the "complete transaction history" comma-delimited CSV because we need all currency conversion transactions. This export has more than 35 fields and some duplicate transactions for currency conversion and pre-authorization, so we need to do some cleaning.
 
@@ -65,8 +65,3 @@ sed -e 's/",/";/g' -e 's/"//g' -e "s@\([0-9]\{2\}\)/\([0-9]\{2\}\)/\([0-9]\{4\}\
 _Enjoy!_
 
 _Note: this tool is now available for Exherbo users using the package ``app-office/homebank``._
-
-References:
-
-[1] [http://homebank.free.fr](http://homebank.free.fr)  
-[2] [http://homebank.free.fr/help/misc-csvformat.html](http://homebank.free.fr/help/misc-csvformat.html)

@@ -4,7 +4,7 @@ Category: Tips
 
 Hey world this is my first post of the year, I hope I will break my record of 2 posts for the last year.
 
-Going back to the first days of my current laptop (_it is still alive!_), I found a post[1] to automatically activate an external screen when plugging it.
+Going back to the first days of my current laptop (_it is still alive!_), I found a [post](http://ruedigergad.com/2012/01/28/hotplug-an-external-screen-to-your-laptop-on-linux/) to automatically activate an external screen when plugging it.
 
 This script works only for a fixed output, in this case the output `VGA1`.
 
@@ -65,7 +65,3 @@ Notes:
 * I've replaced `echo "$1 connected"` with `logger` to log relevant messages using the syslog/journal socket of my system.
 
 _Enjoy!_
-
-References:
-
-[1] [http://ruedigergad.com/2012/01/28/hotplug-an-external-screen-to-your-laptop-on-linux/](http://ruedigergad.com/2012/01/28/hotplug-an-external-screen-to-your-laptop-on-linux/)
