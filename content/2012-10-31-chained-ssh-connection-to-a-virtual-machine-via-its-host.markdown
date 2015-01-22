@@ -112,10 +112,4 @@ _Enjoy it!_
 
 **UPDATE**
 
-OpenSSH now provides [1] a new feature: **AuthorizedKeysCommand** which allows us to make a script to automatically generate public keys listing for a given user at the login.
-
-
-
-**References**
-
-[1] [http://www.gossamer-threads.com/lists/openssh/dev/54584](http://www.gossamer-threads.com/lists/openssh/dev/54584)
+OpenSSH now provides [a new feature](http://www.gossamer-threads.com/lists/openssh/dev/54584): **AuthorizedKeysCommand** which allows us to make a script to automatically generate public keys listing for a given user at the login.

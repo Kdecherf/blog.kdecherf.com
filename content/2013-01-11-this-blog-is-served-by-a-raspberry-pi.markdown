@@ -12,9 +12,9 @@ In fact there is another server between you and the Raspberry Pi as illustrated 
 
 ![Architecture](/images/2013/01/architecture.png)
 
-Since I switched my blog to Octopress[1], the webserver is only serving static files so I don't need a lot of resources to host it. Nginx is enough.
+Since I switched my blog to [Octopress](http://octopress.org), the webserver is only serving static files so I don't need a lot of resources to host it. Nginx is enough.
 
-I made some load tests with siege[2] to know how much connections the raspberry pi and my connection can handle in this configuration (_serving small static files_).
+I made some load tests with [siege](http://www.joedog.org/siege-home/) to know how much connections the raspberry pi and my connection can handle in this configuration (_serving small static files_).
 
 
 ### HAProxy configuration
@@ -147,8 +147,3 @@ So in this configuration the Raspberry Pi can handle more than 150 rps!
 > Yes, I keep a _SPOF_ if the loadbalancer becomes unavailable but this configuration is just for the fun of self-hosting on a Raspberry Pi.
 
 _Enjoy!_
-
-References:  
-
-[1] [http://octopress.org/](http://octopress.org/)  
-[2] [http://www.joedog.org/siege-home/](http://www.joedog.org/siege-home/)

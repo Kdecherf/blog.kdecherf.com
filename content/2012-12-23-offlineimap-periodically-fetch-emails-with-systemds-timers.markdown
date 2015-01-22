@@ -22,7 +22,7 @@ ExecStart=/usr/bin/offlineimap
 
 **Note:** If you use gpg-agent to retrieve your passwords, add this line in the ``Service`` section: ``EnvironmentFile=/path/to/your/.gpg-agent-info``
 
-**Note 2:** If you use a systemd service to start gpg-agent [1], add the following line in the ``Unit`` section: ``Requires=gpg-agent.service``
+**Note 2:** If you use a systemd service to start gpg-agent[ref]There is an example available on a [previous post](/2012/11/06/mount-a-luks-partition-with-a-password-protected-gpg-encrypted-key-using-systemd/)[/ref], add the following line in the ``Unit`` section: ``Requires=gpg-agent.service``
 
 
 The timer is shorter and named `offlineimap.timer`:
@@ -42,9 +42,5 @@ After adding these files you can start the timer with ``systemctl --user start o
 You must start the service for the first run after starting the timer with ``systemctl --user start offlineimap.service`` since the timer activates the service after the **last deactivation**.
 
 **General Note:** Please be careful when you shutdown your computer. If offlineimap is running, there is a high probability that one of the databases become corrupted.
-
-**References:**
-
-[1] [http://blog.kdecherf.com/2012/11/06/mount-a-luks-partition-with-a-password-protected-gpg-encrypted-key-using-systemd/](/2012/11/06/mount-a-luks-partition-with-a-password-protected-gpg-encrypted-key-using-systemd/)
 
 _Enjoy!_

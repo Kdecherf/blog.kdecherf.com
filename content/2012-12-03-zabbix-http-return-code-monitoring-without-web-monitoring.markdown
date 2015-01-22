@@ -4,7 +4,7 @@ Category: Tips
 
 Several days ago I wanted to monitor the HTTP Return Code of an API in Zabbix. My first attempt with Scenarios in Web Monitoring was a fail.
 
-The proper way to do it is to use generated items for each Scenario [1]. But if you want to monitor a resource with only one step, you can also use the following tip:
+The proper way to do it is to use [generated items](http://www.zabbix.com/documentation/2.0/manual/web_monitoring/items#scenario_items) for each Scenario. But if you want to monitor a resource with only one step, you can also use the following tip:
 
 
 First, add a new item to your host with this key:
@@ -24,7 +24,3 @@ Then, you can create a trigger for this item with the following expression:
 _(if you want to trigger an alert when the return code is not 200)_
 
 _Enjoy!_
-
-References:
-
-[1] [http://www.zabbix.com/documentation/2.0/manual/web_monitoring/items](http://www.zabbix.com/documentation/2.0/manual/web_monitoring/items)

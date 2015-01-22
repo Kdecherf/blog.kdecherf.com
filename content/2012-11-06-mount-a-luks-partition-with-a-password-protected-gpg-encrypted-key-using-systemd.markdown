@@ -33,7 +33,7 @@ _**Note:** Don't forget to append `use-agent` in `~/.gnupg/gpg.conf` and customi
 
 ### LUKS
 
-I've found [1] a script for mounting a LUKS partition with automount. I've customized it for my own use:
+I've found [a script](http://www.saout.de/pipermail/dm-crypt/2011-January/001467.html) for mounting a LUKS partition with automount. I've customized it for my own use:
 
 ``` bash
 #!/bin/sh
@@ -125,7 +125,3 @@ _**Note:**  I specify xsession to only start after `luks.service` and it explici
 Now, I execute `systemctl --user start xsession.service` and it will start GPG Agent and the LUKS mount script for me (_and X, of course_).
 
 _Enjoy it!_
-
-**References**
-
-[1] [http://www.saout.de/pipermail/dm-crypt/2011-January/001467.html](http://www.saout.de/pipermail/dm-crypt/2011-January/001467.html)
