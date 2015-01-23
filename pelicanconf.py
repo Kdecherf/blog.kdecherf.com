@@ -13,6 +13,8 @@ EMAIL = u'kevin@kdecherf.com'
 DEFAULT_GRV_URL = u'http://www.example.com/default.jpg'
 GRV_SIZE = 120
 
+ASSETS_VERSION = "v20150123"
+
 # construct gravatar URL
 GRV_URL = "http://www.gravatar.com/avatar/" + hashlib.md5(EMAIL.lower()).hexdigest() + "?"
 GRV_URL += urllib.urlencode({'s':str(GRV_SIZE)})
