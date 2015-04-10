@@ -48,33 +48,32 @@ The solution is to split all the certificates from the file and use `openssl x50
 Someone already done a [oneliner to split certificates from a file](http://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall/4454754#4454754) using `awk`, we'll use it.
 
 ``` bash
-#!/bin/bash
+#!/bin/sh
 
-if [ ! -f $1 ]; then
+if [[ ! -f "$1" ]]; then
    echo "$1 is not a file or does not exist"
    exit 1
 fi
 
-openssl x509 -in $1 -noout 2>/dev/null
-if [ $? -gt 0 ]; then
+openssl x509 -in "$1" -noout 2>/dev/null
+if [[ $? -gt 0 ]]; then
    echo "$1 is not a certificate"
    exit 1
 fi
 
 tmpdir=$(mktemp -d)
 
-awk "{print > \"$tmpdir/cert\" (1+n) \".pem\"} /-----END CERTIFICATE-----/ {n++}" $1
+awk "{print > \"$tmpdir/cert\" (1+n) \".pem\"} /-----END CERTIFICATE-----/ {n++}" "$1"
 
 j=0
 
-for i in $(ls $tmpdir/cert*.pem) ; do
+for i in "$tmpdir"/cert*.pem ; do
    echo -n "$j: "
-   openssl x509 -in $i -noout -subject -issuer
+   openssl x509 -in "$i" -noout -subject -issuer
    j=$[$j+1]
 done
 
-rm $tmpdir/cert*.pem && rmdir $tmpdir
-
+rm "$tmpdir"/cert*.pem && rmdir "$tmpdir"
 ```
 
 Here is the output for the certificate file from _www.google.com_[ref]I've retrieved their certificate by using `openssl s_client` but by default it shows only the first certificate. Use the option `-showcerts` to see the complete chain[/ref] (_my script was saved as `ssl_chain.sh`_):
@@ -88,6 +87,6 @@ issuer= /C=US/O=GeoTrust Inc./CN=GeoTrust Global CA
 issuer= /C=US/O=Equifax/OU=Equifax Secure Certificate Authority
 ```
 
-Bonus: if you want to check the validity of the chain at the same time, add `openssl verify -untrusted $1 $1` at the end of your script.
+Bonus: if you want to check the validity of the chain at the same time, add `openssl verify -untrusted "${1}" "${1}"` at the end of your script.
 
 _Enjoy!_
