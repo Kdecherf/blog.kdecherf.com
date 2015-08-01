@@ -41,14 +41,24 @@ PAGE_SAVE_AS = '{slug}/index.html'
 INDEX_SAVE_AS = 'blog/index.html'
 INDEX_URL = 'blog/'
 
+CATEGORY_SAVE_AS = 'category/{slug}/index.html'
+CATEGORY_URL = 'category/{slug}/'
+
+TAG_SAVE_AS = 'tag/{slug}/index.html'
+TAG_URL = 'tag/{slug}/'
+
+AUTHOR_SAVE_AS = ''
 AUTHORS_SAVE_AS = ''
+TAGS_SAVE_AS = ''
+CATEGORIES_SAVE_AS = ''
+ARCHIVES_SAVE_AS = ''
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 0
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = True
 
