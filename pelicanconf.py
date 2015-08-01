@@ -19,7 +19,7 @@ ASSETS_VERSION = "v20150123"
 GRV_URL = "//www.gravatar.com/avatar/" + hashlib.md5(EMAIL.lower()).hexdigest() + "?"
 GRV_URL += urllib.urlencode({'s':str(GRV_SIZE)})
 
-THEME = 'themes/cleanelican'
+THEME = 'themes/Nicholas'
 
 MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra','fenced_code','codehilite']
 
@@ -49,6 +49,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 DEFAULT_PAGINATION = 5
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = True
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
