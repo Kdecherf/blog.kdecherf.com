@@ -9,4 +9,4 @@
 	url = https://github.com/getpelican/pelican-plugins
 [submodule "themes/Nicholas"]
 	path = themes/Nicholas
-	url = github:Kdecherf/Nicholas.git
+	url = https://github.com/Kdecherf/Nicholas.git
