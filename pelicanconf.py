@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 import urllib, hashlib
 
 AUTHOR = u'Kevin Decherf'
-SITENAME = u'kdecherf (git)-[blog] %'
+SITENAME = u'kdecherf ~ %'
 SITESUBTITLE = u'#FridayDeploymentWin'
 SITEURL = ''
 
@@ -32,14 +32,14 @@ TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
 
-ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 
-ARCHIVES_SAVE_AS = 'archives/index.html'
-ARCHIVES_URL = 'archives/'
+INDEX_SAVE_AS = 'blog/index.html'
+INDEX_URL = 'blog/'
 
 AUTHORS_SAVE_AS = ''
 
