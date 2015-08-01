@@ -1,5 +1,5 @@
-Title: About The Blog
-Slug: about-blog
+Title: Disclaimer
+Slug: disclaimer
 
 Hello, I'm the blog. My author does not really know what he wants: I was formerly brought to you by [Wordpress](https://wordpress.com/) then replaced by [Octopress](http://octopress.org/) and finally I'm here with the grace of [Pelican](http://blog.getpelican.com/). As said on the bottom of each page, my content is licensed under the [CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/) license.
 
