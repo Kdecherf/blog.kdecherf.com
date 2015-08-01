@@ -62,5 +62,14 @@ DEFAULT_PAGINATION = 0
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = True
 
+STATIC_PATHS = [
+        'images',
+        'misc/kdecherf.asc'
+]
+
+EXTRA_PATH_METADATA = {
+        'misc/kdecherf.asc': {'path': 'kdecherf.asc'}
+}
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
