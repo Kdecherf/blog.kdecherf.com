@@ -1,5 +1,6 @@
-Title: About Me
-Slug: about
+Title: Kevin Decherf
+save_as: index.html
+Hide: True
 
 My name is Kevin Decherf, I am a system administrator and developer living in Nantes, France. Computers are my passion since the high school when I started as a web developer. Then I discovered the Microsoft's universe as a student partner before becoming a Linux trainer and system administrator. Knoppix, Mandrake, Gentoo and others remind me funny memories of the old time but now I contribute to [Exherbo](http://exherbo.org), a great and fresh source-based distribution. I've co-founded [Clever Cloud](https://www.clever-cloud.com), the french awesome cloud platform, where I am the production manager. The use of a wide range of languages and technologies is my everyday challenge.
 
