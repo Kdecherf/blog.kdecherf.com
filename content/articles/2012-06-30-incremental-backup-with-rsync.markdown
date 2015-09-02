@@ -1,6 +1,7 @@
 Title: Incremental backup with rsync
 Date: 2012-06-30 16:03 
 Category: Articles 
+Tags: rsync
 
 Hello World,
 

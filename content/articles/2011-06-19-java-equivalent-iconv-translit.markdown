@@ -1,6 +1,7 @@
 Date: 2011-06-19 19:47:34
 Title: Java : un équivalent à Iconv//TRANSLIT
 Category: Tips
+Tags: java
 Slug: java-equivalent-iconv-translit
 
 Il y a deux ans j'avais publié un petit billet sur le [nettoyage d'accents en PHP à l'aide d'Iconv](/blog/2009/04/14/php-nettoyer-des-accents-simplement-avec-iconv/). J'ai eu besoin de faire la même chose en Java récemment, seulement le mode //TRANSLIT n'existe pas.

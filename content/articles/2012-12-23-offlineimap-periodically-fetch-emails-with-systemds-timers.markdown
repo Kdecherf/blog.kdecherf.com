@@ -1,6 +1,7 @@
 Title: OfflineIMAP: Periodically fetch emails with systemd's timers
 Date: 2012-12-23 17:25
 Category: Tips
+Tags: offlineimap, systemd
 
 When I switched from Gmail web interface to Mutt+OfflineIMAP, I used the ``autorefresh`` feature of OfflineIMAP.
 

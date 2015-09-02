@@ -1,6 +1,7 @@
 Date: 2011-06-02 17:35:07
 Title: Java/Jersey : une API REST Cross-Domain sans JSONP
 Category: Articles
+Tags: java
 Slug: java-jersey-une-api-rest-cross-domain-sans-jsonp
 
 An english version of this post is available [here](/blog/2011/06/19/java-jersey-a-cors-compliant-rest-api/).

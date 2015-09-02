@@ -1,6 +1,7 @@
 Title: Goodbye Webcam
 Date: 2014-10-30 15:03
 Category: Tips
+Tags: linux, udev
 
 I have suspected my webcam to have an electrical default for a while. As a result I used to have plenty of USB connect/disconnect/error events in the kernel journal like the following lines:
 

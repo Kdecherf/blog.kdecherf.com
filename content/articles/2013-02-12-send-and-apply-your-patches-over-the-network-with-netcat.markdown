@@ -1,6 +1,7 @@
 Title: Send and apply your patches over the network with netcat
 Date: 2013-02-12 14:20
 Category: Tips 
+Tags: git
 
 For some of my works and mainly for testing them, I use virtual machines and containers (_that will be subject to another post_). 
 Since I used to make the development outside the testing environnement, I need to quickly and easily transfer patches and test them.

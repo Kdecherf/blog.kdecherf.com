@@ -1,6 +1,7 @@
 Date: 2011-01-07 14:39:06
 Title: Linux & EMP NS Connection
 Category: Tips
+Tags: linux
 
 En ce début d'année, j'ai été amené à donner une formation de quelques jours à une promotion d'une centaine de personnes. J'avais à ma disposition des vidéoprojecteurs en réseau (de marque Epson), l'utilisation se faisant via un outil disponible uniquement sous Mac et Windows : EMP NS Connection.
 

@@ -1,6 +1,7 @@
 Date: 2009-12-31 14:31:15
 Title: Windows 7 : Utiliser les librairies pour faire du backup
 Category: Tips
+Tags: windows
 
 Si vous êtes adepte du backup mais que vous gardez des données en dehors de votre profil utilisateur, vous avez déjà peut-être remarqué que les deux ne vont pas ensemble. Pour y remédier, voici une petite astuce issue du livre [_Windows 7 Inside Out_](http://www.microsoft.com/learning/en/us/book.aspx?ID=13487) et [relayée](http://technet.microsoft.com/fr-fr/magazine/ee851686%28en-us%29.aspx) par le magazine TechNet.
 

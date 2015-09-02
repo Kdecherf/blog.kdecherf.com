@@ -1,6 +1,7 @@
 Date: 2011-09-10 13:29:47
 Title: Iftop : utiliser l'interface par défaut
 Category: Tips
+Tags: linux
 Slug: iftop-utiliser-interface-par-defaut
 
 Je ne poste pas souvent ces temps-ci, mais en ce début de week-end je vous offre une petite astuce pour _iftop_, l'utilitaire qui permet d'afficher en détail le traffic entrant et sortant d'une interface réseau.

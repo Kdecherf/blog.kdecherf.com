@@ -1,6 +1,7 @@
 Date: 2015-04-10 11:08
 Title: Show the certificate chain of a local X509 file
 Category: Tips
+Tags: openssl
 
 When I play with X509 certificates I check that the certificate chain in the file is always complete and valid.
 

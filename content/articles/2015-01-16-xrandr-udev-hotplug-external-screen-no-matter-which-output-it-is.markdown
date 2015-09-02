@@ -1,6 +1,7 @@
 Date: 2015-01-16 14:13
 Title: xrandr+udev: hotplug an external screen no matter which output it is
 Category: Tips
+Tags: xrandr, udev, linux
 
 Hey world this is my first post of the year, I hope I will break my record of 2 posts for the last year.
 

@@ -1,6 +1,7 @@
 Title: Mount a LUKS partition with a password-protected GPG-encrypted key using systemd
 Date: 2012-11-06 22:12
 Category: Articles
+Tags: luks, systemd, linux
 
 I recently took a good resolution for my laptop: increase the security of some sensitive data using LUKS.
 Because I'm using a password-protected gpg-encrypted key, I can't use any automatic mount tool like dracut or automount so I use a bunch of systemd service files.

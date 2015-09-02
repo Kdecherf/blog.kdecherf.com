@@ -1,6 +1,7 @@
 Title: Multithreaded Python Simple HTTP Server
 Date: 2012-07-29 15:42
 Category: Tips
+Tags: python
 
 Hey geeks, did you already have this conversation?
 

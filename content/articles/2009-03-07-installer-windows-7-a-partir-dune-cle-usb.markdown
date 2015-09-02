@@ -1,6 +1,7 @@
 Date: 2009-03-07 01:44:57
 Title: Installer Windows 7 à partir d'une clé USB
 Category: Tips
+Tags: windows
 
 Windows 7 rime avec netbook. Si si, le monsieur il l'a dit ! Par contre, lecteur DVD rime moins avec netbook. Pas de panique ! Outre la solution de boot par le réseau (PXE) vous pouvez également installer Windows 7 depuis une clé USB. Et même que c'est simple :)
 

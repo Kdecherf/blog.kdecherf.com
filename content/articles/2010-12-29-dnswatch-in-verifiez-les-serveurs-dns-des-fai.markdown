@@ -1,6 +1,7 @@
 Date: 2010-12-29 12:32:04
 Title: DNSWatch.in : vérifiez les serveurs DNS des FAI
 Category: Articles
+Tags: dns
 Slug: dnswatch-in-verifiez-les-serveurs-dns-des-fai
 
 Il y a quelques semaines j'avais eu la mauvaise expérience (et vous aussi, au moins une fois) d'avoir une propagation DNS lente en changeant un enregistrement : certains FAI ne distribuaient pas la bonne réponse. J'avais eu alors l'envie de savoir QUI ne répondait pas correctement, à n'importe quel moment. Malheureusement le boulot m'a occupé jusqu'à perdre de vue ce petit besoin ... jusqu'à lundi.

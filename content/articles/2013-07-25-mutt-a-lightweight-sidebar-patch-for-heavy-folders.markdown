@@ -1,6 +1,7 @@
 Title: Mutt: a lightweight sidebar patch for heavy folders
 Date: 2013-07-25 20:01
 Category: Tips
+Tags: mutt
 
 <div class="alert-info">
   <strong>UPDATE 2014/06/07:</strong> patched the patch for Mutt 1.5.23

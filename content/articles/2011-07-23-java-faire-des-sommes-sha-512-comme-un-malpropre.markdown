@@ -1,6 +1,7 @@
 Date: 2011-07-23 22:57:16
 Title: Java : faire des sommes SHA-512 comme un malpropre
 Category: Tips
+Tags: java
 
 Ou comment perdre plusieurs heures sur un problème bien planqué et très con. Dans le cadre d'un projet je devais stocker la somme SHA-512 de chaînes de caractères. Je suis parti à la recherche d'un bout de code pour faire ce que je voulais et j'ai trouvé le code suivant :
 

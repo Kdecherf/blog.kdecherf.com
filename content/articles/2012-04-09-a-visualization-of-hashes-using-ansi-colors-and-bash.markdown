@@ -1,6 +1,7 @@
 Title: A visualization of hashes using ANSI colors and bash
 Date: 2012-04-09 17:27
 Category: Articles
+Tags: bash
 
 Two weeks ago, [@waxzce](https://twitter.com/waxzce) found a [tool](https://github.com/bengl/node-hashcolors) to colorize hashes using ANSI colors and Node.js.
 

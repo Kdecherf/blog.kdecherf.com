@@ -1,6 +1,7 @@
 Title: Zabbix: Add items in the host pop up menu
 Date: 2013-03-26 20:39
 Category: Tips
+Tags: zabbix
 
 At Clever Cloud we use Zabbix to monitor our platform. When I see a problem I would like to be able to go to the host's settings or graphs from its pop up menu.  
 Unfortunately, this feature is not available on the frontend.

@@ -1,6 +1,7 @@
 Date: 2010-07-24 15:16:07
 Title: Restaurer un MBR Windows depuis Linux
 Category: Tips
+Tags: windows, linux
 
 Voilà maintenant 3 mois que je n'avais pas posté sur mon blog, je continue sur la lignée du dernier billet en vous proposant une nouvelle astuce tirée par les cheveux (_mais plus simple quand même_). Celle-ci permet de restaurer la zone d'amorçage (_Master Boot Record_) utilisée par Windows ... depuis Linux.
 

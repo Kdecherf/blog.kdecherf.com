@@ -1,6 +1,7 @@
 Title: ElasticSearch: Human readable search with cURL and Python
 Date: 2013-02-12 14:25
 Category: Tips
+Tags: elasticsearch
 
 At Clever Cloud, we use LogStash and ElasticSearch to index and make search on your logs. Since geeks are in love with command-line stuff, I made a little script to prettify the output of ES searches according to the LogStash fields.
 

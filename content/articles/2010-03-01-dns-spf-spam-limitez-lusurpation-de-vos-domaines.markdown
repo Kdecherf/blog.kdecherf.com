@@ -1,6 +1,7 @@
 Date: 2010-03-01 02:10:53
 Title: DNS/SPF - Spam : limitez l'usurpation de vos domaines
 Category: Articles
+Tags: dns
 Slug: dns-spf-spam-limitez-lusurpation-de-vos-domaines
 
 De nos jours, les pirates n'hésitent pas à usurper des noms de domaine pour envoyer du spam. Outre le fait d'embêter les filtres cela amène parfois à un blocage pur et simple du domaine incriminé, ce qui n'est pas négligeable dans un contexte professionnel : altération et blocage des communications ... Une norme expérimentale existe depuis 2006 pour limiter cet impact : **Sender Policy Framework** (SPF), _[RFC 4408](http://tools.ietf.org/html/rfc4408)_.
