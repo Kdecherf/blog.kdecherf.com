@@ -4,6 +4,10 @@ Category: Tips
 Tags: mutt
 
 <div class="alert-info">
+  <strong>UPDATE 2015/10/01:</strong> patched for Mutt 1.5.24, removed 1.5.21 and moved the stuff to a GitHub repository
+</div>
+
+<div class="alert-info">
   <strong>UPDATE 2014/06/07:</strong> patched the patch for Mutt 1.5.23
 </div>
 
@@ -73,7 +77,7 @@ diff -u mutt1/mutt-1.5.21/init.h mutt2/mutt-1.5.21/init.h
    ** Format string for the sidebar. The sequences `%N', `%F' and `%S'
 ```
 
-My patches are available on Github and work with [Mutt 1.5.21](https://gist.github.com/Kdecherf/674307aac44997e9a853) or [Mutt 1.5.23](https://gist.github.com/Kdecherf/0ca09fc730033d4bf516).
+My patches are available for version 1.5.23 and later on [Github](https://github.com/Kdecherf/mutt-lightweight-sidebar).
 
 Now my sidebar doesn't hang and lets me play with my 492,885 emails.
 
