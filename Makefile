@@ -27,6 +27,11 @@ DROPBOX_DIR=~/Dropbox/Public/
 
 GITHUB_PAGES_BRANCH=gh-pages
 
+PAGESDIR=$(INPUTDIR)/pages
+DATE := $(shell date +'%Y-%m-%d %H:%M:%S')
+SLUG := $(shell echo '$(shell date +'%Y-%m-%d')-${NAME}' | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)
+EXT ?= markdown
+
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
 	PELICANOPTS += -D
@@ -53,6 +58,20 @@ help:
 	@echo '                                                                       '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
 	@echo '                                                                       '
+
+newpost:
+ifdef NAME
+	echo "Title: $(NAME)" >  $(INPUTDIR)/articles/$(SLUG).$(EXT)
+	echo "Category:" >> $(INPUTDIR)/articles/$(SLUG).$(EXT)
+	echo "Tags:" >> $(INPUTDIR)/articles/$(SLUG).$(EXT)
+	echo "Date: $(DATE)" >> $(INPUTDIR)/articles/$(SLUG).$(EXT)
+	echo ""              >> $(INPUTDIR)/articles/$(SLUG).$(EXT)
+	echo ""              >> $(INPUTDIR)/articles/$(SLUG).$(EXT)
+	$(EDITOR) $(INPUTDIR)/articles/$(SLUG).$(EXT)
+else
+	@echo 'Variable NAME is not defined.'
+	@echo 'Do make newpost NAME='"'"'Post Name'"'"
+endif
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
