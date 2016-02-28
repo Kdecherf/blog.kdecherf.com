@@ -21,7 +21,7 @@ GRV_URL += urllib.urlencode({'s':str(GRV_SIZE)})
 
 THEME = 'themes/Nicholas'
 
-MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra','fenced_code','codehilite']
+MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra','fenced_code']
 
 PLUGIN_PATHS = ['plugins/']
 PLUGINS = ['simple_footnotes']
