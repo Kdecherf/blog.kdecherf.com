@@ -18,7 +18,7 @@ This website tries to stay as light as possible but it still features third-part
  * Google Analytics for generating anonymous statistics
  * Disqus for providing a commenting system
 
-These tools may come with their cookies for their own use but you remain free to disable cookies or whole services as you will.
+These tools may come with their cookies for their own use but you remain free to disable cookies or whole services as you want.
 
 ### Legal notice
 
