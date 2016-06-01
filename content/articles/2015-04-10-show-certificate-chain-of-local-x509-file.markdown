@@ -3,6 +3,10 @@ Title: Show the certificate chain of a local X509 file
 Category: Tips
 Tags: openssl
 
+<div class="alert-info">
+  <strong>UPDATE 2016/06/01:</strong> Improving the script by using pipe inside awk, thanks to <a href="#comment-2650059724">@ilatypov</a>.
+</div>
+
 When I play with X509 certificates I check that the certificate chain in the file is always complete and valid.
 
 With `openssl s_client` we can see the chain and check its validity:
@@ -46,48 +50,57 @@ It says OK, cool but it's not very verbose: I don't see the chain like `openssl 
 
 The solution is to split all the certificates from the file and use `openssl x509` on each of them.
 
-Someone already done a [oneliner to split certificates from a file](http://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall/4454754#4454754) using `awk`, we'll use it.
+Someone already done a [oneliner to split certificates from a file](http://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall/4454754#4454754) using `awk`. I initially based my script on it but [@ilatypov proposed a solution in comments](#comment-2650059724) that is far better as it does not rely on temporary files. Here is the updated script:
 
 ``` bash
-#!/bin/sh
+#!/bin/bash
 
-if [[ ! -f "$1" ]]; then
-   echo "$1 is not a file or does not exist"
-   exit 1
+chain_pem="${1}"
+
+if [[ ! -f "${chain_pem}" ]]; then
+    echo "Usage: $0 BASE64_CERTIFICATE_CHAIN_FILE" >&2
+    exit 1
 fi
 
-openssl x509 -in "$1" -noout 2>/dev/null
-if [[ $? -gt 0 ]]; then
-   echo "$1 is not a certificate"
-   exit 1
+if ! openssl x509 -in "${chain_pem}" -noout 2>/dev/null ; then
+    echo "$1 is not a certificate" >&2
+    exit 1
 fi
 
-tmpdir=$(mktemp -d)
+awk -F'\n' '
+        BEGIN {
+            showcert = "openssl x509 -noout -subject -issuer"
+        }
 
-awk "{print > \"$tmpdir/cert\" (1+n) \".pem\"} /-----END CERTIFICATE-----/ {n++}" "$1"
+        /-----BEGIN CERTIFICATE-----/ {
+            printf "%2d: ", ind
+        }
 
-j=0
+        {
+            printf $0"\n" | showcert
+        }
 
-for i in "$tmpdir"/cert*.pem ; do
-   echo -n "$j: "
-   openssl x509 -in "$i" -noout -subject -issuer
-   j=$[$j+1]
-done
+        /-----END CERTIFICATE-----/ {
+            close(showcert)
+            ind ++
+        }
+    ' "${chain_pem}"
 
-rm "$tmpdir"/cert*.pem && rmdir "$tmpdir"
+echo
+openssl verify -untrusted "${chain_pem}" "${chain_pem}"
 ```
 
 Here is the output for the certificate file from _www.google.com_[ref]I've retrieved their certificate by using `openssl s_client` but by default it shows only the first certificate. Use the option `-showcerts` to see the complete chain[/ref] (_my script was saved as `ssl_chain.sh`_):
 ```
 ~ % ssl_chain.sh google.crt
-0: subject= /C=US/ST=California/L=Mountain View/O=Google Inc/CN=www.google.com
+ 0: subject= /C=US/ST=California/L=Mountain View/O=Google Inc/CN=www.google.com
 issuer= /C=US/O=Google Inc/CN=Google Internet Authority G2
-1: subject= /C=US/O=Google Inc/CN=Google Internet Authority G2
+ 1: subject= /C=US/O=Google Inc/CN=Google Internet Authority G2
 issuer= /C=US/O=GeoTrust Inc./CN=GeoTrust Global CA
-2: subject= /C=US/O=GeoTrust Inc./CN=GeoTrust Global CA
+ 2: subject= /C=US/O=GeoTrust Inc./CN=GeoTrust Global CA
 issuer= /C=US/O=Equifax/OU=Equifax Secure Certificate Authority
-```
 
-Bonus: if you want to check the validity of the chain at the same time, add `openssl verify -untrusted "${1}" "${1}"` at the end of your script.
+google.crt: OK
+```
 
 _Enjoy!_
