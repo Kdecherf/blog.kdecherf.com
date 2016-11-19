@@ -16,8 +16,8 @@ GRV_SIZE = 120
 ASSETS_VERSION = "v20150123"
 
 # construct gravatar URL
-GRV_URL = "//www.gravatar.com/avatar/" + hashlib.md5(EMAIL.lower()).hexdigest() + "?"
-GRV_URL += urllib.urlencode({'s':str(GRV_SIZE)})
+GRV_URL = "//www.gravatar.com/avatar/" + hashlib.md5(EMAIL.lower().encode('utf-8')).hexdigest() + "?"
+GRV_URL += urllib.parse.urlencode({'s':str(GRV_SIZE)})
 
 THEME = 'themes/Nicholas'
 
