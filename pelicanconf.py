@@ -24,7 +24,7 @@ THEME = 'themes/Nicholas'
 MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra','fenced_code']
 
 PLUGIN_PATHS = ['plugins/']
-PLUGINS = ['simple_footnotes']
+PLUGINS = ['simple_footnotes', 'tag_cloud']
 
 PATH = 'content'
 
@@ -47,9 +47,11 @@ CATEGORY_URL = 'category/{slug}/'
 TAG_SAVE_AS = 'tag/{slug}/index.html'
 TAG_URL = 'tag/{slug}/'
 
+TAGS_URL = 'tags/'
+
 AUTHOR_SAVE_AS = ''
 AUTHORS_SAVE_AS = ''
-TAGS_SAVE_AS = ''
+TAGS_SAVE_AS = 'tags/index.html'
 CATEGORIES_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
 
