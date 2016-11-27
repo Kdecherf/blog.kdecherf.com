@@ -13,24 +13,23 @@ This can happen, fd exhaustion is a common issue so let's check the current limi
 
 The error returned by `journalctl` can't be a fd exhaustion, so what is it? Let's use `strace` to find more verbose errors, as usual.
 
-```
-~ # strace -f -tt journalctl -fn
-08:54:40.167094 execve("/usr/host/bin/journalctl", ["journalctl", "-fn"], [/* 26 vars */]) = 0
-08:54:40.169903 brk(0)                  = 0x557694f9c000
-08:54:40.170508 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa24c12e000
-08:54:40.171099 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+``` strace
+~ # strace -f journalctl -fn
+execve("/usr/host/bin/journalctl", ["journalctl", "-fn"], [/* 26 vars */]) = 0
+brk(0)                  = 0x557694f9c000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa24c12e000
+access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
 [...]
-08:54:40.245144 openat(AT_FDCWD, "/run/log/journal/c961e28ba6f74af6b63ba50efdb053ba", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
-08:54:40.245275 getdents(4, /* 3 entries */, 32768) = 88
-08:54:40.245386 open("/run/log/journal/c961e28ba6f74af6b63ba50efdb053ba/system.journal", O_RDONLY|O_CLOEXEC) = 5
+openat(AT_FDCWD, "/run/log/journal/c961e28ba6f74af6b63ba50efdb053ba", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
+getdents(4, /* 3 entries */, 32768) = 88
+open("/run/log/journal/c961e28ba6f74af6b63ba50efdb053ba/system.journal", O_RDONLY|O_CLOEXEC) = 5
 [...]
-08:54:40.252050 inotify_init1(O_NONBLOCK|O_CLOEXEC) = -1 EMFILE (Too many open files)
+inotify_init1(O_NONBLOCK|O_CLOEXEC) = -1 EMFILE (Too many open files)
 [...]
-08:54:40.259287 writev(2, [{"Failed to get journal fd: Too ma"..., 45}, {"\n", 1}], 2Failed to get journal fd: Too many open files
-      ) = 46
-08:54:40.260529 close(5)                = 0
-08:54:40.261011 exit_group(1)           = ?
-08:54:40.261274 +++ exited with 1 +++
+writev(2, [{"Failed to get journal fd: Too ma"..., 45}, {"\n", 1}], 2) = 46
+close(5)                = 0
+exit_group(1)           = ?
++++ exited with 1 +++
 ```
 
 Hm interesting, it successfully opened a file but the syscall to `inotify_init1` returned a `EMFILE` error. Let's check another software which uses inotify: `tail -f`.
