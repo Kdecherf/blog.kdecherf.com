@@ -3,3 +3,4 @@
 .*.swp
 /pelicanconf.pyc
 /publishconf.pyc
+/__pycache__
