@@ -1,6 +1,6 @@
 Title: Kevin Decherf
 save_as: index.html
-Hide: True
+Status: hidden
 
 I am a system engineer and developer living in France. Computers are my passion since high school when I started developing websites on my spare time. Following the exploration of new languages like _C#_ I joined the Microsoft's community as a student partner for few years. I truly discovered the Linux world at the same time and sharing the two worlds was an interesting experiment. I eventually focused on the latter as a trainer and full-time system engineer. The use of a wide range of languages and technologies is my everyday challenge, so are production and monitoring topics in general.
 
