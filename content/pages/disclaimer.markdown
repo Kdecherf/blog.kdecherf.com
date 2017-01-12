@@ -11,15 +11,6 @@ You can find the complete sources on [its GitHub repository](https://github.com/
 
 If you have any suggestion, question or comment about this website or its content you can contact me by email, on IRC or also on Twitter by using contact details found on the homepage.
 
-### Third-party tools
-
-This website tries to stay as light as possible but it still features third-party tools:
-
- * Google Analytics for generating anonymous statistics
- * Disqus for providing a commenting system
-
-These tools may come with their cookies for their own use but you remain free to disable cookies or whole services as you want.
-
 ### Legal notice
 
 This personal website is hosted on a self-managed server provided by:  

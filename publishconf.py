@@ -16,8 +16,3 @@ RELATIVE_URLS = False
 FEED_ALL_ATOM = 'atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
-
-# Following items are often useful when publishing
-
-DISQUS_SITENAME = 'kdecherf-blog'
-GOOGLE_ANALYTICS = 'UA-3230664-5'
