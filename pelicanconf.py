@@ -10,14 +10,8 @@ SITEURL = ''
 
 # Conf for pulling Gravatar Image
 EMAIL = u'kevin@kdecherf.com'
-DEFAULT_GRV_URL = u'http://www.example.com/default.jpg'
-GRV_SIZE = 120
 
 ASSETS_VERSION = "v20150123"
-
-# construct gravatar URL
-GRV_URL = "//www.gravatar.com/avatar/" + hashlib.md5(EMAIL.lower().encode('utf-8')).hexdigest() + "?"
-GRV_URL += urllib.parse.urlencode({'s':str(GRV_SIZE)})
 
 THEME = 'themes/Nicholas'
 
