@@ -38,11 +38,11 @@ CATEGORY_URL = '{slug}/'
 TAG_SAVE_AS = 'tag/{slug}/index.html'
 TAG_URL = 'tag/{slug}/'
 
+TAGS_SAVE_AS = 'tags/index.html'
 TAGS_URL = 'tags/'
 
 AUTHOR_SAVE_AS = ''
 AUTHORS_SAVE_AS = ''
-TAGS_SAVE_AS = 'tags/index.html'
 CATEGORIES_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
 INDEX_SAVE_AS = ''
@@ -59,7 +59,9 @@ DISPLAY_PAGES_ON_MENU = True
 
 STATIC_PATHS = [
         'images',
-        'misc/kdecherf.asc'
+        'misc/kdecherf.asc',
+        'lekdecherf',
+        'blog',
 ]
 
 EXTRA_PATH_METADATA = {
