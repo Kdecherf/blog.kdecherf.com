@@ -4,7 +4,7 @@ Category: Blog
 Tags: java
 Slug: java-jersey-a-cors-compliant-rest-api
 
-Une traduction française est disponible [ici](/blog/2011/06/02/java-jersey-une-api-rest-cross-domain-sans-jsonp/).
+Une traduction française est disponible [ici]({filename}/blog/2011-06-02-java-jersey-une-api-rest-cross-domain-sans-jsonp/post.markdown).
 
 <div class="alert-info">
   <strong>UPDATE 2012/12/23:</strong> fixing typo on line 4, <code>ResponseBuilder</code> has no <code>ok()</code> method (<em>Thanks <a href="#comment-658615663">Frankie Frank</a></em>).

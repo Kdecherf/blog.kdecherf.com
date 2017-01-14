@@ -23,7 +23,7 @@ ExecStart=/usr/bin/offlineimap
 
 **Note:** If you use gpg-agent to retrieve your passwords, add this line in the ``Service`` section: ``EnvironmentFile=/path/to/your/.gpg-agent-info``
 
-**Note 2:** If you use a systemd service to start gpg-agent[ref]There is an example available on a [previous post](/blog/2012/11/06/mount-a-luks-partition-with-a-password-protected-gpg-encrypted-key-using-systemd/)[/ref], add the following line in the ``Unit`` section: ``Requires=gpg-agent.service``
+**Note 2:** If you use a systemd service to start gpg-agent[ref]There is an example available on a [previous post]({filename}/blog/2012-11-06-mount-a-luks-partition-with-a-password-protected-gpg-encrypted-key-using-systemd/post.markdown)[/ref], add the following line in the ``Unit`` section: ``Requires=gpg-agent.service``
 
 
 The timer is shorter and named `offlineimap.timer`:

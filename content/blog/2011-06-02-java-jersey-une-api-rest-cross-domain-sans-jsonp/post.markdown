@@ -4,7 +4,7 @@ Category: Blog
 Tags: java
 Slug: java-jersey-une-api-rest-cross-domain-sans-jsonp
 
-An english version of this post is available [here](/blog/2011/06/19/java-jersey-a-cors-compliant-rest-api/).
+An english version of this post is available [here]({filename}/blog/2011-06-19-java-jersey-a-cors-compliant-rest-api/post.markdown).
 
 <div class="alert-info">
   <strong>UPDATE 2012/12/23:</strong> Correction d'une erreur d'étourderie sur le premier bloc ligne 4, l'objet <code>ResponseBuilder</code> n'a pas de méthode <code>ok()</code>.

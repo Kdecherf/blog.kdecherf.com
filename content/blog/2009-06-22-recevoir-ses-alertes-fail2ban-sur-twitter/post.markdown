@@ -7,8 +7,8 @@ Dans la série des articles inutiles mais utiles, voici comment recevoir ses ale
 
 **Prérequis :**
 	
-  * [Twitter + Curl : poster le même statut à la suite](/blog/2009/06/16/twitter-curl-poster-le-meme-statut-a-la-suite/)
-  * [Fail2ban : notifier chaque connexion SSH](/blog/2009/06/15/fail2ban-notifier-chaque-connexion-ssh/)
+  * [Twitter + Curl : poster le même statut à la suite]({filename}/blog/2009-06-16-twitter-curl-poster-le-meme-statut-a-la-suite/post.markdown)
+  * [Fail2ban : notifier chaque connexion SSH]({filename}/blog/2009-06-15-fail2ban-notifier-chaque-connexion-ssh/post.markdown)
 
 **Notifier les bannissements :**
 
