@@ -15,10 +15,10 @@ ASSETS_VERSION = "v20150123"
 
 THEME = 'themes/Nicholas'
 
-MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra','fenced_code']
+MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra','fenced_code', 'footnotes']
 
 PLUGIN_PATHS = ['plugins/']
-PLUGINS = ['simple_footnotes', 'tag_cloud']
+PLUGINS = ['tag_cloud']
 
 PATH = 'content'
 

@@ -90,7 +90,7 @@ echo
 openssl verify -untrusted "${chain_pem}" "${chain_pem}"
 ```
 
-Here is the output for the certificate file from _www.google.com_[ref]I've retrieved their certificate by using `openssl s_client` but by default it shows only the first certificate. Use the option `-showcerts` to see the complete chain[/ref] (_my script was saved as `ssl_chain.sh`_):
+Here is the output for the certificate file from _www.google.com_[^1] (_my script was saved as `ssl_chain.sh`_):
 ```
 ~ % ssl_chain.sh google.crt
  0: subject= /C=US/ST=California/L=Mountain View/O=Google Inc/CN=www.google.com
@@ -104,3 +104,5 @@ google.crt: OK
 ```
 
 _Enjoy!_
+
+[^1]: I've retrieved their certificate by using `openssl s_client` but by default it shows only the first certificate. Use the option `-showcerts` to see the complete chain

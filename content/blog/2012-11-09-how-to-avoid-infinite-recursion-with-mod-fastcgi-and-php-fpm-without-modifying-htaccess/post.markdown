@@ -9,7 +9,7 @@ Do you know this error?
 the Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary
 ```
 
-It’s really frustrating since the usual fix is to add a `RewriteCond` rule in the .htaccess[ref]_«Making mod\_fastcgi work with mod\_rewrite»_ [http://blog.grahampoulter.com/2012/02/maximum-wordpress-performance-on-ec2.html](http://blog.grahampoulter.com/2012/02/maximum-wordpress-performance-on-ec2.html) [/ref]. However, it's not feasible when you're a hosting platform.
+It’s really frustrating since the usual fix is to add a `RewriteCond` rule in the .htaccess[^1]. However, it's not feasible when you're a hosting platform.
 
 My goal was to add this rule without asking the user to do it himself. The solution was to add a RewriteRule server-wide and force inheritance which is not set by default.
 
@@ -36,3 +36,5 @@ This rule will simply do nothing and block all other rules (_with option `[L]`_)
 _**Note**: `InheritBefore` is available in Apache [since 2.3.10](http://httpd.apache.org/docs/current/fr/mod/mod_rewrite.html#rewriteoptions)_
 
 _Enjoy!_
+
+[^1]: _«Making mod\_fastcgi work with mod\_rewrite»_ [http://blog.grahampoulter.com/2012/02/maximum-wordpress-performance-on-ec2.html](http://blog.grahampoulter.com/2012/02/maximum-wordpress-performance-on-ec2.html)
