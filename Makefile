@@ -29,7 +29,11 @@ GITHUB_PAGES_BRANCH=gh-pages
 
 PAGESDIR=$(INPUTDIR)/pages
 DATE := $(shell date +'%Y-%m-%d %H:%M:%S')
-SLUG := $(shell echo '$(shell date +'%Y-%m-%d')-${NAME}' | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)
+ifdef SLUG
+	CUSTSLUG = 1
+endif
+SLUG := $(shell echo '${NAME}' | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)
+DATESLUG = $(shell echo '${DATE}' | cut -d' ' -f1)-${SLUG}
 EXT ?= markdown
 
 DEBUG ?= 0
@@ -61,13 +65,35 @@ help:
 
 newpost:
 ifdef NAME
-	echo "Title: $(NAME)" >  $(INPUTDIR)/articles/$(SLUG).$(EXT)
-	echo "Category:" >> $(INPUTDIR)/articles/$(SLUG).$(EXT)
-	echo "Tags:" >> $(INPUTDIR)/articles/$(SLUG).$(EXT)
-	echo "Date: $(DATE)" >> $(INPUTDIR)/articles/$(SLUG).$(EXT)
-	echo ""              >> $(INPUTDIR)/articles/$(SLUG).$(EXT)
-	echo ""              >> $(INPUTDIR)/articles/$(SLUG).$(EXT)
-	$(EDITOR) $(INPUTDIR)/articles/$(SLUG).$(EXT)
+	mkdir $(INPUTDIR)/blog/$(DATESLUG)
+	echo "Title: $(NAME)" >  $(INPUTDIR)/blog/$(DATESLUG)/post.$(EXT)
+	echo "Category: Blog" >> $(INPUTDIR)/blog/$(DATESLUG)/post.$(EXT)
+	echo "Tags:" >> $(INPUTDIR)/blog/$(DATESLUG)/post.$(EXT)
+	echo "Date: $(DATE)" >> $(INPUTDIR)/blog/$(DATESLUG)/post.$(EXT)
+ifdef CUSTSLUG
+	echo "Slug: $(SLUG)" >> $(INPUTDIR)/blog/$(DATESLUG)/post.$(EXT)
+endif
+	echo ""              >> $(INPUTDIR)/blog/$(DATESLUG)/post.$(EXT)
+	echo ""              >> $(INPUTDIR)/blog/$(DATESLUG)/post.$(EXT)
+	$(EDITOR) $(INPUTDIR)/blog/$(DATESLUG)/post.$(EXT)
+else
+	@echo 'Variable NAME is not defined.'
+	@echo 'Do make newpost NAME='"'"'Post Name'"'"
+endif
+
+newle:
+ifdef NAME
+	mkdir $(INPUTDIR)/lekdecherf/$(DATESLUG)
+	echo "Title: $(NAME)" >  $(INPUTDIR)/lekdecherf/$(DATESLUG)/post.$(EXT)
+	echo "Date: $(DATE)" >> $(INPUTDIR)/lekdecherf/$(DATESLUG)/post.$(EXT)
+	echo "Category: *Le Kdecherf" >> $(INPUTDIR)/lekdecherf/$(DATESLUG)/post.$(EXT)
+ifdef CUSTSLUG
+	echo "Slug: $(SLUG)" >> $(INPUTDIR)/lekdecherf/$(DATESLUG)/post.$(EXT)
+endif
+	echo ""              >> $(INPUTDIR)/lekdecherf/$(DATESLUG)/post.$(EXT)
+	echo ""              >> $(INPUTDIR)/lekdecherf/$(DATESLUG)/post.$(EXT)
+	echo "![]({attach})"              >> $(INPUTDIR)/lekdecherf/$(DATESLUG)/post.$(EXT)
+	$(EDITOR) $(INPUTDIR)/lekdecherf/$(DATESLUG)/post.$(EXT)
 else
 	@echo 'Variable NAME is not defined.'
 	@echo 'Do make newpost NAME='"'"'Post Name'"'"
