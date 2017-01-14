@@ -1,7 +1,7 @@
 Title: OfflineIMAP and Sqlite3: «file is encrypted or is not a database»
 Date: 2012-12-23 15:00
 Category: Blog
-Tags: offlineimap
+Tags: offlineimap, sqlite
 
 Have you already seen this error with OfflineIMAP and Sqlite3?
 

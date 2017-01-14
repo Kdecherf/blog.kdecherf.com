@@ -1,6 +1,7 @@
 Date: 2009-08-20 22:11:28
 Title: Workaround - Voyages-SNCF et les cartes Smile's
 Category: Blog
+Tags: voyages-sncf
 
 Depuis quelques temps, je rencontre un problème plutôt gênant sur mon site préféré (_notez l'ironie_) : ma carte Smile's (_carte Smile's fournie par un partenaire_) n'est pas acceptée lors d'une commande. En bidouillant, par désespoir, j'ai trouvé une solution -**chiante mais**- fonctionnelle.
 

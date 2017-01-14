@@ -1,6 +1,7 @@
 Date: 2010-11-07 18:56:38
 Title: MySQL & PHP : Scénarios de migration
 Category: Blog
+Tags: mysql, php
 
 Il n'y a rien de plus frustrant que de se retrouver coincé en tentant de migrer une base de données en utilisant des techniques non adaptées au nouvel hébergement. Voici un petit billet qui vous liste les différents scénarios possibles de migration d'une base de données MySQL (_en partant du principe que le site est en PHP_).
 

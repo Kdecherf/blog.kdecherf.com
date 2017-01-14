@@ -1,6 +1,7 @@
 Title: Chained SSH connection to a virtual machine via its host
 Date: 2012-10-31 19:41
 Category: Blog
+Tags: ssh
 
 After some weeks without any post, I'm back with a tip about chained SSH connection in a highly virtualized world.
 
