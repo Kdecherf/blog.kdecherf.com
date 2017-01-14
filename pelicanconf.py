@@ -26,17 +26,14 @@ TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
 
-ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+ARTICLE_URL = '{category}/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = '{category}/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 
-INDEX_SAVE_AS = 'blog/index.html'
-INDEX_URL = 'blog/'
-
-CATEGORY_SAVE_AS = 'category/{slug}/index.html'
-CATEGORY_URL = 'category/{slug}/'
+CATEGORY_SAVE_AS = '{slug}/index.html'
+CATEGORY_URL = '{slug}/'
 
 TAG_SAVE_AS = 'tag/{slug}/index.html'
 TAG_URL = 'tag/{slug}/'
@@ -48,14 +45,16 @@ AUTHORS_SAVE_AS = ''
 TAGS_SAVE_AS = 'tags/index.html'
 CATEGORIES_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
+INDEX_SAVE_AS = ''
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 DEFAULT_PAGINATION = 0
-DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = True
 DISPLAY_PAGES_ON_MENU = True
 
 STATIC_PATHS = [
