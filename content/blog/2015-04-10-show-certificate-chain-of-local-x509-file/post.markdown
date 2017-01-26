@@ -4,7 +4,7 @@ Category: Blog
 Tags: openssl
 
 <div class="alert-info">
-  <strong>UPDATE 2016/06/01:</strong> Improving the script by using pipe inside awk, thanks to <a href="#comment-2650059724">@ilatypov</a>.
+  <strong>UPDATE 2016/06/01:</strong> Improving the script by using pipe inside awk, thanks to @ilatypov.
 </div>
 
 When I play with X509 certificates I check that the certificate chain in the file is always complete and valid.
@@ -50,7 +50,7 @@ It says OK, cool but it's not very verbose: I don't see the chain like `openssl 
 
 The solution is to split all the certificates from the file and use `openssl x509` on each of them.
 
-Someone already done a [oneliner to split certificates from a file](http://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall/4454754#4454754) using `awk`. I initially based my script on it but [@ilatypov proposed a solution in comments](#comment-2650059724) that is far better as it does not rely on temporary files. Here is the updated script:
+Someone already done a [oneliner to split certificates from a file](http://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall/4454754#4454754) using `awk`. I initially based my script on it but [@ilatypov proposed a solution in comments](https://disqus.com/home/discussion/kdecherf-blog/show_the_certificate_chain_of_a_local_x509_file_kdecherf_git_blog/#comment-2650059724)[^disqus] that is far better as it does not rely on temporary files. Here is the updated script:
 
 ``` bash
 #!/bin/bash
@@ -63,7 +63,7 @@ if [[ ! -f "${chain_pem}" ]]; then
 fi
 
 if ! openssl x509 -in "${chain_pem}" -noout 2>/dev/null ; then
-    echo "$1 is not a certificate" >&2
+    echo "${chain_pem} is not a certificate" >&2
     exit 1
 fi
 
@@ -106,3 +106,4 @@ google.crt: OK
 _Enjoy!_
 
 [^1]: I've retrieved their certificate by using `openssl s_client` but by default it shows only the first certificate. Use the option `-showcerts` to see the complete chain
+[^disqus]: Given that I have deleted comments from my blog, the link is now a direct link to the original Disqus thread
