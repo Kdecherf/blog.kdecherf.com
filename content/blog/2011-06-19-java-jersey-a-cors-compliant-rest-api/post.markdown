@@ -7,7 +7,7 @@ Slug: java-jersey-a-cors-compliant-rest-api
 Une traduction française est disponible [ici]({filename}/blog/2011-06-02-java-jersey-une-api-rest-cross-domain-sans-jsonp/post.markdown).
 
 <div class="alert-info">
-  <strong>UPDATE 2012/12/23:</strong> fixing typo on line 4, <code>ResponseBuilder</code> has no <code>ok()</code> method (<em>Thanks <a href="#comment-658615663">Frankie Frank</a></em>).
+  <strong>UPDATE 2012/12/23:</strong> fixing typo on line 4, <code>ResponseBuilder</code> has no <code>ok()</code> method (<em>Thanks <a href="https://disqus.com/home/discussion/kdecherf-blog/javajersey_a_cors_compliant_rest_api_die_jsonp_die/#comment-658615663">Frankie Frank</a></em>).
 </div>
 
 Cross-Domain AJAX request is the developer's nightmare with the awful JSONP workaround. But we can use a simple standard to kick off this bad practice.
