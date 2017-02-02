@@ -15,7 +15,15 @@ ASSETS_VERSION = "v20150123"
 
 THEME = 'themes/Nicholas'
 
-MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra','fenced_code', 'footnotes']
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': { 'css_class': 'highlight', 'guess_lang': False },
+        'markdown.extensions.extra': {},
+        'markdown.extensions.fenced_code': {},
+        'markdown.extensions.footnotes': {},
+    },
+    'output_format': 'html5',
+}
 
 PLUGIN_PATHS = ['plugins/']
 PLUGINS = ['tag_cloud']
