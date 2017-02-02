@@ -1,4 +1,6 @@
 /output
+/publish
+/online
 /cache
 .*.swp
 /pelicanconf.pyc
