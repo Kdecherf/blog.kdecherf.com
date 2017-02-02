@@ -7,7 +7,7 @@ Hello World,
 
 Today I show you a (really) tiny tip to convert M4A files to MP3 keeping bitrate with FFmpeg.
 
-By using the command `ffmpeg -i` thefile we obtain data about all streams of the file (codec, bitrate, ...), like this:
+By using the command `ffmpeg -i thefile` we obtain data about all streams of the file (codec, bitrate, ...), like this:
 
 ```
 $ ffmpeg -i test.m4a
@@ -49,7 +49,7 @@ $ ffmpeg -i test.m4a 2>&1 | grep Audio | awk -F', ' '{print $5}' | cut -d' ' -f1
 319
 ```
 
-This output will be used for the -ab argument:
+This output will be used for the `-ab` argument:
 
 ``` bash
 ffmpeg -i test.m4a -ab `ffmpeg -i test.m4a 2>&1 | grep Audio | awk -F', ' '{print $5}' | cut -d' ' -f1`k test.mp3
