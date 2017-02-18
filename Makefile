@@ -50,6 +50,8 @@ help:
 	@echo '   make clean                       remove the generated files         '
 	@echo '   make regenerate                  regenerate files upon modification '
 	@echo '   make publish                     generate using production settings '
+	@echo '   make newpost [NAME=] [SLUG=] [DATE=]   create new blog post         '
+	@echo '   make newle [NAME=] [SLUG=] [DATE=]     create new *Le Kdecherf post '
 	@echo '   make serve [PORT=8000]           serve site at http://localhost:8000'
 	@echo '   make devserver [PORT=8000]       start/restart develop_server.sh    '
 	@echo '   make stopserver                  stop local server                  '
