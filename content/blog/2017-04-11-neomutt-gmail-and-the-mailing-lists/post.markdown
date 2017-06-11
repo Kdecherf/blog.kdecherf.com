@@ -3,6 +3,10 @@ Category: Blog
 Tags: mutt, neomutt, gmail
 Date: 2017-04-11 22:32
 
+<div class="alert-info">
+   <strong>UPDATE 2017/06/11:</strong> The patch has landed in NeoMutt 20170414.
+</div>
+
 For a long time Gmail filters were keeping my inbox clean by automatically
 archiving all emails incoming from mailing lists. Even if it looks efficient,
 there's actually a big issue.  Do you seriously take time to read all these
@@ -117,9 +121,9 @@ Yes, I'm using a dedicated color for each mailing list. The complete file gives 
 
 ![NeoMutt]({attach}neomutt.png)
 
-_Note: the support of `%K` should land in the next release of NeoMutt. If you
+<del>_Note: the support of `%K` should land in the next release of NeoMutt. If you
 want it now you should patch your installation using
-[this patch](https://github.com/neomutt/neomutt/commit/6be374b7e8d2b1d794b05836493ddf62dd9b427e.patch)._
+[this patch](https://github.com/neomutt/neomutt/commit/6be374b7e8d2b1d794b05836493ddf62dd9b427e.patch)._</del>
 
 For more information:
 
