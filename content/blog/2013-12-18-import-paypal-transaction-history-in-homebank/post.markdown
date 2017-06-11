@@ -1,6 +1,7 @@
 Title: Import Paypal transaction history in HomeBank
 Date: 2013-12-18 15:08
 Category: Blog
+Tags: homebank, paypal
 
 <div class="alert-info">
   <strong>UPDATE 2017/06/11:</strong> replaced sed call with awk and refactored
