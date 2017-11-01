@@ -49,6 +49,8 @@ TAG_URL = 'tag/{slug}/'
 TAGS_SAVE_AS = 'tags/index.html'
 TAGS_URL = 'tags/'
 
+TAG_CLOUD_SORTING = 'alphabetically'
+
 AUTHOR_SAVE_AS = ''
 AUTHORS_SAVE_AS = ''
 CATEGORIES_SAVE_AS = ''
