@@ -51,6 +51,8 @@ TAGS_URL = 'tags/'
 
 TAG_CLOUD_SORTING = 'alphabetically'
 
+FLATTR_ID = '8wppd0'
+
 AUTHOR_SAVE_AS = ''
 AUTHORS_SAVE_AS = ''
 CATEGORIES_SAVE_AS = ''
