@@ -3,6 +3,10 @@ Title: Microsoft Tag ou Comment transformer des infos en image
 Category: Blog
 Tags: Microsoft Tag
 
+<div class="alert-info">
+   <strong>UPDATE 2018/02/11:</strong> remplacement des liens vers archive.org.
+</div>
+
 Il existe un outil, encore peu connu mais fort utile, qui permet de transformer un lien hypertexte ou du texte en image. _Comment est-ce possible ?_ Avec **Microsoft Tag** !
 
 Si vous avez été aux Techdays, vous avez forcément du voir ces carrés de couleur ! Intéressant, mais encore ?
@@ -22,7 +26,7 @@ Pour tout le monde ! Et je tiens à préciser que ce service est **gratuit**.
 
 ### Comment créer un Tag ?
 
-Rendez-vous sur le site de [Microsoft Tag](http://tag.microsoft.com/). Créez un compte à l'aide de votre LiveID (_créez-vous un LiveID le cas échéant_).   
+Rendez-vous sur le site de [Microsoft Tag](http://web.archive.org/web/20100925234542/http://tag.microsoft.com/consumer/index.aspx){: .archive}. Créez un compte à l'aide de votre LiveID (_créez-vous un LiveID le cas échéant_).   
 Une fois connecté à votre compte, vous avez la liste des tags existants (dans votre cas, vide) et un lien pour en créer un nouveau.
 
 ![create-new-tag3]({attach}create-new-tag3.jpg)
@@ -48,7 +52,7 @@ Et voilà, je crois que j'ai fait le tour. Passons côté utilisateur.
 
 ### Comment s'en servir ?
 
-Les tags sont à capturer avec un téléphone portable. Comme vous pouvez le voir, si l'utilisateur n'a pas encore l'application il est invité à visiter [http://gettag.mobi](http://gettag.mobi/)  
+Les tags sont à capturer avec un téléphone portable. Comme vous pouvez le voir, si l'utilisateur n'a pas encore l'application il est invité à visiter [http://gettag.mobi](https://web.archive.org/web/20091025232842/http://gettag.mobi/){: .archive}  
 L'application est disponible pour Windows Mobile, iPhone, Sambios, Blackberry, PalmOS, en version Java et même ... pour Android ! _A noter, ces applications sont fournies en version beta._
 
 Donc l'utilisateur exécute l'application, cette dernière va initialiser la caméra puis capturer le premier tag reconnu (reconnaissance très rapide sur mon HTC Dual Touch). Là, l'application va se connecter à internet pour avoir les infos du tag (_ndlr : le tag n'est autre qu'un identifiant pour la base de données Microsoft Tag_). Dans le cadre d'une URL votre navigateur mobile préféré va s'ouvrir, dans le cadre d'un texte il va s'afficher sous forme de " popup " et dans le cadre d'une vCard elle va pouvoir être directement importée sur votre mobile (_utile pour le CV !_).
