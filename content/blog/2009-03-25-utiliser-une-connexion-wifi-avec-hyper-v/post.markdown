@@ -13,5 +13,6 @@ L'astuce est vraiment simple mais il faut y penser.
   * Dans les propriétés de la connexion WiFi, onglet Partage, **partagez la connexion** puis sélectionnez l'interface fraichement créée.
 
 ![hyper-v-connections]({attach}hyper-v-connections.jpg)
+{: .image}
 
 C'est aussi simple que ça ! Pensez à ajouter l'interface réseau sur vos machines virtuelles et vous aurez désormais internet via votre connexion WiFi.

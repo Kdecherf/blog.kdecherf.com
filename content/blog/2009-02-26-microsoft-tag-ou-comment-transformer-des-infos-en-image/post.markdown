@@ -8,6 +8,7 @@ Il existe un outil, encore peu connu mais fort utile, qui permet de transformer 
 Si vous avez été aux Techdays, vous avez forcément du voir ces carrés de couleur ! Intéressant, mais encore ?
 
 ![Microsoft Tag]({attach}example.jpg)
+{: .image}
 
 Je vais brièvement vous présenter à quoi sert ce service, pour qui et comment l'utiliser.
 
@@ -25,18 +26,21 @@ Rendez-vous sur le site de [Microsoft Tag](http://tag.microsoft.com/). Créez un
 Une fois connecté à votre compte, vous avez la liste des tags existants (dans votre cas, vide) et un lien pour en créer un nouveau.
 
 ![create-new-tag3]({attach}create-new-tag3.jpg)
+{: .image}
 
 A ce moment là, vous pouvez créer 4 types de Tag : **Lien**, **Texte**, **vCard** ou **Dialer**. Je passe, ici, les détails de chaque type. J'ajoute simplement que vous pouvez spécifier un commentaire, une date de fin et même un mot de passe !
 
 Une fois votre tag créé, vous avez une nouvelle entrée dans votre tableau. Cliquez sur l'icone de la colonne _Render_ pour avoir votre Tag.
 
 ![get-tag-render]({attach}get-tag-render.jpg)
+{: .image}
 
 Ici, vous pouvez choisir le format de rendu (XPS, PDF ou WMF), la taille d'impression et le détail du cadre. Pour ce dernier point, il vous est possible d'ajouter un cadre d'aide et un cadre de téléchargement de l'application mobile ou de juste afficher votre image.
 
 Une fois téléchargé, vous pouvez vous amuser avec votre Tag : l'imprimer pour en faire des affiches ou le découper pour le mettre sur votre site ;-)
 
 ![final-render]({attach}final-render.jpg)
+{: .image}
 
 _Note : ce Tag est le Tag-URL de cet article._
 

@@ -39,5 +39,6 @@ done
 Exemple de résultat :
 
 ![Screenshot]({attach}Screenshot-113-1.png)
+{: .image}
 
 Enjoy it !

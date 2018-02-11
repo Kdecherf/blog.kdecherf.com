@@ -13,12 +13,14 @@ Le concept ? Pouvoir tester un enregistrement DNS chez tous les FAI (mondiaux + 
 L'outil se présente sous la forme d'un formulaire où vous indiquez l'enregistrement à tester et son type. Vous pouvez également restreindre la vérification à une partie du globe.
 
 ![Screenshot]({attach}Screenshot-92-11.png)
+{: .image}
 
 Une fois le test lancé, un tableau avec la liste des providers interrogés s'affiche.
 
 Exemple concret : img.dnswatch.in que je viens de créer.
 
 ![Screenshot]({attach}Screenshot-91-2.png)
+{: .image}
 
 Orange, Nerim et Belgacom ne répondent pas car ils bloquent l'accès à leurs serveurs depuis l'extérieur (voir ci-dessous). On voit bien que Free a du mal à propager le nouvel enregistrement contrairement aux autres, déjà à jour.
 

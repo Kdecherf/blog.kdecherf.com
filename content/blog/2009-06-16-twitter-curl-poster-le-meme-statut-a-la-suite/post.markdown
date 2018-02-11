@@ -6,6 +6,7 @@ Tags: curl,twitter
 Dans certains cas, la même chose doit être tweetée (rapport d'erreur sur le même serveur, connexion ...) mais par défaut c'est interdit sur Twitter. Voici donc une solution simple mais efficace pour passer outre cette limitation. _Cet article est destiné aux personnes utilisant des robots de monitoring sur Twitter via Curl (Nagios, Fail2ban)._
 
 ![Twitter]({attach}twitter-logo.jpg)
+{: .image}
 
 > 
 > _Twitter will ignore attempts to perform a duplicate update. With each update attempt, the application compares the update text with the authenticating user's last successful update, and ignores any attempts that would result in duplication. Therefore, a user cannot submit the same status twice in a row. The status element in the response will return the id from the previously successful update if a duplicate has been silently ignored._
@@ -21,9 +22,11 @@ _**Mise à jour**_ : les arguments du _cut_ sont valables pour un système avec 
 Ainsi nous obtenons le résultat suivant :
 
 ![twitter-curl1]({attach}twitter-curl1.png)
+{: .image}
 
 Vous pouvez aussi faire plus court à l'aide des usertags :
 
 ![twitter-curl-2]({attach}twitter-curl-2.png)
+{: .image}
 
 _Enjoy it !_

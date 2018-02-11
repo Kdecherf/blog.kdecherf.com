@@ -8,6 +8,7 @@ Trop d'emails à lire ? Des soucis d'organisation de votre compte Gmail ? Emails
 ### Rappel
 
 ![GTD]({attach}GTD-Map-1.jpg)
+{: .image}
 
 La méthode GTD est une méthode d'organisation inventée par David Allen, je vous conseille d'ailleurs d'acheter le livre si vous ne l'avez pas. L'image ci-dessus est une version light de cette technique de tri dont voici les grandes lignes traduites :
 	
@@ -28,6 +29,7 @@ La boîte de réception est la fameuse corbeille d'arrivée du système GTD. Ave
 Quand un élément est traité, il doit être archivé. Ainsi ne restent dans la boîte de réception que les éléments formant une TODO-List à court ou moyen terme.
 
 ![GTD]({attach}Screenshot-13-1.png)
+{: .image}
 
 ### Dossier 'suivi' (_starred_)
 
@@ -36,12 +38,14 @@ Le label _starred_ de Gmail va constituer la boîte de références, et le lab _
 Le lab _Superstars_ permet de paramêtrer les icônes que nous voulons, personnellement j'ai activé les suivants :
 
 ![GTD]({attach}Screenshot-8-1.png)
+{: .image}
 
 Dans l'ordre d'apparition : _information_, _important_, _urgent_, _inconnu_, _validé_ et _à faire suivre._
 
 Ainsi ma boîte de références ressemble à ça :
 
 ![GTD]({attach}Screenshot-14-1.png)
+{: .image}
 
 ### Pour le reste : il y a le reste
 

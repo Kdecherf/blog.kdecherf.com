@@ -6,6 +6,7 @@ Tags: fail2ban
 Bien que Fail2Ban fasse correctement son travail, il peut arriver qu'une intrusion se fasse avec succès. Il peut être utile, par précaution ou aussi pour du suivi, de savoir quand quelqu'un se connecte sur SSH.
 
 ![fail2ban]({attach}fail2ban_logo.png)
+{: .image}
 
 Si vous connaissez bien Fail2ban, vous savez que tout se fait via des actions et des filtres, donc notre objectif ne sera pas dur à atteindre. Commençons par ajouter notre filtre dans _/etc/fail2ban/jail.conf_ :
 
@@ -63,5 +64,6 @@ dest = root
 Vous pouvez dès à présent redémarrer Fail2ban, désormais à chaque connexion vous devriez recevoir un email de ce genre :
 
 ![ssh-fail2ban-notify]({attach}ssh-fail2ban-notify.png)
+{: .image}
 
 Enjoy it ;-)

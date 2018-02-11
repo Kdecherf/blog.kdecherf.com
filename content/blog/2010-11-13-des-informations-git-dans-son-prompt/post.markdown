@@ -43,6 +43,7 @@ Cette modification ajoute le nom de la branche en cours ainsi qu'un * si des fic
 Le prompt est inspiré du prompt Gentoo. Quant à la barre des titres, elle est inspirée d'Ubuntu.
 
 ![Screenshot]({attach}Screenshot-55-1.png)
+{: .image}
 
 _Enjoy it !_
 

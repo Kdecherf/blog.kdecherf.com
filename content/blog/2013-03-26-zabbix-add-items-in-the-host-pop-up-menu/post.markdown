@@ -7,6 +7,7 @@ At Clever Cloud we use Zabbix to monitor our platform. When I see a problem I wo
 Unfortunately, this feature is not available on the frontend.
 
 ![Zabbix]({attach}zabbix-1.png)
+{: .image}
 
 Well, the fix to add new items in this menu is quite simple. In the following figure, I add two links: "Settings" and "Graphs".
 
@@ -28,6 +29,7 @@ Well, the fix to add new items in this menu is quite simple. In the following fi
 And now we can take shortcuts to go to the Settings and Graphs pages:
 
 ![Zabbix]({attach}zabbix-2.png)
+{: .image}
 
 
 > Please note that this fix doesn't consider the user rights

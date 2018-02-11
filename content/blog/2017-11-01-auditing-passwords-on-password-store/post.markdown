@@ -43,6 +43,7 @@ password or all of them. Additionally, it can output an indication of their
 length, which can help you easily find really short passwords.
 
 ![pass-report]({attach}screenshot.png)
+{: .image}
 
 One must note that as Git needs to decrypt passwords this script may take a
 while to print the report for all passwords.

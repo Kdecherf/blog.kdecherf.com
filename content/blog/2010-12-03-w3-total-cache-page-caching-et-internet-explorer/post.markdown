@@ -10,3 +10,4 @@ Etant de ce clan, j'ai fait une mauvaise découverte ce matin sur un wordpress .
 La solution réside dans la fonctionnalité "Rejected User Agents" de W3 Total Cache qui permet d'interdire la mise en cache pour certains navigateurs. Il suffit donc d'ajouter MSIE dans la liste, et plus aucune version d'Internet Explorer n'utilisera ou générera la "version cachée" d'une page.
 
 ![Screenshot]({attach}Screenshot-74-1.png)
+{: .image}

@@ -11,5 +11,6 @@ Retrouvez également de nouvelles voitures de course d'exception comme la **Peug
 Retrouvez plus d'informations sur [http://forza.xbox.com/](http://forza.xbox.com/)
 
 ![fm3_lemans_10]({attach}fm3_lemans_10-1024x576.jpg)
+{: .image}
 
 _Source : _[_XBox Press_](http://gamerscoreblog.com/press/archive/2009/06/12/forza367676766.aspx)

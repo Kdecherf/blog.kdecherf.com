@@ -13,6 +13,7 @@ It's a tiny script that supports multiple arguments, files and strings.
 
 
 ![Hashcolors]({attach}hashcolors-screenshot.png)
+{: .image}
 
 
 [hashcolors on GitHub](https://github.com/Kdecherf/hashcolors)

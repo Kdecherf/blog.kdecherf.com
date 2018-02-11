@@ -19,6 +19,7 @@ A ce stade vous pouvez y accéder via un port spécifique. Si vous souhaitez ren
 ### Principe
 
 ![Principe]({attach}temporary-online.png)
+{: .image}
 
 Je pars du principe que nous disposons d'un serveur avec un serveur web qui écoute sur le port 80 et d'un laptop avec le serveur web local qui écoute sur le port 4000.
 

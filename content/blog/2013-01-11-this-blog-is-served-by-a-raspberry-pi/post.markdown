@@ -6,11 +6,13 @@ Yesterday I switched the primary source of my blog to _Kaho_, my Raspberry Pi be
 > _Why? Just for fun._
 
 ![You are here]({attach}rasp-you-are-here.jpg)
+{: .image}
 
 
 In fact there is another server between you and the Raspberry Pi as illustrated below to prevent overloads and downtimes (_fonts are served by the main server to save bandwidth_):
 
 ![Architecture]({attach}architecture.png)
+{: .image}
 
 Since I switched my blog to [Octopress](http://octopress.org), the webserver is only serving static files so I don't need a lot of resources to host it. Nginx is enough.
 
@@ -69,6 +71,7 @@ Shortest transaction:           0.06
 ```
 
 ![5 concurrent connections]({attach}rasp-5c.png)
+{: .image}
 
 
 The number of concurrent connections was increased to 15 for the second test, results are good too:
@@ -91,6 +94,7 @@ Shortest transaction:           0.07
 ```
 
 ![15 concurrent connections]({attach}rasp-15c.png)
+{: .image}
 
 After these tests, my connection can handle ~40 concurrent connections but can raspberry pi handle more connections?
 
@@ -119,6 +123,7 @@ Shortest transaction:           0.00
 ```
 
 ![50 concurrent connections]({attach}rasp-50c.png)
+{: .image}
 
 
 The response time is _higher_ (_470ms is still a really good response time_) with 150 concurrent connections and the CPU is full:
@@ -141,6 +146,7 @@ Shortest transaction:           0.00
 ```
 
 ![150 concurrent connections]({attach}rasp-150c.png)
+{: .image}
 
 So in this configuration the Raspberry Pi can handle more than 150 rps!
 

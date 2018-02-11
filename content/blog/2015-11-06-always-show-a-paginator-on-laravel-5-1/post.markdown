@@ -12,10 +12,12 @@ Laravel 5.1 provides a convenient way to [show a paginator](http://laravel.com/d
 This method renders ―by default and when used with `paginate()`― a Bootstrap 3-compliant paginator like on the left side of the following image:
 
 ![Default paginator]({attach}laravel-paginator-normal.png)
+{: .image}
 
 It's pretty cool but the paginator will not be rendered if the collection has only one page:
 
 ![Empty paginator]({attach}laravel-paginator-none.png)
+{: .image}
 
 On the side of Laravel `paginate()` returns a `Illuminate\Pagination\LengthAwarePaginator`. Let's check the rendering.
 
@@ -112,5 +114,6 @@ with the following:
 Now the paginator will be rendered even if there is only one page:
 
 ![Permanent Paginator]({attach}laravel-paginator-permanent.png)
+{: .image}
 
 _Enjoy!_

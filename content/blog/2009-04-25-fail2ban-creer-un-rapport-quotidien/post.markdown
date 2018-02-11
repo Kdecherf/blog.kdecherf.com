@@ -6,6 +6,7 @@ Tags: fail2ban
 Après l'article pour [transformer les mails Fail2ban façon Nagios]({filename}/blog/2009-03-27-fail2ban-email-alerte-facon-nagios/post.markdown), voici un petit article pour générer des rapports journaliers de l'activité de votre chien de garde favori.
 
 ![fail2ban]({attach}fail2ban_logo.png)
+{: .image}
 
 L'idée générale de l'article est de changer le système par défaut de Fail2Ban qui vous envoie un email à chaque bannissement. Si vous regardez les actions disponibles vous pouvez y trouver _mail-buffered_. Cette action attend 5 bannissements (par défaut) avant de vous envoyer un email.
 
