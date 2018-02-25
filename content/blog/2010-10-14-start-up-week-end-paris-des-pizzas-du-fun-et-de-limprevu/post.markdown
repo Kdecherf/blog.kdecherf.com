@@ -3,6 +3,10 @@ Title: Start-Up Week-end Paris : des pizzas, du fun et ... de l'imprévu
 Category: Blog
 Tags: Thoughts
 
+<div class="alert-info">
+   <strong>UPDATE 2018/02/25:</strong> remplacement des liens brisés vers archive.org.
+</div>
+
 Ce week-end (8 au 10) a eu lieu la 3ème édition du [Start-Up Week-end Paris](http://paris.startupweekend.org/) à Télécom ParisTech. Pendant tout un week-end, des personnes d'horizons différents (_marketeux, devs, ..._) se retrouvent pour monter des projets qui, par la suite, peuvent se concrétiser ... ou pas. Oui, on a 54 heures pour monter une boîte !
 
 J'ai décidé d'y aller pour me faire un petit week-end geekerie et coding (_pour changer_), accompagné de [waxzce](http://twitter.com/waxzce), [JLequertier](http://twitter.com/JLequertier) et [blouerat](http://twitter.com/blouerat). [18 projets ont été sélectionnés](http://www.guilhembertholet.com/blog/2010/10/11/petit-debrief-du-startup-weekend-paris-3/) pour le week-end parmis une quarantaine de projets présentés vendredi soir. La petite équipe nantaise a rejoint le projet [Reputeo.us](http://reputeo.us) pitché par [_Mickael_D_](http://twitter.com/_Mickael_D_) et [_PoC_](http://twitter.com/_PoC_), accompagné de [fulbert_lecoq](http://twitter.com/fulbert_lecoq), [BaBaptiste](http://twitter.com/BaBaptiste) et [KlodR](http://twitter.com/KlodR).
@@ -48,9 +52,9 @@ Gagnant ou pas, ce week-end est l'occasion de découvrir du monde et pourquoi pa
 
 **Reputeo.us sur le web**
 	
-  * [Communiqué de presse Orange](http://www.orange.com/fr_FR/presse/communiques/cp101012fr2.jsp)
-  * [Communiqué TechCrunch](http://fr.techcrunch.com/2010/10/11/reputeo-us-le-nouveau-gagnant-de-startup-weekend-veut-mettre-des-ipad-dans-tous-les-hotels-et-restaurants/)
-  * [Communiqué Mashable](http://fr.mashable.com/2010/10/14/urlirl-interview-des-createurs-du-projet-reputeo-us/)
+  * [Communiqué de presse Orange](https://web.archive.org/web/20101015213831/http://www.orange.com:80/fr_FR/presse/communiques/cp101012fr2.jsp){: .archive}
+  * [Communiqué TechCrunch](https://web.archive.org/web/20101012133347/fr.techcrunch.com/2010/10/11/reputeo-us-le-nouveau-gagnant-de-startup-weekend-veut-mettre-des-ipad-dans-tous-les-hotels-et-restaurants/){: .archive}
+  * [Communiqué Mashable](https://web.archive.org/web/20101017132630/fr.mashable.com/2010/10/14/urlirl-interview-des-createurs-du-projet-reputeo-us/){: .archive}
   * [Site internet](http://reputeo.us/)
 
 Si vous êtes Nantais, vous pourrez assister au Start-Up Week-end Nantes courant janvier 2011 !
