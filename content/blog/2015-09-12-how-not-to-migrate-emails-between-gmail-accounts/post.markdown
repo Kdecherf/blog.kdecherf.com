@@ -5,7 +5,7 @@ Date: 2015-09-12 15:58
 
 I had several debugging sessions this week and it produced really interesting findings which I will share here. I begin with a mishap that could have turned into a disaster and data loss: email migration.
 
-Yesterday I finally decided to migrate all the remaining emails of my Gmail account to my main email account —which is another Gmail account thanks to Google Apps— with the help of [offlineimap](http://offlineimap.org/>). Nothing fancy until I found a weird issue during the actual upload of the emails.
+Yesterday I finally decided to migrate all the remaining emails of my Gmail account to my main email account —which is another Gmail account thanks to Google Apps— with the help of [offlineimap](http://offlineimap.org/). Nothing fancy until I found a weird issue during the actual upload of the emails.
 
 The process here was to move files from one `[Gmail]/All Mail` folder to another on my laptop and synchronize the latter with offlineimap. I expected offlineimap to upload more than 4,000 emails but it eventually sent less than a thousand without any error. A quick check using the special filter `rfc822msgid` confirmed that a lot of emails were actually missing.
 
