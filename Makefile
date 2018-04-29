@@ -102,6 +102,16 @@ else
 	@echo 'Do make newpost NAME='"'"'Post Name'"'"
 endif
 
+date:
+ifdef POST
+	$(eval _POST = $(shell echo '${POST}' | sed -e 's;/$$;;g'))
+	sed -e "s/^Date: .*/Date: $(DATE)/" -i $(_POST)/post.$(EXT)
+	mv $(_POST) $(INPUTDIR)/blog/$(shell echo '${DATE}' | cut -d' ' -f1)-$(shell echo '${_POST}' | awk -F'/' '{print $$NF}' | cut -d- -f4-)
+else
+	@echo 'Variable POST is not defined.'
+	@echo 'Do make date POST='"'"'Path to post'"'"
+endif
+
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
@@ -155,4 +165,4 @@ github: publish
 	ghp-import -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github date
