@@ -1,6 +1,7 @@
 PY?=python
 PELICAN?=pelican
 PELICANOPTS=
+WRITE_SELECTED=
 
 BASEDIR=$(CURDIR)
 OUTPUT?=output
@@ -37,9 +38,17 @@ SLUG := $(shell echo '${NAME}' | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-
 DATESLUG = $(shell echo '${DATE}' | cut -d' ' -f1)-${SLUG}
 EXT ?= markdown
 
+PORT ?= 8081
+
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
 	PELICANOPTS += -D
+endif
+
+ifdef WRITE_SELECTED
+	INPUTCONTENT=--write-selected $(WRITE_SELECTED)
+else
+	INPUTCONTENT=$(INPUTDIR)
 endif
 
 help:
@@ -119,14 +128,10 @@ clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
 regenerate:
-	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	$(PELICAN) -r $(INPUTCONTENT) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 serve:
-ifdef PORT
 	cd $(OUTPUTDIR) && $(PY) -m pelican.server $(PORT)
-else
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server
-endif
 
 devserver:
 ifdef PORT
