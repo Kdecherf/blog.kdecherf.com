@@ -15,6 +15,8 @@ ASSETS_VERSION = "v20150123"
 
 THEME = 'themes/Nicholas'
 
+DEFAULT_DATE_FORMAT = "%B %d, %Y"
+
 MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.codehilite': { 'css_class': 'highlight', 'guess_lang': False },
