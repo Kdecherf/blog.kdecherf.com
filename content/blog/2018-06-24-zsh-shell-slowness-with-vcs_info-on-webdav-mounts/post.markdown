@@ -1,4 +1,4 @@
-Title: zsh, vcs_info and WebDAV mounts
+Title: zsh: shell slowness with vcs_info on WebDAV mounts
 Category: Blog
 Tags: zsh, nextcloud, webdav
 Date: 2018-06-24 22:39
