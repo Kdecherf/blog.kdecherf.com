@@ -13,10 +13,10 @@ everyday challenge, so are production and monitoring topics in general.
 
 Knoppix, Mandrake, Gentoo and others remind me funny memories of the old time
 but now I contribute to [Exherbo](http://exherbo.org), a great and fresh
-source-based distribution. I've co-founded [Clever Cloud](https://www.clever-cloud.com),
-a french awesome cloud platform, where I was the former production manager. I
-am now a DevOps-enabled system administrator and developer at Gibmedia Group.
-You can checkout my profile on [GitHub](https://github.com/Kdecherf) and
+source-based distribution. I've co-founded [Clever
+Cloud](https://www.clever-cloud.com), a french awesome cloud platform, where I
+was the former production manager. You can checkout my profile on
+[GitHub](https://github.com/Kdecherf) and
 [LinkedIn](https://www.linkedin.com/in/kdecherf).
 
 My spare time lets me enjoy my other passions like photography, books and
