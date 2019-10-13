@@ -3,6 +3,11 @@ Category: Blog
 Tags: backblaze,restic
 Date: 2018-12-28 15:17:47
 
+<div class="alert-info">
+  <strong>UDPATE 2019/10/13:</strong> added a third prune example with a larger
+  repository
+</div>
+
 After Crashplan shutted down its consumer backup plan I moved to [restic][1]
 and [Backblaze B2][2] for backing up my computers and servers. restic provides
 a really powerful deduplication system that allows you to keep costs quite low.
@@ -61,6 +66,23 @@ The forget operation marked 29 snapshots for deletion and the prune operation:
 This prune was cheaper than the first by costing roughly **$0.04** but it
 allowed me to save **$0.07** per month.
 
+## Another system
+
+I've finally done a prune on my largest repository, which handles around 1TB of
+data for 85k+ files. Before the prune the storage use was approximately 1.15TB.
+This repository handles a lot of files with infrequent to non-existent updates
+and backups are mostly for newly added files; But a few months ago I removed
+several dozens of GB of data and I never pruned it until today.
+
+The forget operation marked 18 snapshots for deletion and the prune operation:
+
+- Took 39 hours[^2]
+- Freed 100+GB
+- Downloaded 120+GB of data (_billed for $1.20_)
+- Made 540k+ class B transactions (_billed for $0.19_)
+
+This prune costed roughly **$1.39** and allowed me to save **$0.50** per month.
+
 These numbers may hardly apply to your repositories and/or use cases but it
 should give you a general idea of what costs to expect when pruning a restic
 repository.
@@ -80,6 +102,6 @@ _Enjoy!_
 [2]: https://www.backblaze.com/b2/cloud-storage.html
 
 [^1]: This repository is not the larger that I have but I wanted to give a try
-  with a small one before playing with the other repositories. I still need to
-  try the prune against a repository of 1+TB of data. Also this repository
-  backs up files that are mainly added or removed but rarely updated.
+  with a small one before playing with the other repositories.
+[^2]: I used `-o b2.connections=20` for this prune operation, I don't know if it
+  had a impact on overall duration.
