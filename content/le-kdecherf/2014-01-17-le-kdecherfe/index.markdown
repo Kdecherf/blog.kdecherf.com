@@ -1,6 +1,8 @@
-Title: *Le Kdecherfe
-Date: 2014-01-17 21:56
-Category: *Le Kdecherf
+---
+title: "*Le Kdecherfe"
+date: 2014-01-17T20:56Z
+category: "*Le Kdecherf"
+---
 
 
 ![]({attach}le-kdecherfe.png)
