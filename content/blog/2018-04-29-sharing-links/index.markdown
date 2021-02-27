@@ -31,8 +31,7 @@ show when the original link was actually a tweet. I forked the plugin, adding
 the support of a twitter icon, which is available here:
 [Kdecherf/shaarli-plugin-via](https://github.com/Kdecherf/shaarli-plugin-via).
 
-![Shaarli Via]({attach}shaarli-via.png)
-{: .image}
+![Shaarli Via](shaarli-via.png)
 
 Having this tool lets me archive links and quickly search on it without the fear
 of seeing the service disapear (_Hello, Delicious?_).

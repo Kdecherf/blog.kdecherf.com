@@ -28,7 +28,7 @@ the environment variable `NODE_EXTRA_CA_CERTS`.
 Cool but it appears that Insomnia —a REST client— and more generally every
 Electron app ignore this variable, at best[^1]. And you end with that thing:
 
-![Insomnia TLS Error]({attach}insomnia1.png)
+![Insomnia TLS Error](insomnia1.png)
 
 As you can see, the workaround proposed by the application is to simply disable
 SSL validation. What a brilliant idea.
@@ -36,7 +36,7 @@ SSL validation. What a brilliant idea.
 While wandering between tabs and swearing I saw something interesting in the
 _Timeline_ tab:
 
-![Insomnia Timeline tab]({attach}insomnia2.png)
+![Insomnia Timeline tab](insomnia2.png)
 
 The good news is that Insomnia uses `curl` to make requests, the bad news is
 that they decided to override the default behavior of `curl` (_using the system

@@ -14,8 +14,7 @@ Personally, my laptop doesn't have Node.js installed so I wanted to remake this 
 It's a tiny script that supports multiple arguments, files and strings.
 
 
-![Hashcolors]({attach}hashcolors-screenshot.png)
-{: .image}
+![Hashcolors](hashcolors-screenshot.png)
 
 
 [hashcolors on GitHub](https://github.com/Kdecherf/hashcolors)

@@ -5,7 +5,7 @@ slug: le-poodle-day
 ---
 
 
-![]({attach}poodle.png)
+![](poodle.png)
 
 Resources:
 

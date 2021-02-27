@@ -4,8 +4,7 @@ date: 2015-04-24T14:50:00+02:00
 slug: le-last-user-windows-xp
 ---
 
-
-![]({attach}last-xp.png)
+![](last-xp.png)
 
 If you know what I mean.
 

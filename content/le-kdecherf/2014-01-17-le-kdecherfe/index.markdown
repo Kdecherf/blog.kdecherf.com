@@ -4,8 +4,7 @@ date: 2014-01-17T20:56:00Z
 category: "*Le Kdecherf"
 ---
 
-
-![]({attach}le-kdecherfe.png)
+![](le-kdecherfe.png)
 
 ```
     very work^W^W  

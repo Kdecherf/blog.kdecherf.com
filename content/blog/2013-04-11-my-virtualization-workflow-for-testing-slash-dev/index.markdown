@@ -25,7 +25,6 @@ This tool is not so beautiful and it lacks features like disk management and rem
 
 Link: [https://github.com/Kdecherf/birsh](https://github.com/Kdecherf/birsh)
 
-![birsh]({attach}birsh.jpg)
-{: .image}
+![birsh](birsh.jpg)
 
 _Enjoy!_

@@ -73,8 +73,7 @@ set index_format = "%4C (%4c) %Z %?GI?%GI& ? %[%d/%b]  %-20.19F %?K?%15.14K&    
 Which will create a dedicated column for the list name like in the following
 image:
 
-![NeoMutt, K support]({attach}neomutt-k.png)
-{: .image}
+![NeoMutt, K support](neomutt-k.png)
 
 In the previous example `%?K?%15.14K&               ?` instructs Mutt to:
 
@@ -124,8 +123,7 @@ color index brightcolor10 default "~N ~C frsag@frsag.org"
 
 Yes, I'm using a dedicated color for each mailing list. The complete file gives me the following colored inbox:
 
-![NeoMutt]({attach}neomutt.png)
-{: .image}
+![NeoMutt](neomutt.png)
 
 <del>_Note: the support of `%K` should land in the next release of NeoMutt. If you
 want it now you should patch your installation using

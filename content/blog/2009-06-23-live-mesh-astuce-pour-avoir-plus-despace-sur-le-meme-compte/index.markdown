@@ -23,45 +23,37 @@ Dans le cadre de cet article, je décide de créer un dossier pour une année sc
 
 Pour commencer, je me connecte sur mon compte scolaire puis j'ajoute un nouveau dossier :
 
-![create-folder_11]({attach}create-folder_11.png)
-{: .image}
+![create-folder_11](create-folder_11.png)
 
 Je me rends dans le dossier fraichement ajouté et je me rends sur l'onglet " Members " :
 
-![newly-folder_1]({attach}newly-folder_1.png)
-{: .image}
+![newly-folder_1](newly-folder_1.png)
 
 Ici, je clique sur " Invite " pour m'inviter :
 
-![invite_1]({attach}invite_1.png)
-{: .image}
+![invite_1](invite_1.png)
 
 Dans la nouvelle fenêtre, j'indique l'adresse email de mon LiveID global. Il est important de laisser le droit _Owner_ :
 
-![invite-member_11]({attach}invite-member_11.png)
-{: .image}
+![invite-member_11](invite-member_11.png)
 
 **Acceptation de partage**
 
 Voilà, **à partir de maintenant je n'utilise que mon compte Live Mesh global**. Un email vient d'être envoyé pour accepter le partage, il suffit de cliquer sur le lien puis d'accepter :
 
-![confirm-invitation_1]({attach}confirm-invitation_1.png)
-{: .image}
+![confirm-invitation_1](confirm-invitation_1.png)
 
 Une fois acceptée, le dossier partagé apparait désormais sur le Live Desktop :
 
-![global-folder_1]({attach}global-folder_1.png)
-{: .image}
+![global-folder_1](global-folder_1.png)
 
 La dernière étape consiste à activer la synchronisation du nouveau dossier sur le(s) pc.
 
 Quand j'envoie des fichiers dans ce dossier, ils sont en réalité envoyés sur le compte scolaire mais ils sont tout de même bien présents sur le compte global. On arrive donc au plus intéressant ! J'ai envoyé un peu plus de 100 Mo de fichiers sur le dossier scolaire et on arrive à ça (_en premier le compte scolaire, en dessous le compte global_) :
 
-![school_1]({attach}school_1.png)
-{: .image}
+![school_1](school_1.png)
 
-![global_1]({attach}global_1.png)
-{: .image}
+![global_1](global_1.png)
 
 Les images parlent d'elles mêmes.
 

@@ -71,7 +71,7 @@ Enjoy
 
 Example : Resin Dependency Graph of Quercus  
 
-[![]({attach}36cd6dc7df67944c199c3464d395a4848a130b8e.jpg)](http://i.imgur.com/91AJN.jpg)
+[![](36cd6dc7df67944c199c3464d395a4848a130b8e.jpg)](http://i.imgur.com/91AJN.jpg)
 
 _Note : the script currently uses 'fdp' from graphviz which is not fully optimized for this kind of graph. Tell me if you have any other solution ;-)_
 

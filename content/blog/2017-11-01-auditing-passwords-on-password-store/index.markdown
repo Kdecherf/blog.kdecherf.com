@@ -44,8 +44,7 @@ This script will output the date and relative age of the last change for a given
 password or all of them. Additionally, it can output an indication of their
 length, which can help you easily find really short passwords.
 
-![pass-report]({attach}screenshot.png)
-{: .image}
+![pass-report](screenshot.png)
 
 One must note that as Git needs to decrypt passwords this script may take a
 while to print the report for all passwords.

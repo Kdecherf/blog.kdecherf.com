@@ -43,59 +43,59 @@ PowerShot G7 X Mark II.
 
 Here is the original shot, followed by two AEB shots at -3 EV and +3 EV:
 
-![]({attach}grp1_original.jpg)
+![](grp1_original.jpg)
 
-![]({attach}grp1_aeb_under.jpg)
-![]({attach}grp1_aeb_over.jpg)
+![](grp1_aeb_under.jpg)
+![](grp1_aeb_over.jpg)
 
 Now, here is the original shot with automatic tune:
-![]({attach}grp1_original_autotune.jpg)
+![](grp1_original_autotune.jpg)
 
 And the HDR automatic tune using AEB shots:
-![]({attach}grp1_aeb_hdr.jpg)
+![](grp1_aeb_hdr.jpg)
 
 You may see that dark areas are more visible in the HDR shot.
 
 Let's do some magic with only the original shot. Make two virtual copies with
 respectively -3 EV and +3 EV. It should give that:
-![]({attach}grp1_raw_under.jpg)
-![]({attach}grp1_raw_over.jpg)
+![](grp1_raw_under.jpg)
+![](grp1_raw_over.jpg)
 
 Here is the resulting HDR automatic tune image:
-![]({attach}grp1_raw_hdr.jpg)
+![](grp1_raw_hdr.jpg)
 
 Put side-by-side with 1:1 crop, we see that it has a lot more noise than the AEB
 HDR shot (_PPEB left, AEB right_):
-![]({attach}grp1_versus_raw_aeb.png)
+![](grp1_versus_raw_aeb.png)
 
 You can play with luminance on first and third (_respectively normal and
 overexposed_) shots to reduce noise (_previous PPEB left, luminance right_):
-![]({attach}grp1_versus_luminance.png)
+![](grp1_versus_luminance.png)
 
 Which gives you (_luminance left, AEB right_):
-![]({attach}grp1_versus_luminance_aeb.png)
+![](grp1_versus_luminance_aeb.png)
 
 And finally here is the result of HDR autotune with post-processing exposure
 bracketing:
-![]({attach}grp1_raw_luminance_hdr.jpg)
+![](grp1_raw_luminance_hdr.jpg)
 
 Put side-by-side, a comparison between HDR autotune with AEB shots on the left
 and HDR autotune with the post-processing exposure bracketing shot on the right:
-![]({attach}grp1_compare.jpg)
+![](grp1_compare.jpg)
 
 ### Shot 2: Paris sunset using Canon EOS 60D
 
 Here is the original shot, followed by the same shot with autotune:
 
-![]({attach}grp2_original.jpg)
+![](grp2_original.jpg)
 
-![]({attach}grp2_original_autotune.jpg)
+![](grp2_original_autotune.jpg)
 
 And here are the two HDR shots with autotune, AEB first:
 
-![]({attach}grp2_aeb_hdr.jpg)
+![](grp2_aeb_hdr.jpg)
 
-![]({attach}grp2_raw_hdr.jpg)
+![](grp2_raw_hdr.jpg)
 
 On this shot we can see that the sun is less detailed and dark zones are less
 clear when using the post-processed RAW file.
@@ -104,13 +104,13 @@ clear when using the post-processed RAW file.
 
 Here is the original shot:
 
-![]({attach}grp3_original.jpg)
+![](grp3_original.jpg)
 
 And here are the two HDR shots with autotune, AEB first:
 
-![]({attach}grp3_aeb_hdr.jpg)
+![](grp3_aeb_hdr.jpg)
 
-![]({attach}grp3_raw_hdr.jpg)
+![](grp3_raw_hdr.jpg)
 
 Like the previous scene, the sun appears brighter and less detailed than with
 the AEB shots.
@@ -120,15 +120,15 @@ the AEB shots.
 For the last scene I used a shot took with a compact device. Here is the
 original shot followed by the same shot with autotune:
 
-![]({attach}grp4_original.jpg)
+![](grp4_original.jpg)
 
-![]({attach}grp4_original_autotune.jpg)
+![](grp4_original_autotune.jpg)
 
 And here are the two HDR shots with autotune, AEB first:
 
-![]({attach}grp4_aeb_hdr.jpg)
+![](grp4_aeb_hdr.jpg)
 
-![]({attach}grp4_raw_hdr.jpg)
+![](grp4_raw_hdr.jpg)
 
 When creating the first HDR shot (_using AEB_) I activated a corrective setting
 of Lightroom which resulted in a noticeable contrast change on the rock. This

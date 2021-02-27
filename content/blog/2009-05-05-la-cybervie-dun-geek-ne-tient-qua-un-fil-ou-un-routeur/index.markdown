@@ -8,8 +8,7 @@ tags:
 
 S'il y a bien quelque chose auquel il ne faut pas toucher chez un geek, outre son ordinateur, c'est bien **Internet** !
 
-![frustrated]({attach}frustrated_1.jpg)
-{: .image}
+![frustrated](frustrated_1.jpg)
 
 Combien d'entre nous ont subis de lourds dommages psychologiques à cause d'un dysfonctionnement de notre lien vital vers le (cyber)monde ?
 
@@ -17,8 +16,7 @@ Combien d'entre nous ont subis de lourds dommages psychologiques à cause d'un d
 
 Il y a quelques temps, j'ai expérimenté un nouveau genre de défaillance bloquant totalement la navigation : la terrible _"boucle de routage"_. Le but du jeu ? Un routeur s'emmêle les pinceaux dans ses routes et envoie les paquets au mauvais routeur ... Ce dernier les renvoie au bon routeur qui est ... le premier. Ça donne un résultat similaire :
 
-![easynet-infinite-router-loop1]({attach}easynet-infinite-router-loop1.jpg)
-{: .image}
+![easynet-infinite-router-loop1](easynet-infinite-router-loop1.jpg)
 
 Là où c'est totalement frustrant, c'est que techniquement la connexion fonctionne ... Mais voilà !
 

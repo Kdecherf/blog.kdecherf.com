@@ -12,13 +12,11 @@ Voici une petite astuce, de la part de nos amis de TechNet, qui peut se réveler
 
 Faites tout simplement une GPO normale (_Stratégie de groupe_)
 
-![image_thumb_1]({attach}image_thumb_1.jpg)
-{: .image}
+![image_thumb_1](image_thumb_1.jpg)
 
 Double-cliquez sur les propriétés d'ouverture de session, vous avez un onglet _PowerShell Scripts_
 
-![image_thumb]({attach}image_thumb.jpg)
-{: .image}
+![image_thumb](image_thumb.jpg)
 
 Enfantin, non ?
 

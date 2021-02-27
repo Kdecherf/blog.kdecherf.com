@@ -47,13 +47,11 @@ want to get rid of the reconstructed threads.
 Example of my INBOX folder before retrieving the entire thread of a GitHub
 notification:
 
-![Before]({attach}notmuch-neomutt-before.png)
-{: .image}
+![Before](notmuch-neomutt-before.png)
 
 And after, still my unchanged INBOX folder:
 
-![After]({attach}notmuch-neomutt-after.png)
-{: .image}
+![After](notmuch-neomutt-after.png)
 
 I bound this function to the `x` key like this:
 

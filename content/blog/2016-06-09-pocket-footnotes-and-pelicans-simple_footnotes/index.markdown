@@ -26,13 +26,11 @@ As reference text I take the footnote showed on [this article]({filename}/blog/2
 
 The first workaround is to remove the class `simple-footnotes` from `ol`:
 
-![ol without class]({attach}html-ol-wo-class.png)
-{: .image}
+![ol without class](html-ol-wo-class.png)
 
 And Pocket renders the footnote:
 
-![pocket view, ol without class]({attach}pocket-ol-wo-class.png)
-{: .image}
+![pocket view, ol without class](pocket-ol-wo-class.png)
 
 Here is the corresponding change to the plugin source:
 
@@ -58,11 +56,9 @@ Adding a `hr` tag before `ol` does not work. And neither wrapping the whole bloc
 
 But wrapping the whole block with a `section` tag and wrapping each entry with `p` seems to do the job:
 
-![section-wrapped ol without class, with p]({attach}html-section-ol-hr-p.png)
-{: .image}
+![section-wrapped ol without class, with p](html-section-ol-hr-p.png)
 
-![pocket view]({attach}pocket-section-ol-hr-p.png)
-{: .image}
+![pocket view](pocket-section-ol-hr-p.png)
 
 Here is the complete change to the plugin source:
 

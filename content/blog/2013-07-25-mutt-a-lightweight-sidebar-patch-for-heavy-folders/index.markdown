@@ -15,8 +15,7 @@ tags:
 
 Hey, I'm back after "several" busy days to show you a little tip of my virtual set _"Leave Gmail"_. In case you have several folders with a lot of emails (_more than 10,000 per folder_) like me and you want to use the [sidebar patch](http://www.lunar-linux.org/mutt-sidebar/) for your beloved Mutt, read this.
 
-![Mutt Sidebar Patch]({attach}mutt-sidebar.png)
-{: .image}
+![Mutt Sidebar Patch](mutt-sidebar.png)
 
 The sidebar patch adds a sidebar _[obviously]_ which shows a list of folders with some counters into Mutt.  
 It works well but when you have folders with dozens of thousand emails your client will hang on each keystroke like during an IMAP sync. It's really annoying.

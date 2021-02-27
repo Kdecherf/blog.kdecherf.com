@@ -4,7 +4,7 @@ date: 2015-04-24T16:06:00+02:00
 slug: le-mutt-user-against-the-world
 ---
 
-![]({attach}mutt-user.png)
+![](mutt-user.png)
 
 I don’t care and will use this awesome MUA forever.
 
