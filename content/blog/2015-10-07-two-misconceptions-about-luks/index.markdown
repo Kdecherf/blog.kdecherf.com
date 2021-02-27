@@ -1,7 +1,9 @@
-Title: Two misconceptions about LUKS
-Category: Blog
-Tags: luks
-Date: 2015-10-07 15:43
+---
+title: "Two misconceptions about LUKS"
+date: 2015-10-07T15:43:00+02:00
+tags:
+- luks
+---
 
 Few weeks ago I had a discussion about LUKS (_Linux Unified Key Setup_) and the purpose of using a (openssl|gpg|whatever)-encrypted random passphrase. I heard two things which I want to comment:
 

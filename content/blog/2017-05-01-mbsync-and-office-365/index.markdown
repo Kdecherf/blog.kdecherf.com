@@ -1,7 +1,10 @@
-Title: mbsync and Office 365
-Category: Blog
-Tags: mbsync, office 365
-Date: 2017-05-01 23:55
+---
+title: "mbsync and Office 365"
+date: 2017-05-01T23:55:00+02:00
+tags:
+- "mbsync"
+- "office 365"
+---
 
 I observed that offlineimap stops working correctly and starts seeing UID
 validity issues quite often when syncing my Office 365 account. Considering that

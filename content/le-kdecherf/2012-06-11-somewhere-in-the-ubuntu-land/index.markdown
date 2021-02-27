@@ -1,6 +1,7 @@
-Title: Somewhere in the Ubuntu Land
-Date: 2012-06-11 17:43
-Category: *Le Kdecherf
+---
+title: "Somewhere in the Ubuntu Land"
+date: 2012-06-11T17:43:00+02:00
+---
 
 ![]({attach}mysql-security-issue.png)
 

@@ -1,7 +1,10 @@
-Title: Calibre and the invisible e-reader
-Category: Blog
-Tags: calibre, linux
-Date: 2017-02-18 17:22
+---
+title: "Calibre and the invisible e-reader"
+date: 2017-02-18T17:22:00+01:00
+tags:
+- calibre
+- linux
+---
 
 I decided to give a new try to Calibre a few months ago after buying several
 O'reilly ebooks. Mainly because my workflow to synchronize my e-reader was to use

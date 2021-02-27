@@ -1,7 +1,10 @@
-Title: ElasticSearch: Human readable search with cURL and Python
-Date: 2013-02-12 14:25
-Category: Blog
-Tags: elasticsearch
+---
+title: "xrandr+udev: hotplug an external screen no matter which output it is"
+title: "ElasticSearch: Human readable search with cURL and Python"
+date: 2013-02-12T14:25:00+01:00
+tags:
+- elasticsearch
+---
 
 At Clever Cloud, we use LogStash and ElasticSearch to index and make search on your logs. Since geeks are in love with command-line stuff, I made a little script to prettify the output of ES searches according to the LogStash fields.
 

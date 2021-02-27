@@ -1,7 +1,9 @@
-Date: 2011-01-09 15:40:30
-Title: Clôner un répertoire et déplacer les éléments obsolètes avec rsync
-Category: Blog
-Tags: rsync
+---
+title: "Clôner un répertoire et déplacer les éléments obsolètes avec rsync"
+date: 2011-01-09T15:40:30+01:00
+tags:
+- rsync
+---
 
 Depuis le temps que je devais le faire, hier j'ai mis en place ma petite stratégie de sauvegarde avec un script perso et rsync. Je voulais avoir un clône parfait de mes dossiers : ne pas garder les éléments qui ne sont plus dans la source. Et si jamais on supprime un élément par erreur et qu'il est définitivement perdu lors de la sauvegarde ?
 

@@ -1,7 +1,9 @@
-Title: Sharing links
-Category: Blog
-Tags: Thoughts
-Date: 2018-04-29 21:52:42
+---
+title: "Sharing links"
+date: 2018-04-29T21:52:42+02:00
+tags:
+- Thoughts
+---
 
 Here is a little post to show what is my workflow for sharing links, hoping it
 could inspire you.

@@ -1,6 +1,8 @@
-Title: This blog is served by a Raspberry Pi
-Date: 2013-01-11 17:23
-Category: Blog
+---
+title: "This blog is served by a Raspberry Pi"
+date: 2013-01-11T17:23:00+01:00
+---
+
 Yesterday I switched the primary source of my blog to _Kaho_, my Raspberry Pi behind a broadband connection.
 
 > _Why? Just for fun._

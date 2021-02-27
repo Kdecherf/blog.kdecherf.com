@@ -1,5 +1,6 @@
-Title: *Le me playing with iptables
-Date: 2012-09-09 12:39
-Category: *Le Kdecherf
+---
+title: "*Le me playing with iptables"
+date: 2012-09-09T12:39:00+02:00
+---
 
 ![]({attach}iptables-no-specific.png)

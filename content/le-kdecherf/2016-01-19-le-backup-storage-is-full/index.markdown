@@ -1,7 +1,8 @@
-Title: *Le backup storage is full
-Date: 2016-01-19 23:26
-Category: *Le Kdecherf
-Slug: le-backup-storage-is-full
+---
+title: "*Le backup storage is full"
+date: 2016-01-19T23:26:00+01:00
+slug: le-backup-storage-is-full
+---
 
 
 ![]({attach}backup-full.png)

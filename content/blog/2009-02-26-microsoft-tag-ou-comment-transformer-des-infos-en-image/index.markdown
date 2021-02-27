@@ -1,7 +1,9 @@
-Date: 2009-02-26 02:04:32
-Title: Microsoft Tag ou Comment transformer des infos en image
-Category: Blog
-Tags: Microsoft Tag
+---
+title: "Microsoft Tag ou Comment transformer des infos en image"
+date: 2009-02-26T02:04:32+01:00
+tags:
+- "Microsoft Tag"
+---
 
 <div class="alert-info">
    <strong>UPDATE 2018/02/11:</strong> remplacement des liens vers archive.org.

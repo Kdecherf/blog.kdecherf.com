@@ -1,7 +1,12 @@
-Date: 2015-01-16 14:13
-Title: xrandr+udev: hotplug an external screen no matter which output it is
-Category: Blog
-Tags: xrandr, udev, linux
+---
+title: "xrandr+udev: hotplug an external screen no matter which output it is"
+date: 2015-01-16T14:13:00+01:00
+slug: xrandrudev-hotplug-an-external-screen-no-matter-which-output-it-is
+tags:
+- xrandr
+- udev
+- linux
+---
 
 Hey world this is my first post of the year, I hope I will break my record of 2 posts for the last year.
 

@@ -1,7 +1,9 @@
-Title: Pocket, footnotes and Pelican's simple_footnotes
-Category: Blog
-Tags: pelican
-Date: 2016-06-09 23:04:00
+---
+title: "Pocket, footnotes and Pelican's simple_footnotes"
+date: 2016-06-09T23:04:00+02:00
+tags:
+- pelican
+---
 
 Few months ago I noticed that [Pocket](https://getpocket) was not showing footnotes of my articles. It surprised me as articles from other publishers had working footnotes. So I played with the HTML structure and I finally found several workarounds. Here they are.
 

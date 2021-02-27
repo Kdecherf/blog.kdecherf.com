@@ -1,8 +1,11 @@
-Date: 2010-12-29 12:32:04
-Title: DNSWatch.in : vérifiez les serveurs DNS des FAI
-Category: Blog
-Tags: dns, Projects
-Slug: dnswatch-in-verifiez-les-serveurs-dns-des-fai
+---
+title: "DNSWatch.in : vérifiez les serveurs DNS des FAI"
+date: 2010-12-29T12:32:04+01:00
+slug: dnswatch-in-verifiez-les-serveurs-dns-des-fai
+tags:
+- dns
+- Projects
+---
 
 <div class="alert-warn">
    <strong>UPDATE 2018/02/11:</strong> le projet a été abandonné.

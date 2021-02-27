@@ -1,7 +1,10 @@
-Title: Always show a paginator on Laravel 5.1
-Category: Blog
-Tags: laravel
-Date: 2015-11-06 22:31:19
+---
+title: "Always show a paginator on Laravel 5.1"
+date: 2015-11-06T22:31:19+01:00
+slug: always-show-a-paginator-on-laravel-51
+tags:
+- laravel
+---
 
 Laravel 5.1 provides a convenient way to [show a paginator](http://laravel.com/docs/5.1/pagination#displaying-results-in-a-view) when rendering a collection. When you build a query and use the method `paginate()`, a new method is available in your Blade template to print the paginator:
 

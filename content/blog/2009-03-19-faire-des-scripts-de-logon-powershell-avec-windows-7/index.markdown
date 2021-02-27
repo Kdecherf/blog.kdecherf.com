@@ -1,7 +1,10 @@
-Date: 2009-03-19 01:43:27
-Title: Faire des scripts de logon PowerShell avec Windows 7
-Category: Blog
-Tags: powershell, windows
+---
+title: "Faire des scripts de logon PowerShell avec Windows 7"
+date: 2009-03-19T01:43:27+01:00
+tags:
+- powershell
+- windows
+---
 
 Voici une petite astuce, de la part de nos amis de TechNet, qui peut se réveler très utile :)
 

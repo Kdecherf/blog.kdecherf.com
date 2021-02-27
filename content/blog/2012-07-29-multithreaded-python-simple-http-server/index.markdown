@@ -1,7 +1,9 @@
-Title: Multithreaded Python Simple HTTP Server
-Date: 2012-07-29 15:42
-Category: Blog
-Tags: python
+---
+title: "Multithreaded Python Simple HTTP Server"
+date: 2012-07-29T15:42:00+02:00
+tags:
+- python
+---
 
 Hey geeks, did you already have this conversation?
 

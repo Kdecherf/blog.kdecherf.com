@@ -1,7 +1,10 @@
-Date: 2009-03-25 02:27:03
-Title: Utiliser une connexion WiFi avec Hyper-V
-Category: Blog
-Tags: hyper-v, windows
+---
+title: "Utiliser une connexion WiFi avec Hyper-V"
+date: 2009-03-25T02:27:03+01:00
+tags:
+- "hyper-v"
+- windows
+---
 
 Si certains souhaitent ou utilisent Windows Server 2008 et (le rôle) Hyper-V sur un ordinateur portable, cette astuce pourrait vous être utile.
 

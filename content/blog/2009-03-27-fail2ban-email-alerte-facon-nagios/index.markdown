@@ -1,8 +1,10 @@
-Date: 2009-03-27 23:58:39
-Title: Fail2ban : email d'alerte façon Nagios
-Category: Blog
-Tags: fail2ban
-Slug: fail2ban-email-alerte-facon-nagios
+---
+title: "Fail2ban : email d'alerte façon Nagios"
+date: 2009-03-27T23:58:39+01:00
+slug: fail2ban-email-alerte-facon-nagios
+tags:
+- fail2ban
+---
 
 Vous êtes accrocs aux emails d'alerte de votre cher Nagios et vous détestez les emails _par défaut_ de Fail2Ban ? Alors voici une astuce pour vous.
 

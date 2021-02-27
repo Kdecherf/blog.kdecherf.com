@@ -1,7 +1,11 @@
-Title: NeoMutt, Gmail and the mailing lists
-Category: Blog
-Tags: mutt, neomutt, gmail
-Date: 2017-04-11 22:32
+---
+title: "NeoMutt, Gmail and the mailing lists"
+date: 2017-04-11T22:32:00+02:00
+tags:
+- mutt
+- neomutt
+- gmail
+---
 
 <div class="alert-info">
    <strong>UPDATE 2017/06/11:</strong> The patch has landed in NeoMutt 20170414.

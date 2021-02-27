@@ -1,8 +1,10 @@
-Date: 2011-06-19 19:35:11
-Title: Java/Jersey: A CORS-Compliant REST API (die JSONP die)
-Category: Blog
-Tags: java
-Slug: java-jersey-a-cors-compliant-rest-api
+---
+title: "Java/Jersey: A CORS-Compliant REST API (die JSONP die)"
+date: 2011-06-19T19:35:11+02:00
+slug: java-jersey-a-cors-compliant-rest-api
+tags:
+- java
+---
 
 Une traduction française est disponible [ici]({filename}/blog/2011-06-02-java-jersey-une-api-rest-cross-domain-sans-jsonp/post.markdown).
 

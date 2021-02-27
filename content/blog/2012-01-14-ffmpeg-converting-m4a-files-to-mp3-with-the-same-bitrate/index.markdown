@@ -1,7 +1,9 @@
-Date: 2012-01-14 19:54:23
-Title: FFmpeg: converting M4A files to MP3 with the same bitrate
-Category: Blog
-Tags: ffmpeg
+---
+title: "FFmpeg: converting M4A files to MP3 with the same bitrate"
+date: 2012-01-14T19:54:23+01:00
+tags:
+- ffmpeg
+---
 
 Hello World,
 

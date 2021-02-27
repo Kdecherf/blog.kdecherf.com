@@ -1,7 +1,8 @@
-Title: Another funny day in the unsecure world of the Internet
-Date: 2014-10-17 13:40
-Category: *Le Kdecherf
-Slug: le-poodle-day
+---
+title: "Another funny day in the unsecure world of the Internet"
+date: 2014-10-17T13:40:00+02:00
+slug: le-poodle-day
+---
 
 
 ![]({attach}poodle.png)

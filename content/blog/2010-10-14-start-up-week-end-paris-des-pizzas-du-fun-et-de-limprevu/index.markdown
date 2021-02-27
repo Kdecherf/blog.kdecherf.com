@@ -1,7 +1,10 @@
-Date: 2010-10-14 15:37:34
-Title: Start-Up Week-end Paris : des pizzas, du fun et ... de l'imprévu
-Category: Blog
-Tags: Thoughts
+---
+title: "Start-Up Week-end Paris : des pizzas, du fun et ... de l'imprévu"
+date: 2010-10-14T15:37:34+02:00
+slug: start-up-week-end-paris-des-pizzas-du-fun-et-de-limprevu
+tags:
+- Thoughts
+---
 
 <div class="alert-info">
    <strong>UPDATE 2018/02/25:</strong> remplacement des liens brisés vers archive.org.

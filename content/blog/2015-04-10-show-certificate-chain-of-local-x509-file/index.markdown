@@ -1,7 +1,9 @@
-Date: 2015-04-10 11:08
-Title: Show the certificate chain of a local X509 file
-Category: Blog
-Tags: openssl
+---
+title: "Show the certificate chain of a local X509 file"
+date: 2015-04-10T11:08:00+02:00
+tags:
+- openssl
+---
 
 <div class="alert-info">
   <strong>UPDATE 2016/06/01:</strong> Improving the script by using pipe inside awk, thanks to @ilatypov.

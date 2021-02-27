@@ -1,7 +1,9 @@
-Date: 2010-10-03 12:51:11
-Title: Organisation : appliquer la méthode GTD avec Gmail
-Category: Blog
-Tags: gmail
+---
+title: "Organisation : appliquer la méthode GTD avec Gmail"
+date: 2010-10-03T12:51:11+02:00
+tags:
+- gmail
+---
 
 Trop d'emails à lire ? Des soucis d'organisation de votre compte Gmail ? Emails perdus dans la masse de vos archives ? Voici un billet qui pourrait vous être utile.  Pour commencer, je vais faire un très léger rappel/résumé de la méthode **[GTD](http://en.wikipedia.org/wiki/Getting_Things_Done)** (_Getting Things Done_).
 

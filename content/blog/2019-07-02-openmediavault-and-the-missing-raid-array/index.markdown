@@ -1,7 +1,9 @@
-Title: OpenMediaVault and the missing RAID array
-Category: Blog
-Tags: openmediavault
-Date: 2019-07-02 21:57:35
+---
+title: "OpenMediaVault and the missing RAID array"
+date: 2019-07-02T21:57:35+02:00
+tags:
+- openmediavault
+---
 
 Today while trying to update some softwares on my NAS server I had issues with
 Debian Jessie's missing repositories. I though it was the right time to

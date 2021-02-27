@@ -1,7 +1,9 @@
-Title: HDR: AEB versus post-processing exposure bracketing
-Category: Blog
-Tags: Photography
-Date: 2018-07-13 18:33:53
+---
+title: "HDR: AEB versus post-processing exposure bracketing"
+date: 2018-07-13T18:33:53+02:00
+tags:
+- Photography
+---
 
 HDR, or High-Dynamic-Range is a technique to improve dynamic range of a
 photograph thus enhancing tricky scenes like direct sunlight. As I'm not the

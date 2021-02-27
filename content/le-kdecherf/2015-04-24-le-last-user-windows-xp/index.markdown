@@ -1,7 +1,8 @@
-Title: *Le last user of Windows XP
-Date: 2015-04-24 14:50
-Category: *Le Kdecherf
-Slug: le-last-user-windows-xp
+---
+title: "*Le last user of Windows XP"
+date: 2015-04-24T14:50:00+02:00
+slug: le-last-user-windows-xp
+---
 
 
 ![]({attach}last-xp.png)

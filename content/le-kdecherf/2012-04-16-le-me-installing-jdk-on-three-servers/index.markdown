@@ -1,5 +1,6 @@
-Title: *Le me installing JDK on three servers
-Date: 2012-04-16 14:02
-Category: *Le Kdecherf
+---
+title: "*Le me installing JDK on three servers"
+date: 2012-04-16T14:02:00+02:00
+---
 
 ![]({attach}installing-jdk.png)

@@ -1,7 +1,11 @@
-Title: Force Insomnia to use the system trust store
-Category: Blog
-Tags: x509, insomnia, nodejs
-Date: 2018-07-13 12:58:26
+---
+title: "Force Insomnia to use the system trust store"
+date: 2018-07-13T12:58:26+02:00
+tags:
+- x509
+- insomnia
+- nodejs
+---
 
 <div class="alert-warn">
    <strong>PSA:</strong> Electron developers and others, please stop making use

@@ -1,7 +1,9 @@
-Date: 2009-06-23 23:53:31
-Title: Live Mesh : Astuce pour avoir plus d'espace sur le même compte
-Category: Blog
-Tags: live mesh
+---
+title: "Live Mesh : Astuce pour avoir plus d'espace sur le même compte"
+date: 2009-06-23T23:53:31+02:00
+tags:
+- "live mesh"
+---
 
 Entre 2 examens de fin d'année j'ai réactivé un service que je n'utilisais plus depuis quelques mois : **Live Mesh**. Ce service gratuit de Microsoft vous propose un espace en ligne de 5 Go avec bureau en ligne, utilitaire de synchronisation et même la prise de contrôle à distance. Ce midi donc, j'ai trouvé (sans le vouloir) une solution pour " avoir plus d'espace " sur son compte.
 

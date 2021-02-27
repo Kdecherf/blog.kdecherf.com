@@ -1,7 +1,10 @@
-Date: 2010-01-10 23:56:52
-Title: CentOS : installer Htop simplement
-Category: Blog
-Tags: centos, htop
+---
+title: "CentOS : installer Htop simplement"
+date: 2010-01-10T23:56:52+01:00
+tags:
+- centos
+- htop
+---
 
 Distribution axée sur des dépôts stables, CentOS n'aime pas trop les dépôts d'applis en développement. C'est donc normal qu'un _yum search htop_ nous retourne un vilain _Match not found_.
 

@@ -1,7 +1,8 @@
-Title: *Le recovery plan went wrong
-Date: 2015-04-24 14:45
-Category: *Le Kdecherf
-Slug: le-backup-and-recovery-plan
+---
+title: "*Le recovery plan went wrong"
+date: 2015-04-24T14:45:00+02:00
+slug: le-backup-and-recovery-plan
+---
 
 
 ![]({attach}backup.png)

@@ -1,6 +1,7 @@
-Title: GIMME MOAR POWER
-Date: 2017-05-21 15:26:01
-Category: *Le Kdecherf
+---
+title: "GIMME MOAR POWER"
+date: 2017-05-21T15:26:01+02:00
+---
 
 
 ![]({attach}gimme-moar-power.png)

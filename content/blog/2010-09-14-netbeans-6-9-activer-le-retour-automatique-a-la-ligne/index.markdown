@@ -1,8 +1,11 @@
-Date: 2010-09-14 11:00:42
-Title: NetBeans 6.9 : activer le retour automatique à la ligne
-Category: Blog
-Tags: java, netbeans
-Slug: netbeans-6-9-activer-le-retour-automatique-a-la-ligne
+---
+title: "NetBeans 6.9 : activer le retour automatique à la ligne"
+date: 2010-09-14T11:00:42+02:00
+slug: netbeans-6-9-activer-le-retour-automatique-a-la-ligne
+tags:
+- java
+- netbeans
+---
 
 <div class="alert-info">
    <strong>UPDATE 2018/02/25:</strong> remplacement des liens brisés vers archive.org.

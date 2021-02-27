@@ -1,7 +1,9 @@
-Title: Zabbix: HTTP Return Code Monitoring Without Web Monitoring
-Date: 2012-12-03 10:05
-Category: Blog
-Tags: zabbix
+---
+title: "Zabbix: HTTP Return Code Monitoring Without Web Monitoring"
+date: 2012-12-03T10:05:00+01:00
+tags:
+- zabbix
+---
 
 Several days ago I wanted to monitor the HTTP Return Code of an API in Zabbix. My first attempt with Scenarios in Web Monitoring was a fail.
 

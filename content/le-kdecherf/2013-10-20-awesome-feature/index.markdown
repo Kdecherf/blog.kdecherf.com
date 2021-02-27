@@ -1,6 +1,7 @@
-Title: --awesome-feature
-Date: 2013-10-20 00:51
-Category: *Le Kdecherf
+---
+title: "--awesome-feature"
+date: 2013-10-20T00:51:00+02:00
+---
 
 
 ![]({attach}awesome-feature.png)

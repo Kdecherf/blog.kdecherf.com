@@ -1,7 +1,8 @@
-Title: *Le mutt user against the world
-Date: 2015-04-24 16:06
-Category: *Le Kdecherf
-Slug: le-mutt-user-against-the-world
+---
+title: "*Le mutt user against the world"
+date: 2015-04-24T16:06:00+02:00
+slug: le-mutt-user-against-the-world
+---
 
 ![]({attach}mutt-user.png)
 

@@ -1,7 +1,8 @@
-Title: Quick test of a pool of webservers
-Date: 2013-01-09 20:40
-Category: Blog
-Slug: quick-test-of-a-pool-of-servers
+---
+title: "Quick test of a pool of webservers"
+date: 2013-01-09T20:40:00+01:00
+slug: quick-test-of-a-pool-of-servers
+---
 
 > Hm, this website is down... But wait, it has a bunch of servers!
 

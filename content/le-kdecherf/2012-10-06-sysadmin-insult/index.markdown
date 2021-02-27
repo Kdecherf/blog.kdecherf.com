@@ -1,6 +1,7 @@
-Title: Sysadmin Insult
-Date: 2012-10-06 22:19
-Category: *Le Kdecherf
+---
+title: "Sysadmin Insult"
+date: 2012-10-06T22:19:00+02:00
+---
 
 ![]({attach}sysadmin-insult.png)
 

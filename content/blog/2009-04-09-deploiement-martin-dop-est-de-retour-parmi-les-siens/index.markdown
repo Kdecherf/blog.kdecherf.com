@@ -1,7 +1,9 @@
-Date: 2009-04-09 00:27:05
-Title: Déploiement : Martin DOP est de retour parmi les siens
-Category: Blog
-Tags: Microsoft
+---
+title: "Déploiement : Martin DOP est de retour parmi les siens"
+date: 2009-04-09T00:27:05+02:00
+tags:
+- Microsoft
+---
 
 <div class="alert-info">
    <strong>UPDATE 2018/02/11:</strong> remplacement des liens vers archive.org.

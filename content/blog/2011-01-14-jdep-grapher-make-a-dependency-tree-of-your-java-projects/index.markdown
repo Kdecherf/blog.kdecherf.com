@@ -1,7 +1,10 @@
-Date: 2011-01-14 11:00:31
-Title: Jdep-grapher: make a dependency tree of your Java projects
-Category: Blog
-Tags: java, bash
+---
+title: "Jdep-grapher: make a dependency tree of your Java projects"
+date: 2011-01-14T11:00:31+01:00
+tags:
+- java
+- bash
+---
 
 Oh, my first english post ... so amazing (_isn't it ?_). Well, I present a little (_and awful_) bash dependency graph generator for Java projects.
 

@@ -1,7 +1,9 @@
-Title: Oracle, I download your JDK by eating magic cookies
-Date: 2012-04-12 21:15
-Category: Blog
-Tags: java
+---
+title: "Oracle, I download your JDK by eating magic cookies"
+date: 2012-04-12T21:15:00+02:00
+tags:
+- java
+---
 
 <div class="alert-info">
 <strong>UPDATE 2014/07/18:</strong> Replacing <code>gpw_e24</code> by <code>oraclelicense</code>, easier.</div>

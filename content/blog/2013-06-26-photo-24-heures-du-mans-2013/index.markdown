@@ -1,7 +1,10 @@
-Title: Photo: 24 Heures du Mans 2013
-Date: 2013-06-26 14:45
-Category: Blog
-Tags: Photography, Le Mans 24 Heures
+---
+title: "Photo: 24 Heures du Mans 2013"
+date: 2013-06-26T14:45:00+02:00
+tags:
+- Photography
+- Le Mans 24 Heures
+---
 
 Aujourd'hui je vais sortir un peu de mon thème habituel pour vous parler de deux autres passions qui occupent mon temps libre à l'occasion : les 24 Heures du Mans et la photo.  
 _Ce que j'avais à dire ne rentrait pas dans un tweet alors voilà un petit billet._

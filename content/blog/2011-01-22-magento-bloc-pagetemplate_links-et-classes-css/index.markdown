@@ -1,7 +1,10 @@
-Date: 2011-01-22 23:25:40
-Title: Magento : bloc page/template_links et classes CSS
-Category: Blog
-Tags: magento
+---
+title: "Magento : bloc page/template_links et classes CSS"
+date: 2011-01-22T23:25:40+01:00
+slug: magento-bloc-pagetemplate_links-et-classes-css
+tags:
+- magento
+---
 
 C'est au cours d'une mission sur Magento que j'ai remarqué un fonctionnement plutôt limitant du bloc `page/template_links`. En effet on ne peut pas assigner de classes personnalisées à la balise `li`. Voici la solution (pour les plus fainéants :)).
 

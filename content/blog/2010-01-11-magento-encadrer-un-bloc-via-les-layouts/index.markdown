@@ -1,7 +1,9 @@
-Date: 2010-01-11 14:11:32
-Title: Magento : encadrer un bloc via les layouts
-Category: Blog
-Tags: magento
+---
+title: "Magento : encadrer un bloc via les layouts"
+date: 2010-01-11T14:11:32+01:00
+tags:
+- magento
+---
 
 **Magento**, mastodonte de l'_e-Commerce_, se veut être (_sans aucun doute_) la plateforme la moins bien documentée officiellement. Travaillant actuellement dessus, je ferai part ici de mes quelques astuces qui peuvent vous aider ...
 

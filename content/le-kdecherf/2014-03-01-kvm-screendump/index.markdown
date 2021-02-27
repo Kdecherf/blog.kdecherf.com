@@ -1,7 +1,8 @@
-Title: What to do when your KVM machine has no network, no vnc and no serial ?
-Date: 2014-03-01 15:41
-Category: *Le Kdecherf
-Slug: kvm-screendump
+---
+title: "What to do when your KVM machine has no network, no vnc and no serial ?"
+date: 2014-03-01T15:41:00+01:00
+slug: kvm-screendump
+---
 
 
 ![]({attach}screendump.png)

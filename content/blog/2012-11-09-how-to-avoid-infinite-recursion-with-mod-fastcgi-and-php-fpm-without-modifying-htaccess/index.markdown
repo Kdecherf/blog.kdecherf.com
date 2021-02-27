@@ -1,8 +1,11 @@
-Title: How to avoid infinite recursion with mod_fastcgi and PHP-FPM without modifying .htaccess
-Date: 2012-11-09 15:46
-Category: Blog
-Tags: apache, php
-Slug: how-to-avoid-infinite-recursion-with-mod-fastcgi-and-php-fpm-without-modifying-htaccess
+---
+title: "How to avoid infinite recursion with mod_fastcgi and PHP-FPM without modifying .htaccess"
+date: 2012-11-09T15:46:00+01:00
+slug: how-to-avoid-infinite-recursion-with-mod-fastcgi-and-php-fpm-without-modifying-htaccess
+tags:
+- apache
+- php
+---
 
 Do you know this error?
 ``` text

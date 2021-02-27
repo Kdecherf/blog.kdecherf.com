@@ -1,6 +1,7 @@
-Title: A deployment like any other
-Date: 2012-09-08 22:40
-Category: *Le Kdecherf
+---
+title: "A deployment like any other"
+date: 2012-09-08T22:40:00+02:00
+---
 
 ![]({attach}network-overload.png)
 

@@ -1,6 +1,7 @@
-Title: Sysadmin versus the world, lvl: hard night
-Date: 2013-01-29 15:07
-Category: *Le Kdecherf
+---
+title: "Sysadmin versus the world, lvl: hard night"
+date: 2013-01-29T15:07:00+01:00
+---
 
 
 ![]({attach}night-work.png)

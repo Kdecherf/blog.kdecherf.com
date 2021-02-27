@@ -1,7 +1,10 @@
-Date: 2009-06-22 23:14:13
-Title: Recevoir ses alertes Fail2ban sur Twitter
-Category: Blog
-Tags: fail2ban,twitter
+---
+title: "Recevoir ses alertes Fail2ban sur Twitter"
+date: 2009-06-22T23:14:13+02:00
+tags:
+- fail2ban
+- twitter
+---
 
 Dans la série des articles inutiles mais utiles, voici comment recevoir ses alertes Fail2ban sur Twitter.
 

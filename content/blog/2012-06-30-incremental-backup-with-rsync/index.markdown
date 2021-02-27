@@ -1,7 +1,9 @@
-Title: Incremental backup with rsync
-Date: 2012-06-30 16:03 
-Category: Blog
-Tags: rsync
+---
+title: "Incremental backup with rsync"
+date: 2012-06-30T16:03:00+02:00
+tags:
+- rsync
+---
 
 Hello World,
 

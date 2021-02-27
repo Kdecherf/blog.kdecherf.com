@@ -1,7 +1,9 @@
-Title: Auditing passwords on password store
-Category: Blog
-Tags: pass
-Date: 2017-11-01 23:09
+---
+title: "Auditing passwords on password store"
+date: 2017-11-01T23:09:00+01:00
+tags:
+- pass
+---
 
 Five years ago, I decided to give a try to [password store][1] for managing my
 passwords on top of Git and GPG. Five years later I still use it for storing

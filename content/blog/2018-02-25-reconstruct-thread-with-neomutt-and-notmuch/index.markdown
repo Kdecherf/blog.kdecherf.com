@@ -1,7 +1,11 @@
-Title: Reconstruct thread with NeoMutt and Notmuch
-Category: Blog
-Tags: neomutt, mutt, notmuch
-Date: 2018-02-25 21:54:14
+---
+title: "Reconstruct thread with NeoMutt and Notmuch"
+date: 2018-02-25T21:54:14+01:00
+tags:
+- neomutt
+- mutt
+- notmuch
+---
 
 A few years ago I installed Notmuch on my computer in order to keep an index of my
 mailbox. Though Notmuch is quite awesome, I didn't fully configure it until

@@ -1,7 +1,9 @@
-Title: Building Couchbase from source on Exherbo
-Date: 2014-09-30 16:24
-Category: Blog
-Tags: exherbo
+---
+title: "Building Couchbase from source on Exherbo"
+date: 2014-09-30T16:24:00+02:00
+tags:
+- exherbo
+---
 
 Hey this is my first post of the year, happy new ye... oh wait. As of now Couchbase can't be packaged in Paludis/Exherbo due to the lack of support of _git-repo_. So if we want to play with this soft we need to build it manually from source (_I hate unpacking .deb or .rpm files on my distro_).
 

@@ -1,7 +1,10 @@
-Title: restic and Backblaze B2: short cost analysis of prune operations
-Category: Blog
-Tags: backblaze,restic
-Date: 2018-12-28 15:17:47
+---
+title: "restic and Backblaze B2: short cost analysis of prune operations"
+date: 2018-12-28T15:17:47+01:00
+tags:
+- backblaze
+- restic
+---
 
 <div class="alert-info">
   <strong>UDPATE 2019/10/13:</strong> added a third prune example with a larger

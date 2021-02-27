@@ -1,7 +1,9 @@
-Date: 2009-03-01 03:13:16
-Title: Comparatif PHP : Unicode et echappement HTML
-Category: Blog
-Tags: php
+---
+title: "Comparatif PHP : Unicode et echappement HTML"
+date: 2009-03-01T03:13:16+01:00
+tags:
+- php
+---
 
 Me voilà de retour pour un nouveau comparatif PHP. Le titre n'est peut-être pas super explicite alors je vais m'expliquer.
 

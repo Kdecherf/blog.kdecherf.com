@@ -1,7 +1,11 @@
-Title: Gérer les encours de CB à débit différé avec HomeBank
-Category: Blog
-Tags: homebank,awk,qif
-Date: 2020-04-18 18:23:46
+---
+title: "Gérer les encours de CB à débit différé avec HomeBank"
+date: 2020-04-18T16:23:46Z
+tags:
+- homebank
+- awk
+- qif
+---
 
 Ne sachant pas si ce qui suit est répandu ailleurs, j'écris ce billet en
 français.

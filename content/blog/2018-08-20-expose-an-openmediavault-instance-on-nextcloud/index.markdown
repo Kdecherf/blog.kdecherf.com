@@ -1,7 +1,10 @@
-Title: Expose an OpenMediaVault instance on Nextcloud
-Category: Blog
-Tags: openmediavault, nextcloud
-Date: 2018-08-20 14:00:01
+---
+title: "Expose an OpenMediaVault instance on Nextcloud"
+date: 2018-08-20T14:00:01+02:00
+tags:
+- openmediavault
+- nextcloud
+---
 
 tl;dr Prefer CIFS to WebDAV for Nextcloud remote storages, when applicable.
 

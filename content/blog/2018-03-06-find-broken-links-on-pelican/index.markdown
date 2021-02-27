@@ -1,7 +1,9 @@
-Title: Find broken links on Pelican
-Category: Blog
-Tags: pelican
-Date: 2018-03-06 23:09:00
+---
+title: "Find broken links on Pelican"
+date: 2018-03-06T23:09:00+01:00
+tags:
+- pelican
+---
 
 Earlier this month I found, while reading some old blog posts, several dead
 links. I decided to replace them with a link to the suitable capture on the

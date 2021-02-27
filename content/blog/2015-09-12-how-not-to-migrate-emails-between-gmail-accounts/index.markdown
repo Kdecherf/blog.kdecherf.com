@@ -1,7 +1,10 @@
-Title: How not to migrate emails between Gmail accounts
-Category: Blog
-Tags: offlineimap, gmail
-Date: 2015-09-12 15:58
+---
+title: "How not to migrate emails between Gmail accounts"
+date: 2015-09-12T15:58:00+02:00
+tags:
+- offlineimap
+- gmail
+---
 
 I had several debugging sessions this week and it produced really interesting findings which I will share here. I begin with a mishap that could have turned into a disaster and data loss: email migration.
 

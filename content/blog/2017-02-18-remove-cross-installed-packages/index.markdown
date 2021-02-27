@@ -1,7 +1,9 @@
-Title: Remove cross-installed packages
-Category: Blog
-Tags: exherbo
-Date: 2017-02-18 17:25
+---
+title: "Remove cross-installed packages"
+date: 2017-02-18T17:25:00+01:00
+tags:
+- exherbo
+---
 
 When I started my new job back in 2016 I needed to install Skype on my
 workstation. As you can imagine my workstation uses Exherbo. Consequently, it was

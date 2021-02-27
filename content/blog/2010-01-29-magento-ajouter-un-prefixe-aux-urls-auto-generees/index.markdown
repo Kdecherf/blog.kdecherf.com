@@ -1,7 +1,9 @@
-Date: 2010-01-29 00:49:32
-Title: Magento : ajouter un préfixe aux URLs auto-générées
-Category: Blog
-Tags: magento
+---
+title: "Magento : ajouter un préfixe aux URLs auto-générées"
+date: 2010-01-29T00:49:32+01:00
+tags:
+- magento
+---
 
 Ah Magento et ses joies ... ou pas. Avouez que les URLs auto-générées du style _/category.html_ ou _/product.html_ c'est frustrant si on veut une boutique un tant soit peu "hiérarchisée".
 

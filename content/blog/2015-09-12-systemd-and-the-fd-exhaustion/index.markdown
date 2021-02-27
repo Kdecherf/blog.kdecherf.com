@@ -1,7 +1,9 @@
-Title: systemd and the "fd" exhaustion
-Category: Blog
-Tags: systemd
-Date: 2015-09-12 16:03
+---
+title: 'systemd and the "fd" exhaustion'
+date: 2015-09-12T16:03:00+02:00
+tags:
+- systemd
+---
 
 <div class="alert-info">
    <strong>UPDATE 2018/06/24:</strong> A <a href="https://github.com/systemd/systemd/pull/9341">fix just landed</a> in <em>systemd</em> to fix the <a href="https://github.com/systemd/systemd/issues/1296">related issue</a>.

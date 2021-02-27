@@ -1,7 +1,8 @@
-Title: It’s just another OpenSSL Security Advisory
-Date: 2014-06-06 11:17
-Category: *Le Kdecherf
-Slug: another-openssl-security-advisory
+---
+title: "It’s just another OpenSSL Security Advisory"
+date: 2014-06-06T11:17:00+02:00
+slug: another-openssl-security-advisory
+---
 
 
 ![]({attach}new-advisory.png)

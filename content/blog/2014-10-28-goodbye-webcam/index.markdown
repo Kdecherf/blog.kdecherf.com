@@ -1,7 +1,10 @@
-Title: Goodbye Webcam
-Date: 2014-10-30 15:03
-Category: Blog
-Tags: linux, udev
+---
+title: "Goodbye Webcam"
+date: 2014-10-30T15:03:00+01:00
+tags:
+- linux
+- udev
+---
 
 I have suspected my webcam to have an electrical default for a while. As a result I used to have plenty of USB connect/disconnect/error events in the kernel journal like the following lines:
 

@@ -1,7 +1,10 @@
-Title: Wallabag: which domains have more than 3 unread articles?
-Category: Blog
-Tags: wallabag, postgresql
-Date: 2017-02-18 18:45
+---
+title: "Wallabag: which domains have more than 3 unread articles?"
+date: 2017-02-18T18:45:00+01:00
+tags:
+- wallabag
+- postgresql
+---
 
 Here's a little SQL command if you are using Wallabag with a PostgreSQL database
 and you want to know which domains have more than 3 unread articles:

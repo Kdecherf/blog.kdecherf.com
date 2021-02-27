@@ -1,7 +1,9 @@
-Date: 2010-04-19 21:53:05
-Title: Linux : Compiler un noyau x86_64 avec un environnement x86
-Category: Blog
-Tags: linux
+---
+title: "Linux : Compiler un noyau x86_64 avec un environnement x86"
+date: 2010-04-19T21:53:05+02:00
+tags:
+- linux
+---
 
 Cela fait un long moment que je n'ai rien posté, je reviens donc avec une petite astuce qui, je l'espère, pourra vous être utile.
 

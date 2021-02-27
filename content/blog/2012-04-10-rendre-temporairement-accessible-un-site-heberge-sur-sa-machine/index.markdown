@@ -1,7 +1,10 @@
-Title: Rendre temporairement accessible un site hébergé sur sa machine
-Date: 2012-04-10 17:22
-Category: Blog
-Tags: howto, haproxy
+---
+title: "Rendre temporairement accessible un site hébergé sur sa machine"
+date: 2012-04-10T17:22:00+02:00
+tags:
+- howto
+- haproxy
+---
 
 Avec le passage de mon blog de Wordpress à Jekyll/Octopress, j'ai été confronté à un problème existentiel : comment diffuser un billet en cours de rédaction pour lecture "privée" sans le publier ?
 
