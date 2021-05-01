@@ -5,11 +5,13 @@ tags:
 - java
 ---
 
-<div class="alert-info">
-<strong>UPDATE 2014/07/18:</strong> Replacing <code>gpw_e24</code> by <code>oraclelicense</code>, easier.</div>
-<div class="alert-info">
-<strong>UPDATE 2013/05/26:</strong> As noted by <em>frog end</em> and <em>Kip</em> in comments, wget 1.12 (<em>mainly on CentOS systems</em>) is unable to handle SAN SSL certificates (<em>Subject Alternative Name</em>) and will fail on <code>edelivery.oracle.com</code>. Use <code>--no-check-certificate</code> to avoid this issue.
-</div>
+{{< alertbox "info" "UPDATE 2014/07/18" >}}
+  Replacing <code>gpw_e24</code> by <code>oraclelicense</code>, easier.
+{{< /alertbox >}}
+
+{{< alertbox "info" "UPDATE 2013/05/26">}}
+  As noted by <em>frog end</em> and <em>Kip</em> in comments, wget 1.12 (<em>mainly on CentOS systems</em>) is unable to handle SAN SSL certificates (<em>Subject Alternative Name</em>) and will fail on <code>edelivery.oracle.com</code>. Use <code>--no-check-certificate</code> to avoid this issue.
+{{< /alertbox >}}
 
 Today, I had to install the <span style="text-decoration:line-through;">Sun</span>Oracle JDK on some servers, so I visited the [JDK download page](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) to retrieve the direct download link for `wget` on each server:
 ```
@@ -63,4 +65,4 @@ According to the [OTN BCL document for Java SE](http://www.oracle.com/technetwor
 _Enjoy it!_
 
 
-[_Bonus_](http://le.kdecherf.com/post/21207105768/le-me-installing-jdk-on-three-servers)
+[_Bonus_]({{< ref "/le-kdecherf/2012-04-16-le-me-installing-jdk-on-three-servers/index.markdown" >}})

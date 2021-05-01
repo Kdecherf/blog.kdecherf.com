@@ -6,13 +6,14 @@ tags:
 - paypal
 ---
 
-<div class="alert-info">
-  <strong>UPDATE 2017/06/11:</strong> replaced sed call with awk and refactored
+{{< alertbox "info" "UPDATE 2017/06/11" >}}
+  replaced sed call with awk and refactored
   code. Fixed field changes and added email addresses in memo, thanks to <a href="http://www.linkedin.com/in/christopherslee/">Chris Slee</a>.
-</div>
-<div class="alert-info">
-  <strong>UPDATE 2014/03/16:</strong> updated sed line to remove the header of initial csv file.
-</div>
+{{< /alertbox >}}
+
+{{< alertbox "info" "UPDATE 2014/03/16" >}}
+  updated sed line to remove the header of initial csv file.
+{{< /alertbox >}}
 
 Wow, it's been a long time since my last post. Few days ago I found a cool free and open-source (_and cross-platform_) software for personal accounting: [HomeBank](http://homebank.free.fr).
 

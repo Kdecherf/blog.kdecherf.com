@@ -5,7 +5,7 @@ tags:
 - fail2ban
 ---
 
-Après l'article pour [transformer les mails Fail2ban façon Nagios]({filename}/blog/2009-03-27-fail2ban-email-alerte-facon-nagios/post.markdown), voici un petit article pour générer des rapports journaliers de l'activité de votre chien de garde favori.
+Après l'article pour [transformer les mails Fail2ban façon Nagios]({{< ref "/blog/2009-03-27-fail2ban-email-alerte-facon-nagios/index.markdown" >}}), voici un petit article pour générer des rapports journaliers de l'activité de votre chien de garde favori.
 
 ![fail2ban](fail2ban_logo.png)
 
@@ -42,7 +42,7 @@ Comme vous pouvez le constater, nous utilisons la forme Nagios pour les mails. C
 
 **Configuration Fail2ban**
 
-On reprend la configuration fail2ban de l'ancien article et on y change une petite ligne. Ici nous prenons l'exemple du service SSH qui a, pour action mail par défaut, _mail-whois_. Fichier_ /etc/fail2ban/jail.conf_
+On reprend la configuration fail2ban de l'ancien article et on y change une petite ligne. Ici nous prenons l'exemple du service SSH qui a, pour action mail par défaut, _mail-whois_. Fichier _/etc/fail2ban/jail.conf_
 
 ``` bash
 fromt   = Fail2ban

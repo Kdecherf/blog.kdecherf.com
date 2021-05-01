@@ -7,14 +7,13 @@ tags:
 - Projects
 ---
 
-<div class="alert-warn">
-   <strong>UPDATE 2018/02/11:</strong> le projet a été abandonné.
-   Remplacement des liens vers archive.org.
-</div>
+{{< alertbox "warn" "UPDATE 2018/02/11" >}}
+  le projet a été abandonnée. Remplacement des liens vers archive.org.
+{{< /alertbox >}}
 
 Il y a quelques semaines j'avais eu la mauvaise expérience (et vous aussi, au moins une fois) d'avoir une propagation DNS lente en changeant un enregistrement : certains FAI ne distribuaient pas la bonne réponse. J'avais eu alors l'envie de savoir QUI ne répondait pas correctement, à n'importe quel moment. Malheureusement le boulot m'a occupé jusqu'à perdre de vue ce petit besoin ... jusqu'à lundi.
 
-Etant obligé de changer de serveur, je suis retombé sur la même problématique d'avoir certains FAI ne répondant pas correctement aux requêtes DNS pour un de mes domaines. Ayant un peu de temps libre j'ai décidé de le coder ... Naquit [DNSWatch.in](https://web.archive.org/web/20110103033347/http://dnswatch.in:80/){: .archive} en 24 heures chrono.
+Etant obligé de changer de serveur, je suis retombé sur la même problématique d'avoir certains FAI ne répondant pas correctement aux requêtes DNS pour un de mes domaines. Ayant un peu de temps libre j'ai décidé de le coder ... Naquit {{< wayback "http://dnswatch.in:80" >}}DNSWatch.in{{< /wayback >}} en 24 heures chrono.
 
 Le concept ? Pouvoir tester un enregistrement DNS chez tous les FAI (mondiaux + providers DNS alternatifs).
 
@@ -32,7 +31,7 @@ Orange, Nerim et Belgacom ne répondent pas car ils bloquent l'accès à leurs s
 
 ### Reporteurs
 
-Certains FAI refusent les requêtes DNS venant de l'extérieur (exemple : Orange, Nerim, ...). Pour cette raison, j'en appelle aux volontaires qui ont une machine qui tourne derrière l'un des FAI concernés et qui souhaitent participer au projet. Un script (reporting proxy) sera fait sous peu et disponible sur GitHub. Les requêtes entre le master et les proxies seront signées. Plus d'infos [ici](https://web.archive.org/web/20110104113406/http://dnswatch.in:80/info.html){: .archive} (_et à venir_).
+Certains FAI refusent les requêtes DNS venant de l'extérieur (exemple : Orange, Nerim, ...). Pour cette raison, j'en appelle aux volontaires qui ont une machine qui tourne derrière l'un des FAI concernés et qui souhaitent participer au projet. Un script (reporting proxy) sera fait sous peu et disponible sur GitHub. Les requêtes entre le master et les proxies seront signées. Plus d'infos {{< wayback "http://dnswatch.in:80/info.html" >}}ici{{< /wayback >}} (_et à venir_).
 
 De la même manière, si vous souhaitez rajouter des serveurs DNS, des providers alternatifs ou autre ... N'hésitez pas à envoyer un email à l'adresse indiquée.
 

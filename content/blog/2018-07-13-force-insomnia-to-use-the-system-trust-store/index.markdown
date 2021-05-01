@@ -7,11 +7,11 @@ tags:
 - nodejs
 ---
 
-<div class="alert-warn">
-   <strong>PSA:</strong> Electron developers and others, please stop making use
+{{< alertbox "warn" "PSA" >}}
+   Electron developers and others, please stop making use
    of custom CA a PITA by embedding your own trust store and stop advicing
    users to disable SSL validation when they have errors.
-</div>
+{{< /alertbox >}}
 
 At work we emit X.509 certificates from several internal certificate
 authorities. When you play with internal CA you must update the trusted store

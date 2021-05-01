@@ -128,6 +128,6 @@ entre le compte principal et le compte d'encours afin d'avoir une balance
 _Enjoy_
 
 [1]: http://homebank.free.fr
-[2]: {filename}/blog/2013-12-18-import-paypal-transaction-history-in-homebank/post.markdown
+[2]: {{< ref "/blog/2013-12-18-import-paypal-transaction-history-in-homebank/index.markdown" >}}
 
 [^1]: Le format QIF, pour _Quicken Interchange Format_ est un format de fichier répandu dans le milieu bancaire, voir [wikipedia](https://en.wikipedia.org/wiki/Quicken_Interchange_Format)

@@ -5,13 +5,13 @@ tags:
 - mutt
 ---
 
-<div class="alert-info">
-  <strong>UPDATE 2015/10/01:</strong> patched for Mutt 1.5.24, removed 1.5.21 and moved the stuff to a GitHub repository
-</div>
+{{< alertbox "info" "UPDATE 2015/10/01" >}}
+  patched for Mutt 1.5.24, removed 1.5.21 and moved the stuff to a GitHub repository
+{{< /alertbox >}}
 
-<div class="alert-info">
-  <strong>UPDATE 2014/06/07:</strong> patched the patch for Mutt 1.5.23
-</div>
+{{< alertbox "info" "UPDATE 2014/06/07" >}}
+  patched the patch for Mutt 1.5.23
+{{< /alertbox >}}
 
 Hey, I'm back after "several" busy days to show you a little tip of my virtual set _"Leave Gmail"_. In case you have several folders with a lot of emails (_more than 10,000 per folder_) like me and you want to use the [sidebar patch](http://www.lunar-linux.org/mutt-sidebar/) for your beloved Mutt, read this.
 

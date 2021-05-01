@@ -49,4 +49,4 @@ Date/Time: Sun Mar 22 03:15:59 CET 2009
 Additional Info:
 ```
 
-Bien entendu, je vous conseille d'utiliser ce format _surtout_ pour les alertes du type rapport (MAJ : [Fail2Ban: Générer des rapports quotidiens]({filename}/blog/2009-04-25-fail2ban-creer-un-rapport-quotidien/post.markdown)).
+Bien entendu, je vous conseille d'utiliser ce format _surtout_ pour les alertes du type rapport (MAJ : [Fail2Ban: Générer des rapports quotidiens]({{< ref "/blog/2009-04-25-fail2ban-creer-un-rapport-quotidien/index.markdown" >}})).

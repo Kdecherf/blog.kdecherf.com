@@ -49,4 +49,4 @@ You must start the service for the first run after starting the timer with ``sys
 
 _Enjoy!_
 
-[^1]: There is an example available on a [previous post]({filename}/blog/2012-11-06-mount-a-luks-partition-with-a-password-protected-gpg-encrypted-key-using-systemd/post.markdown)
+[^1]: There is an example available on a [previous post]({{< ref "/blog/2012-11-06-mount-a-luks-partition-with-a-password-protected-gpg-encrypted-key-using-systemd/index.markdown" >}})

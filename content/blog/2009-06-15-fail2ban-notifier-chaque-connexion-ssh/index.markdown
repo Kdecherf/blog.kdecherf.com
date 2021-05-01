@@ -11,7 +11,7 @@ Bien que Fail2Ban fasse correctement son travail, il peut arriver qu'une intrusi
 
 Si vous connaissez bien Fail2ban, vous savez que tout se fait via des actions et des filtres, donc notre objectif ne sera pas dur à atteindre. Commençons par ajouter notre filtre dans _/etc/fail2ban/jail.conf_ :
 
-Le formatage des mails utilisé ici est disponible [sur ce billet]({filename}/blog/2009-03-27-fail2ban-email-alerte-facon-nagios/post.markdown).
+Le formatage des mails utilisé ici est disponible [sur ce billet]({{< ref "/blog/2009-03-27-fail2ban-email-alerte-facon-nagios/index.markdown" >}}).
 
 ``` bash
 [ssh-notify]

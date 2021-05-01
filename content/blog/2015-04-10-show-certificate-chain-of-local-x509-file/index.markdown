@@ -5,9 +5,9 @@ tags:
 - openssl
 ---
 
-<div class="alert-info">
-  <strong>UPDATE 2016/06/01:</strong> Improving the script by using pipe inside awk, thanks to @ilatypov.
-</div>
+{{< alertbox "info" "UPDATE 2016/06/01" >}}
+  Improving the script by using pipe inside awk, thanks to @ilatypov.
+{{< /alertbox >}}
 
 When I play with X509 certificates I check that the certificate chain in the file is always complete and valid.
 

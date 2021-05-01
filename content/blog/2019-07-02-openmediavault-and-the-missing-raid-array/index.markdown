@@ -19,9 +19,9 @@ out, all subsequent dependencies failed too (_other data mount points_). I
 checked the status of the array, it was there and healthy but `blkid` was not
 returning it at all.
 
-<div class="alert-warn">
+{{< alertbox "warn" >}}
   Don't forget to make backups before playing with your drives following a failure.
-</div>
+{{< /alertbox >}}
 
 Trying to mount the array by hand gave me this pretty message:
 

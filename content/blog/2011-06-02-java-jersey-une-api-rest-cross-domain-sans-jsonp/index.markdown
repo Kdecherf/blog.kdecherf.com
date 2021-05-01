@@ -6,11 +6,11 @@ tags:
 - java
 ---
 
-An english version of this post is available [here]({filename}/blog/2011-06-19-java-jersey-a-cors-compliant-rest-api/post.markdown).
+An english version of this post is available [here]({{< ref "/blog/2011-06-19-java-jersey-a-cors-compliant-rest-api/index.markdown" >}}).
 
-<div class="alert-info">
-  <strong>UPDATE 2012/12/23:</strong> Correction d'une erreur d'étourderie sur le premier bloc ligne 4, l'objet <code>ResponseBuilder</code> n'a pas de méthode <code>ok()</code>.
-</div>
+{{< alertbox "info" "UPDATE 2012/12/23" >}}
+  Correction d'une erreur d'étourderie sur le premier bloc ligne 4, l'objet <code>ResponseBuilder</code> n'a pas de méthode <code>ok()</code>.
+{{< /alertbox >}}
 
 Ah les joies d'AJAX et du Cross-Domain ... Ou plutôt le cauchemar des développeurs. Aujourd'hui, je vais vous présenter un concept pour rendre rapidement et simplement une API REST Java/Jersey compatible avec la norme W3C CORS pour faire du Cross-Domain sans utiliser JSONP.
 

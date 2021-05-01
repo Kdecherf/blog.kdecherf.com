@@ -5,9 +5,9 @@ tags:
 - systemd
 ---
 
-<div class="alert-info">
-   <strong>UPDATE 2018/06/24:</strong> A <a href="https://github.com/systemd/systemd/pull/9341">fix just landed</a> in <em>systemd</em> to fix the <a href="https://github.com/systemd/systemd/issues/1296">related issue</a>.
-</div>
+{{< alertbox "info" "UPDATE 2018/06/24" >}}
+  A <a href="https://github.com/systemd/systemd/pull/9341">fix just landed</a> in <em>systemd</em> to fix the <a href="https://github.com/systemd/systemd/issues/1296">related issue</a>.
+{{< /alertbox >}}
 
 Few days ago I faced a quite weird error. Well, what was weird was the apparent error message. I wanted to run `journalctl -f` to see the last logs of a server and keep the journal open but it only returned the following error:
 

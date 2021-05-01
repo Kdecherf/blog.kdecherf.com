@@ -7,9 +7,9 @@ tags:
 - gmail
 ---
 
-<div class="alert-info">
-   <strong>UPDATE 2017/06/11:</strong> The patch has landed in NeoMutt 20170414.
-</div>
+{{< alertbox "info" "UPDATE 2017/06/11" >}}
+  The patch has landed in NeoMutt 20170414.
+{{< /alertbox >}}
 
 For a long time Gmail filters were keeping my inbox clean by automatically
 archiving all emails incoming from mailing lists. Even if it looks efficient,
@@ -125,9 +125,9 @@ Yes, I'm using a dedicated color for each mailing list. The complete file gives 
 
 ![NeoMutt](neomutt.png)
 
-<del>_Note: the support of `%K` should land in the next release of NeoMutt. If you
+_~~Note: the support of `%K` should land in the next release of NeoMutt. If you
 want it now you should patch your installation using
-[this patch](https://github.com/neomutt/neomutt/commit/6be374b7e8d2b1d794b05836493ddf62dd9b427e.patch)._</del>
+[this patch](https://github.com/neomutt/neomutt/commit/6be374b7e8d2b1d794b05836493ddf62dd9b427e.patch).~~_
 
 For more information:
 

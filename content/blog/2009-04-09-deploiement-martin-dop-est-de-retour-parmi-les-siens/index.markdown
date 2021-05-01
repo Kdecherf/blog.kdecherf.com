@@ -5,9 +5,9 @@ tags:
 - Microsoft
 ---
 
-<div class="alert-info">
-   <strong>UPDATE 2018/02/11:</strong> remplacement des liens vers archive.org.
-</div>
+{{< alertbox "info" "UPDATE 2018/02/11" >}}
+  remplacement des liens vers archive.org.
+{{< /alertbox >}}
 
 Son Fan Club était déjà présent aux TechDays '09 avec la distribution de badges (voir ci-dessous). _Disparu il y a 10 ans, Martin DOP a été retrouvé._
 
@@ -19,4 +19,4 @@ Son Fan Club était déjà présent aux TechDays '09 avec la distribution de bad
 > Ce matin-même, l'homme est sorti et s'est présenté avec son projet de déploiement sous le bras. Agé de 39 ans, il a alors découvert la vie des années 2010 avec étonnement : écrans plats full HD, Windows® 7, Xbox 360™, MDOP…
 
 
-Pour plus d'informations, rendez-vous [ici](https://web.archive.org/web/20101231171306/http://www.microsoft.com/france/windows/entreprises/mdop/martin-dop.aspx){: .archive}.
+Pour plus d'informations, rendez-vous {{< wayback "http://www.microsoft.com/france/windows/entreprises/mdop/martin-dop.aspx" >}}ici{{< /wayback >}}.
