@@ -1,6 +1,6 @@
-Title: Kevin Decherf
-save_as: index.html
-Status: hidden
+---
+title: Kevin Decherf
+---
 
 I am a system engineer and developer living in France. Computers are my passion
 since high school when I started developing websites on my spare time.
@@ -21,13 +21,13 @@ was the former production manager. You can checkout my profile on
 
 My spare time lets me enjoy my other passions like photography, books and
 Japanese culture to name a few. I share photos on
-[Flickr](https://www.flickr.com/photos/kdecherf), thoughts on this [blog]({category}blog),
+[Flickr](https://www.flickr.com/photos/kdecherf), thoughts on this [blog]({{< ref "/blog" >}}),
 links with [Shaarli](https://links.kdecherf.com), and sometimes anecdotes about
-sysadmin on [*Le Kdecherf]({category}le-kdecherf). I'm quite active on
+sysadmin on [*Le Kdecherf]({{< ref "/le-kdecherf" >}}). I'm quite active on
 [Twitter](https://twitter.com/Kdecherf) too.
 
 You can reach me by email at _kevin @ kdecherf.com_ —and don't hesitate to use
 my GPG key `0x108ABD75A81E6E2F` (which can be found
-      [here](https://kdecherf.com/kdecherf.asc)) if you need privacy— or by
+      [here](https://kdecherf.com/misc/kdecherf.asc)) if you need privacy— or by
 using the old-school but still famous IRC protocol on the networks
 [Freenode](http://freenode.org) and [Geeknode](http://www.geeknode.org).
