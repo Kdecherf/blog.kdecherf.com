@@ -1,0 +1,105 @@
+---
+baseURL: "https://kdecherf.com"
+title: "kdecherf ~ %"
+
+theme: "PaperMod"
+
+Copyright: "Content under license [CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)"
+
+RemovePathAccents: true
+pygmentsUseClasses: true
+pygmentsCodeFences: true
+
+LanguageCode: "en"
+
+params:
+   ShowReadingTime: true
+   disableSpecial1stPost: true
+   ShowBreadCrumbs: true
+   disableFingerprinting: true
+   assets:
+      disableHLJS: true
+   profileMode:
+      enabled: true
+      title: Kevin Decherf
+      subtitle: Site Reliability Engineering
+   socialIcons:
+      - name: twitter
+        url: "https://twitter.com/Kdecherf"
+      - name: github
+        url: "https://github.com/Kdecherf"
+      - name: linkedin
+        url: "https://www.linkedin.com/in/kdecherf"
+   analytics:
+      umami:
+         Host: "https://u.kdecherf.com"
+         SiteId: "0308fabc-df80-4813-a455-39e7a5b25767"
+
+ignoreErrors:
+- error-output-taxonomy
+
+permalinks:
+   blog: /:section/:year/:month/:day/:slug/
+   le-kdecherf: /:section/:year/:month/:day/:slug/
+
+rssLimit: 10
+
+outputFormats:
+   ATOM:
+      mediaType: "application/atom+xml"
+      baseName: "index"
+      rel: "alternate"
+      isPlainText: false
+      isHTML: false
+      noUgly: true
+      permalinkable: false
+
+mediaTypes:
+   application/atom+xml:
+      suffixes:
+         - xml
+
+outputs:
+   home:
+   - HTML
+   taxonomy:
+   - HTML
+   term:
+   - HTML
+   section:
+   - HTML
+   - ATOM
+
+markup:
+   goldmark:
+      extensions:
+         typographer: false
+
+menu:
+   main:
+      - identifier: about
+        name: About
+        url: /about/
+        weight: 1
+      - identifier: blog
+        name: Blog
+        url: /blog/
+        weight: 2
+      - identifier: le-kdecherf
+        name: "*Le Kdecherf"
+        url: /le-kdecherf/
+        weight: 3
+      - identifier: disclaimer
+        name: Disclaimer
+        url: /disclaimer/
+        weight: 4
+      - identifier: tags
+        name: Tags
+        url: /tags/
+        weight: 5
+
+author:
+   name: "Kevin Decherf"
+   github: "Kdecherf"
+   twitter: "Kdecherf"
+   gitlab: "Kdecherf"
