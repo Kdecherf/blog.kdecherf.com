@@ -1,0 +1,6 @@
+<div class="alertbox {{ .Get 0 }}">
+   {{- if .Get 1 }}
+      <strong>{{ .Get 1 }}: </strong>
+   {{- end }}
+  {{ .Inner }}
+</div>
