@@ -14,7 +14,7 @@ The process here was to move files from one `[Gmail]/All Mail` folder to another
 
 Don't panic, let's engage the debug mode of offlineimap. `offlineimap -d maildir` shows that it scanned and found 401,168 messages whereas the folder counts 405,042 valid emails. Well, let's check the [scan routine](https://github.com/OfflineIMAP/offlineimap/blob/master/offlineimap/folder/Maildir.py#L145>) of the software:
 
-``` python hl_lines="22"
+``` python {hl_lines=[22]}
 def _scanfolder(self, min_date=None, min_uid=None):
 
     maxsize = self.getmaxsize()

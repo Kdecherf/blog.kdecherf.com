@@ -112,7 +112,7 @@ This section is optional. Some of important files for the boot of my X session a
 
 I don't use any login manager (_like gdm or lightdm_) and I start X after the tty login. To make sure everything is set up, I do it via another unit file named `xsession.service`:
 
-``` ini hl_lines="3 4"
+``` ini {hl_lines=["3-4"]}
 [Unit]
 Description=XSession Service
 After=luks.service
