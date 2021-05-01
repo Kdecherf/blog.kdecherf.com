@@ -1,0 +1,111 @@
+:root {
+   --code-bg: #e5eff5;
+}
+body {
+   font-family: serif;
+   color: #272D30;
+   font-size: 1.1em;
+   line-height: 1.7em;
+}
+
+.list {
+   background-color: var(--theme);
+}
+
+.post-title {
+    font-size: 2rem;
+}
+
+.post-content h2 {
+    font-size: 1.7rem;
+}
+
+.post-content h3 {
+    font-size: 1.45rem;
+}
+
+.post-content h4 {
+    font-size: 1.3rem;
+}
+
+.post-content h5 {
+    font-size: 1.1rem;
+}
+
+.post-content blockquote {
+   font-style: italic;
+}
+
+.post-content .highlight:not(table) {
+   margin-bottom: 21px;
+}
+
+.post-content a {
+   border-bottom: 1px dotted #4DB6AC;
+   color: #007065;
+   box-shadow: none;
+}
+   .post-content a:hover {
+      border-bottom-style: solid;
+   }
+   .dark .post-content a {
+      color: #48A49B;
+   }
+   .post-content a.archive {
+      color: inherit;
+      /* border-color: #272D30; */
+      border-color: inherit;
+   }
+     .post-content a.archive svg {
+        vertical-align: super;
+        height: 12px;
+     }
+
+.post-content code {
+   font-family: Courier, monospace;
+   font-size: .95rem;
+}
+
+.post-content .alertbox {
+   padding: 8px 35px 8px 14px;
+   text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+   border-radius: 4px 4px 4px 4px;
+   margin: 20px 0px;
+   font-size: 0.9em;
+}
+   .post-content .alertbox.info {
+      background-color: #D9EDF7;
+      border-color: #BCE8F1;
+      color: #3A87AD;
+   }
+   .post-content .alertbox.warn {
+      background-color: #FFE0B2;
+      border-color: #FF9100;
+      color: #E64A19;
+   }
+
+/* Keep images centered, and allow images wider than the main
+   text column to break out. */
+.post-content p.md__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+    border-radius: 0.3em;
+    box-shadow: rgba(0,0,0,0.15) 0 1px 4px;
+}
+   .post-content img:hover {
+       box-shadow: rgba(0,0,0,0.25) 0 2px 5px;
+   }
+   .post-content p.md__image img {
+       margin: 0;
+   }
+
+.post-content .footnotes ol li {
+   font-size: .95rem;
+}
