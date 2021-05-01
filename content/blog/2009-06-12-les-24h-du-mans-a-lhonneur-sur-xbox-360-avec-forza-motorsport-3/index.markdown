@@ -13,4 +13,4 @@ Retrouvez plus d'informations sur [http://forza.xbox.com/](http://forza.xbox.co
 
 ![fm3_lemans_10](fm3_lemans_10-1024x576.jpg)
 
-_Source : _[_XBox Press_](http://gamerscoreblog.com/press/archive/2009/06/12/forza367676766.aspx)
+_Source :_ [_XBox Press_](http://gamerscoreblog.com/press/archive/2009/06/12/forza367676766.aspx)

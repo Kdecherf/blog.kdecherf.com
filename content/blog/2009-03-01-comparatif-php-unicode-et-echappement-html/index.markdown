@@ -25,12 +25,12 @@ Passons aux exemples concrets. Dans cet exemple j'ai pris le texte tel quel de l
 
 ### Taille
 	
-  * Le texte au format UTF-8 fait très précisément **6 544 **octets
+  * Le texte au format UTF-8 fait très précisément **6 544** octets
   * Le texte converti fait très précisément **8 099** octets
 
 En conclusion sur la taille, il y a une différence de **1 555** octets. Petit me dites-vous ? Passons au modèle temporel ... Sur la base de 100 000 pages vues par mois
 	
-  * Le texte au format UTF-8 va générer un transfert de **654,4 **millions d'octets (~650 Mo)
+  * Le texte au format UTF-8 va générer un transfert de **654,4** millions d'octets (~650 Mo)
   * Le texte converti va générer un transfert de **809,9** millions d'octets (~810 Mo)
 
 Nous parlons donc ici d'une différence de transfert de **~155 Mo** par mois. Ce n'est rien ? Les têtes de mule :D Passons ces chiffres sur un site qui possède 10 000 articles comme celui là et qui génère 5 millions de pages vues par mois ... Ce n'est pas moins de **15 Mo** gagné sur le stockage et ... **7,8 Go** de transfert économisé par mois ! Vous comprenez mieux là ? Non ? Ok, passons côté performance ...

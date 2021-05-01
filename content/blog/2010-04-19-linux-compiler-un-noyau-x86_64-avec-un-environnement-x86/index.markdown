@@ -26,7 +26,7 @@ done
 
 Et maintenant, vous pouvez compiler tranquillement votre noyau x86\_64 :
 
-**UPDATE : **Pensez à ajouter ~/bin à votre variable $PATH !
+**UPDATE :** Pensez à ajouter ~/bin à votre variable $PATH !
 
 ``` shell-session
 usr/src/linux $ make ARCH=x86_64 CROSS_COMPILE=x86_64-linux-gnu- menuconfig

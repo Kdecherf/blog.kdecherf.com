@@ -36,7 +36,7 @@ La valeur est facultative pour les sélecteurs _a_ et _mx_, auquel cas le domain
 Ce n'est pas clair ? Petite traduction de l'exemple :
 	
   * _+a_ : autorise toutes les entrées DNS de type A du domaine devaproxis.fr (_utile pour les serveurs web_)
-  * +_mx _: autorise toutes les entrées DNS de type MX du domaine devaproxis.fr (_utile, non ? :)_)
+  * _+mx_ : autorise toutes les entrées DNS de type MX du domaine devaproxis.fr (_utile, non ? :)_)
   * _~all_ : n'autorise pas (_soft fail_) les autres adresses IP envoyant du courriel au nom de devaproxis.fr
 
 Vous pouvez, bien entendu, mélanger les sélécteurs à votre guise. Autre exemple :

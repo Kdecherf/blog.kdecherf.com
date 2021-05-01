@@ -13,7 +13,7 @@ Pour se mettre en situation, si vous avez le même problème, je passe ma comman
 
 ![Voyages SNCF Erreur](Voyages-SNCF-Erreur.png)
 
-La solution, toute simple, consiste à générer une erreur avec une carte quelconque. Dans l'exemple, je prends la carte _Gagnez à voyager _(_la carte Smile's des 12-25 ans_)_ _et j'entre un numéro aléatoire :
+La solution, toute simple, consiste à générer une erreur avec une carte quelconque. Dans l'exemple, je prends la carte _Gagnez à voyager_ (_la carte Smile's des 12-25 ans_) et j'entre un numéro aléatoire :
 
 ![Voyages SNCF Erreur 2](Voyages-SNCF-Erreur-2.png)
 

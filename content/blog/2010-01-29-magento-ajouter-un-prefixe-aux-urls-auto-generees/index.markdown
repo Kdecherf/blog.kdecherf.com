@@ -38,6 +38,6 @@ Cela ne gère que les URLs de catégories et produits associés [aux catégories
 return $this->getUnusedPath($category->getStoreId(), 'votreprefixeproduit/' . $urlKey . $productUrlSuffix,
 ```
 
-__*** ATTENTION ***__, il est très important de garder à l'esprit que ces modifications sont susceptibles d'être perdues lors d'une mise à jour de votre installation.
+__** ATTENTION **__, il est très important de garder à l'esprit que ces modifications sont susceptibles d'être perdues lors d'une mise à jour de votre installation.
 
 Il est évident que le mieux pour faire ceci serait que le Core intègre une directive de configuration permettant d'assigner des préfixes (_au même titre que les suffixes et extensions_) mais bon, on fait avec ce que l'on a. _Enjoy it !_
