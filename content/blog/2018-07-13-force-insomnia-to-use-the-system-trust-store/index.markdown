@@ -79,4 +79,4 @@ _Enjoy!_
 
 [^1]: I experienced segfaults while playing with this variable
 
-[1]: https://github.com/getinsomnia/insomnia/blob/develop/packages/insomnia-app/app/network/cacert.js
+[1]: https://github.com/getinsomnia/insomnia/blob/master/packages/insomnia-app/app/network/cacert.js

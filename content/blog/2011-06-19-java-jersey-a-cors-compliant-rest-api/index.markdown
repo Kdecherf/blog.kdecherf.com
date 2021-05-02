@@ -132,7 +132,7 @@ With this standard you can miss Internet Explorer 6 and 7. Internet Explorer 8 i
 **More information:**
 
   * [W3C Worksheet about CORS](http://www.w3.org/TR/cors/)
-  * [Using CORS with Firefox 3.5](https://developer.mozilla.org/En/HTTP_Access_Control)
+  * [Using CORS with Firefox 3.5](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
   * [XDomainRequest object on MSDN](http://msdn.microsoft.com/en-us/library/cc288060\(v=vs.85\).aspx)
   * [RFC 2616: HTTP Protocol](http://tools.ietf.org/html/rfc2616)
 

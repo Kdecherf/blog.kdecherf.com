@@ -9,7 +9,7 @@ Il fallait s'y attendre, le 12 décembre dernier une équipe de chercheurs dirig
 
 Pour ceux qui ne connaissent pas, l'algorithme **RSA** (_Rivest Shamir Adleman_) est un algorithme de chiffrement asymétrique à clé publique. Cet algorithme a été introduit en 1977 par [_Ron Rivest_](http://fr.wikipedia.org/wiki/Ron_Rivest), [_Adi Shamir_](http://fr.wikipedia.org/wiki/Adi_Shamir) et [_Len Adleman_](http://fr.wikipedia.org/wiki/Len_Adleman).
 
-Je ne vais pas m'étendre sur la présentation de cet algorithme, [Wikipedia](http://fr.wikipedia.org/wiki/Rivest_Shamir_Adleman) le fait très bien. Si vous voulez en savoir plus sur le mechanisme de fonctionnement, vous pouvez toujours vous référer à [l'article](http://www.siteduzero.com/tutoriel-3-2170-la-cryptographie-asymetrique-rsa.html) du Site du Zéro.
+Je ne vais pas m'étendre sur la présentation de cet algorithme, [Wikipedia](http://fr.wikipedia.org/wiki/Rivest_Shamir_Adleman) le fait très bien. Si vous voulez en savoir plus sur le mechanisme de fonctionnement, vous pouvez toujours vous référer à {{< wayback "http://www.siteduzero.com/tutoriel-3-2170-la-cryptographie-asymetrique-rsa.html" >}}l'article du Site du Zéro{{< /wayback >}}.
 
 Partant de ce principe, nous ne pouvons pas parler de "casser" l'algorithme mais de factorisation de clé. La consommation en ressources dépend directement de la taille de clé, sachant que pour une clé 768 bits il faut approximativement **1 500 ans** pour la factoriser à l'aide un Opteron 2.20 Ghz. Le résultat final occupe pas moins de 5 To et a demandé plusieurs centaines de machines. Vous trouverez le PDF du projet [ici](http://eprint.iacr.org/2010/006.pdf).
 

@@ -51,4 +51,4 @@ Le prompt est inspiré du prompt Gentoo. Quant à la barre des titres, elle est 
 _Enjoy it !_
 
   * [Liste des couleurs Bash](https://wiki.archlinux.org/index.php/Color_Bash_Prompt#List_of_colors_for_prompt_and_Bash)
-  * Source (_en partie_) : [Show Your GIT Branch Name In Your Prompt](http://www.jonmaddox.com/2008/03/13/show-your-git-branch-name-in-your-prompt/)
+  * Source (_en partie_) : {{< wayback "http://www.jonmaddox.com/2008/03/13/show-your-git-branch-name-in-your-prompt/" >}}Show Your GIT Branch Name In Your Prompt{{< /wayback >}}

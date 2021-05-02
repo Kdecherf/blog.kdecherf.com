@@ -38,7 +38,7 @@ _**Note:** Don't forget to append `use-agent` in `~/.gnupg/gpg.conf` and customi
 
 ### LUKS
 
-I've found [a script](http://www.saout.de/pipermail/dm-crypt/2011-January/001467.html) for mounting a LUKS partition with automount. I've customized it for my own use:
+I've found {{< wayback "http://www.saout.de/pipermail/dm-crypt/2011-January/001467.html" >}}a script{{< /wayback >}} for mounting a LUKS partition with automount. I've customized it for my own use:
 
 ``` bash
 #!/bin/sh

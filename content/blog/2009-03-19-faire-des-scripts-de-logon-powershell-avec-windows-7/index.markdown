@@ -20,4 +20,4 @@ Double-cliquez sur les propriétés d'ouverture de session, vous avez un onglet 
 
 Enfantin, non ?
 
-*Source : [Blog TechNet PowerShell](http://blogs.technet.com/powershell/archive/2009/03/17/faire-des-scripts-de-logon-powershell-avec-windows-7.aspx)*
+_~~Source : [Blog TechNet PowerShell](http://blogs.technet.com/powershell/archive/2009/03/17/faire-des-scripts-de-logon-powershell-avec-windows-7.aspx)~~_

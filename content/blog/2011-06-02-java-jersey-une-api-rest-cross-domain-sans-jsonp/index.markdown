@@ -126,7 +126,7 @@ Point de vue compatibilité avec cette petite norme laissez tomber Internet Expl
 **Plus d'informations :**
 
   * [Document de travail du W3C pour la norme CORS](http://www.w3.org/TR/cors/)
-  * [Présentation détaillée de l'utilisation de CORS avec Firefox 3.5](https://developer.mozilla.org/En/HTTP_Access_Control)
+  * [Présentation détaillée de l'utilisation de CORS avec Firefox 3.5](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
   * [Présentation de l'objet XDomainRequest sur MSDN](http://msdn.microsoft.com/en-us/library/cc288060\(v=vs.85\).aspx)
   * [RFC 2616 : Protocole HTTP](http://tools.ietf.org/html/rfc2616)
 

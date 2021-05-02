@@ -7,7 +7,7 @@ tags:
 
 Windows 7 rime avec netbook. Si si, le monsieur il l'a dit ! Par contre, lecteur DVD rime moins avec netbook. Pas de panique ! Outre la solution de boot par le réseau (PXE) vous pouvez également installer Windows 7 depuis une clé USB. Et même que c'est simple :)
 
-Explications par le [TechNet Magazine](http://technet.microsoft.com/en-us/magazine/dd535816.aspx) :
+Explications par le {{< wayback "http://technet.microsoft.com/en-us/magazine/dd535816.aspx" >}}TechNet Magazine{{< /wayback >}} :
 	
   * Commencez par télécharger et installer [DiskPart Utility](http://www.microsoft.com/downloads/details.aspx?FamilyID=0FD9788A-5D64-4F57-949F-EF62DE7AB1AE) (normalement, il est déjà installé)
   * Lancez-le (tapez " diskpart " dans le menu démarrer)

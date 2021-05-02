@@ -13,7 +13,7 @@ Few weeks ago I had a discussion about LUKS (_Linux Unified Key Setup_) and the 
 
 ### Key management on LUKS
 
-The first statement is incorrect. As described in the [LUKS On-Disk Format Specification (PDF)](http://tomb.dyne.org/Luks_on_disk_format.pdf), LUKS does not use your passphrase to encrypt your device but uses it to encrypt a randomly generated master key and stores it in a key slot.
+The first statement is incorrect. As described in the [LUKS On-Disk Format Specification (PDF)](https://gitlab.com/cryptsetup/cryptsetup/-/wikis/LUKS-standard/on-disk-format.pdf), LUKS does not use your passphrase to encrypt your device but uses it to encrypt a randomly generated master key and stores it in a key slot.
 
 LUKS can manage up to 8 key slot and each active key slot stores an encrypted copy of the master key using its password. In fact when you type your password to unlock a device, `cryptsetup` checks it against all active key slots to find the correct one and decrypts the master key.
 
