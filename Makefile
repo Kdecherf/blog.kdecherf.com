@@ -1,4 +1,5 @@
 HUGO?=hugo
+GIT?=git
 
 BASEDIR=$(CURDIR)
 OUTPUT?=public
@@ -12,29 +13,32 @@ SSH_PORT=22
 SSH_USER=blog
 SSH_TARGET_DIR=~/httpdocs
 
-DATE := $(shell date +'%Y-%m-%d %H:%M:%S')
+DATETIME := $(shell date -Iseconds)
+DATE := $(shell echo '${DATETIME}' | cut -d'T' -f1)
 ifdef SLUG
 	CUSTSLUG = 1
 endif
 SLUG := $(shell echo '${NAME}' | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)
-DATESLUG = $(shell echo '${DATE}' | cut -d' ' -f1)-${SLUG}
+DATESLUG = $(DATE)-$(SLUG)
 EXT ?= markdown
+FILENAME ?= index
 
 PORT ?= 1313
 
 newpost:
 ifdef NAME
-	mkdir $(INPUTDIR)/blog/$(DATESLUG)
-	echo "---"
-	echo "title: $(NAME)" >  $(INPUTDIR)/blog/$(DATESLUG)/index.$(EXT)
-	echo "date: $(DATE)" >> $(INPUTDIR)/blog/$(DATESLUG)/index.$(EXT)
+	$(eval POSTDIR=blog/$(DATESLUG))
+	$(eval FILEPATH=$(POSTDIR)/$(FILENAME).$(EXT))
+	$(HUGO) new $(FILEPATH)
+	sed -e "s/^title:.*/title: \"$(NAME)\"/" -i $(INPUTDIR)/$(FILEPATH)
 ifdef CUSTSLUG
-	echo "slug: $(SLUG)" >> $(INPUTDIR)/blog/$(DATESLUG)/index.$(EXT)
+	sed -e "s/^slug:.*/slug: \"$(SLUG)\"/" -i $(INPUTDIR)/$(FILEPATH)
+else
+	sed -e "/^slug:.*/d" -i $(INPUTDIR)/$(FILEPATH)
 endif
-	echo "tags:" >> $(INPUTDIR)/blog/$(DATESLUG)/index.$(EXT)
-	echo "---"              >> $(INPUTDIR)/blog/$(DATESLUG)/index.$(EXT)
-	echo ""              >> $(INPUTDIR)/blog/$(DATESLUG)/index.$(EXT)
-	$(EDITOR) $(INPUTDIR)/blog/$(DATESLUG)/index.$(EXT)
+	$(GIT) add $(INPUTDIR)/$(FILEPATH)
+	$(GIT) commit -s -v -m "New post: '$(NAME)'"
+	$(EDITOR) $(INPUTDIR)/$(FILEPATH)
 else
 	@echo 'Variable NAME is not defined.'
 	@echo 'Do make newpost NAME='"'"'Post Name'"'"
@@ -42,28 +46,34 @@ endif
 
 newle:
 ifdef NAME
-	mkdir $(INPUTDIR)/lekdecherf/$(DATESLUG)
-	echo "---"
-	echo "title: $(NAME)" >  $(INPUTDIR)/le-kdecherf/$(DATESLUG)/index.$(EXT)
-	echo "date: $(DATE)" >> $(INPUTDIR)/le-kdecherf/$(DATESLUG)/index.$(EXT)
+	$(eval POSTDIR=le-kdecherf/$(DATESLUG))
+	$(eval FILEPATH=$(POSTDIR)/$(FILENAME).$(EXT))
+	$(HUGO) new $(FILEPATH)
+	sed -e "s/^title:.*/title: \"$(NAME)\"/" -i $(INPUTDIR)/$(FILEPATH)
 ifdef CUSTSLUG
-	echo "slug: $(SLUG)" >> $(INPUTDIR)/le-kdecherf/$(DATESLUG)/index.$(EXT)
+	sed -e "s/^slug:.*/slug: \"$(SLUG)\"/" -i $(INPUTDIR)/$(FILEPATH)
+else
+	sed -e "/^slug:.*/d" -i $(INPUTDIR)/$(FILEPATH)
 endif
-	echo "tags:" >> $(INPUTDIR)/le-kdecherf/$(DATESLUG)/index.$(EXT)
-	echo "---"              >> $(INPUTDIR)/le-kdecherf/$(DATESLUG)/index.$(EXT)
-	echo ""              >> $(INPUTDIR)/le-kdecherf/$(DATESLUG)/index.$(EXT)
-	echo "![]()"              >> $(INPUTDIR)/lekdecherf/$(DATESLUG)/post.$(EXT)
-	$(EDITOR) $(INPUTDIR)/lekdecherf/$(DATESLUG)/post.$(EXT)
+	$(GIT) add $(INPUTDIR)/$(FILEPATH)
+	$(GIT) commit -s -v -m "New post: '$(NAME)'"
+	$(EDITOR) $(INPUTDIR)/$(FILEPATH)
 else
 	@echo 'Variable NAME is not defined.'
 	@echo 'Do make newpost NAME='"'"'Post Name'"'"
 endif
 
-date:
+finalize:
 ifdef POST
 	$(eval _POST = $(shell echo '${POST}' | sed -e 's;/$$;;g'))
-	sed -e "s/^date: .*/date: $(DATE)/" -i $(_POST)/index.$(EXT)
-	mv $(_POST) $(INPUTDIR)/blog/$(shell echo '${DATE}' | cut -d' ' -f1)-$(shell echo '${_POST}' | awk -F'/' '{print $$NF}' | cut -d- -f4-)
+	$(eval _ORIGDATE = $(shell echo '${_POST}' | sed -e 's;.*/\([0-9]*-[0-9]*-[0-9]*\)-.*;\1;'))
+	$(eval _NEWPATH = $(shell echo '${_POST}' | sed -e 's;${_ORIGDATE};${DATE};'))
+	sed -e "s/^date: .*/date: $(DATETIME)/" -i $(_POST)/$(FILENAME).$(EXT)
+	sed -e "/^draft: /d" -i $(_POST)/$(FILENAME).$(EXT)
+	$(if $(filter-out $(_POST),$(_NEWPATH)),mv '$(_POST)' '$(_NEWPATH)')
+	$(if $(filter-out $(_POST),$(_NEWPATH)),$(GIT) rm -r '$(_POST)')
+	$(GIT) add $(_POST)
+	$(GIT) commit -s -v --amend -C HEAD
 else
 	@echo 'Variable POST is not defined.'
 	@echo 'Do make date POST='"'"'Path to post'"'"
@@ -86,6 +96,6 @@ rsync_upload: publish
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
 serve:
-	$(HUGO) serve --port $(PORT)
+	$(HUGO) serve --buildDrafts --port $(PORT)
 
-.PHONY: html clean serve publish ssh_upload rsync_upload date newpost newle
+.PHONY: html clean serve publish ssh_upload rsync_upload finalize newpost newle
