@@ -64,6 +64,7 @@ body {
 .post-content code {
    font-family: Courier, monospace;
    font-size: .95rem;
+   font-variant-ligatures: none;
 }
 
 .post-content .alertbox {
