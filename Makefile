@@ -72,7 +72,7 @@ ifdef POST
 	sed -e "/^draft: /d" -i $(_POST)/$(FILENAME).$(EXT)
 	$(if $(filter-out $(_POST),$(_NEWPATH)),mv '$(_POST)' '$(_NEWPATH)')
 	$(if $(filter-out $(_POST),$(_NEWPATH)),$(GIT) rm -r '$(_POST)')
-	$(GIT) add $(_POST)
+	$(GIT) add $(_NEWPATH)
 	$(GIT) commit -s -v --amend -C HEAD
 else
 	@echo 'Variable POST is not defined.'
