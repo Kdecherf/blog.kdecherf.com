@@ -103,3 +103,7 @@ author:
    github: "Kdecherf"
    twitter: "Kdecherf"
    gitlab: "Kdecherf"
+
+privacy:
+   twitter:
+      simple: true
