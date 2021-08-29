@@ -30,6 +30,16 @@ params:
         url: "https://github.com/Kdecherf"
       - name: linkedin
         url: "https://www.linkedin.com/in/kdecherf"
+      - name: flickr
+        url: "https://www.flickr.com/photos/Kdecherf"
+      - name: matrix
+        url: "https://matrix.to/#/@kdecherf:matrix.org"
+      - name: liberapay
+        url: "https://liberapay.com/Kdecherf/"
+      - name: serverfault
+        url: "https://serverfault.com/users/95273/kdecherf"
+      - name: stackoverflow
+        url: "https://stackoverflow.com/users/954513/kdecherf"
    analytics:
       umami:
          Host: "https://u.kdecherf.com"
