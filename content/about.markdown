@@ -28,6 +28,5 @@ sysadmin on [*Le Kdecherf]({{< ref "/le-kdecherf" >}}). I'm quite active on
 
 You can reach me by email at _kevin @ kdecherf.com_ —and don't hesitate to use
 my GPG key `0x108ABD75A81E6E2F` (which can be found
-      [here](https://kdecherf.com/misc/kdecherf.asc)) if you need privacy— or by
-using the old-school but still famous IRC protocol on the networks
-[Freenode](http://freenode.org) and [Geeknode](http://www.geeknode.org).
+[here](https://kdecherf.com/misc/kdecherf.asc)) if you need privacy— or on
+[Matrix](https://matrix.to/#/@kdecherf:matrix.org).
