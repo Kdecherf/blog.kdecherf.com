@@ -6,6 +6,10 @@ tags:
 - twitter
 ---
 
+{{< alertbox "info" "UPDATE 2021/11/11" >}}
+  Updated XPath query to handle threaded tweets.
+{{< /alertbox >}}
+
 Twitter is one of my primary sources of content to read, the other being RSS
 feeds.
 
@@ -69,7 +73,7 @@ shortener, the actual link is available in the `data-expanded-url` property.
 Then we could use the following XPath query to extract the link we want:
 
 ```
-//p[contains(@class, 'tweet-text')]//a[contains(@class, 'twitter-timeline-link') and contains(@rel, 'nofollow')]/@data-expanded-url
+//div[contains(@class, 'js-initial-focus')]//p[contains(@class, 'tweet-text')]//a[contains(@class, 'twitter-timeline-link') and contains(@rel, 'nofollow')]/@data-expanded-url
 ```
 
 Now that we have the XPath query we can use it with a `single_page_link`
@@ -78,7 +82,7 @@ For that we need to add the following line to the file
 `vendor/j0k3r/graby-site-config/twitter.com.txt`:
 
 ```
-single_page_link: //p[contains(@class, 'tweet-text')]//a[contains(@class, 'twitter-timeline-link') and contains(@rel, 'nofollow')]/@data-expanded-url
+single_page_link: //div[contains(@class, 'js-initial-focus')]//p[contains(@class, 'tweet-text')]//a[contains(@class, 'twitter-timeline-link') and contains(@rel, 'nofollow')]/@data-expanded-url
 ```
 
 With this modification, sending the link
