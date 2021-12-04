@@ -6,6 +6,10 @@ tags:
 - twitter
 ---
 
+{{< alertbox "info" "UPDATE 2021/12/04" >}}
+  Updated XPath query to reflect recent changes on what is returned by Twitter.
+{{< /alertbox >}}
+
 {{< alertbox "info" "UPDATE 2021/11/11" >}}
   Updated XPath query to handle threaded tweets.
 {{< /alertbox >}}
@@ -47,8 +51,8 @@ content. This instruction is `single_page_link` and was originally added for
 articles that spawn over several pages but provide a link for fetching the whole
 content at once.
 
-Here is the DOM tree of a tweet page when fetching it with the User-Agent of
-Googlebot[^1]:
+Here was the DOM tree of a tweet page returned by Twitter before a recent
+change[^1]:
 
 ``` html
 <!-- [clipped] -->
@@ -67,13 +71,13 @@ Googlebot[^1]:
 </div>
 ```
 
-We can see that even if Twitter overrides the `href` property with their url
-shortener, the actual link is available in the `data-expanded-url` property.
+~~We can see that even if Twitter overrides the `href` property with their url
+shortener, the actual link is available in the `data-expanded-url` property.~~[^2]
 
 Then we could use the following XPath query to extract the link we want:
 
 ```
-//div[contains(@class, 'js-initial-focus')]//p[contains(@class, 'tweet-text')]//a[contains(@class, 'twitter-timeline-link') and contains(@rel, 'nofollow')]/@data-expanded-url
+//meta[@itemprop='mainEntityOfPage']/parent::div//article//a[contains(@rel, 'noreferrer') and contains(@href, 'https://t.co')]/@href
 ```
 
 Now that we have the XPath query we can use it with a `single_page_link`
@@ -82,7 +86,7 @@ For that we need to add the following line to the file
 `vendor/j0k3r/graby-site-config/twitter.com.txt`:
 
 ```
-single_page_link: //div[contains(@class, 'js-initial-focus')]//p[contains(@class, 'tweet-text')]//a[contains(@class, 'twitter-timeline-link') and contains(@rel, 'nofollow')]/@data-expanded-url
+single_page_link: //meta[@itemprop='mainEntityOfPage']/parent::div//article//a[contains(@rel, 'noreferrer') and contains(@href, 'https://t.co')]/@href
 ```
 
 With this modification, sending the link
@@ -105,3 +109,6 @@ default, like for Reddit.
 
 [^1]: Without specifying the User-Agent of Googlebot, Twitter sends a
   client-side rendered page with javascript, see https://github.com/fivefilters/ftr-site-config/pull/837
+[^2]: Twitter recently changed the way they show tweets, the attribute
+  `data-expanded-url` is no longer available and the DOM tree is clogged with a
+  lot of crap.
