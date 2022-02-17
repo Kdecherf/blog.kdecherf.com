@@ -4,9 +4,15 @@ title: Disclaimer
 
 ### Content
 
-The content of this website is licensed under the [CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/) license. It is written using Markdown and generation is done by the static site generator [Hugo](https://gohugo.io).
+The content of this website is licensed under the [CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/) license.
 
-You can find the complete sources on [its GitHub repository](https://github.com/Kdecherf/blog.kdecherf.com).
+Sources are available on [GitHub](https://github.com/Kdecherf/blog.kdecherf.com).
+
+### Privacy
+
+This website does not rely on cookies nor third party resources.
+
+Basic and anonymous statistics are collected through a self-hosted [umami](https://umami.is/) instance.
 
 ### Contact
 
