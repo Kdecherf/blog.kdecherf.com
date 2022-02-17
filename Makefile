@@ -98,4 +98,8 @@ rsync_upload: publish
 serve:
 	$(HUGO) serve --buildDrafts --port $(PORT)
 
+expose:
+	ngrok http $(PORT) &
+	sleep 3s && $(HUGO) serve --buildDrafts --liveReloadPort=443 --appendPort=false --baseURL=$$(curl --silent http://127.0.0.1:4040/api/tunnels | jq -r '.tunnels[0].public_url' | sed -e 's@https://@@')
+
 .PHONY: html clean serve publish ssh_upload rsync_upload finalize newpost newle
