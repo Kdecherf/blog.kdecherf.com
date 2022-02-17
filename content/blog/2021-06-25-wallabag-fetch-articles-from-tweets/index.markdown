@@ -23,7 +23,7 @@ article that was originally in this tweet.
 
 We'll take the following tweet for the illustration:
 
-{{< tweet 1394723094183428101 >}}
+{{< tweet Kdecherf 1394723094183428101 >}}
 
 It would be perfect if wallabag was able to directly fetch the linked article.
 
