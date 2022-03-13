@@ -1,3 +1,4 @@
 .*.swp
-/public
+/public/*
+!/public/_redirects
 /build

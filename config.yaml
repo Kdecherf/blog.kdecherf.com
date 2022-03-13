@@ -12,6 +12,8 @@ pygmentsCodeFences: true
 
 LanguageCode: "en"
 
+enableRobotsTXT: true
+
 params:
    ShowReadingTime: true
    disableSpecial1stPost: true

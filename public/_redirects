@@ -1,0 +1,40 @@
+/atom.xml                   /blog/index.xml
+/feeds/blog.atom.xml        /blog/index.xml
+/feeds/le-kdecherf.atom.xml /le-kdecherf/index.xml
+
+# blog.kdecherf.com redirect rules
+https://blog.kdecherf.com/archives   https://kdecherf.com/blog/
+https://blog.kdecherf.com/about-blog https://kdecherf.com/disclaimer/
+https://blog.kdecherf.com/*          https://kdecherf.com/:splat
+
+# tumblr legacy redirect rules
+https://le.kdecherf.com/post/21207105768/le-me-installing-jdk-on-three-servers             https://kdecherf.com/le-kdecherf/2012/04/16/le-me-installing-jdk-on-three-servers/
+https://le.kdecherf.com/post/23668703691/overcommitting-memory-with-kvm                    https://kdecherf.com/le-kdecherf/2012/05/24/overcommitting-memory-with-kvm/
+https://le.kdecherf.com/post/24887060144/somewhere-in-the-ubuntu-land-for-more             https://kdecherf.com/le-kdecherf/2012/06/11/somewhere-in-the-ubuntu-land/
+https://le.kdecherf.com/post/31145423357/a-deployment-like-any-other-i-admit-that          https://kdecherf.com/le-kdecherf/2012/09/08/a-deployment-like-any-other/
+https://le.kdecherf.com/post/31190423149/le-me-playing-with-iptables                       https://kdecherf.com/le-kdecherf/2012/09/09/le-me-playing-with-iptables/
+https://le.kdecherf.com/post/33028512165/sysadmin-insult                                   https://kdecherf.com/le-kdecherf/2012/10/06/sysadmin-insult/
+https://le.kdecherf.com/post/36352198184/spotify-on-linux                                  https://kdecherf.com/le-kdecherf/2012/11/23/le-spotify-on-linux/
+https://le.kdecherf.com/post/41783400985/sysadmin-versus-the-world-lvl-hard-night-it       https://kdecherf.com/le-kdecherf/2013/01/29/sysadmin-versus-the-world-lvl-hard-night/
+https://le.kdecherf.com/post/42284213759/sysadmin-lvl-verbose-log-this-software-has-a      https://kdecherf.com/le-kdecherf/2013/02/04/sysadmin-lvl-verbose-log/
+https://le.kdecherf.com/post/45018476937/somewhere-in-the-storage-area-network             https://kdecherf.com/le-kdecherf/2013/03/10/somewhere-in-the-storage-area-network/
+https://le.kdecherf.com/post/63462117135/call-me-maybe-on-duty                             https://kdecherf.com/le-kdecherf/2013/10/08/call-me-maybe-on-duty/
+https://le.kdecherf.com/post/64517359341/awesome-feature                                   https://kdecherf.com/le-kdecherf/2013/10/20/-awesome-feature/
+https://le.kdecherf.com/post/64518848643/holidays                                          https://kdecherf.com/le-kdecherf/2013/10/20/holidays/
+https://le.kdecherf.com/post/65348045669/kernel-git-bisect                                 https://kdecherf.com/le-kdecherf/2013/10/28/le-new-hobby/
+https://le.kdecherf.com/post/73643271610/le-kdecherfe                                      https://kdecherf.com/le-kdecherf/2014/01/17/le-kdecherfe/
+https://le.kdecherf.com/post/78210782159/kvm-screendump                                    https://kdecherf.com/le-kdecherf/2014/03/01/kvm-screendump/
+https://le.kdecherf.com/post/87974089127/another-openssl-security-advisory                 https://kdecherf.com/le-kdecherf/2014/06/06/another-openssl-security-advisory/
+https://le.kdecherf.com/post/100233447477/le-poodle-day                                    https://kdecherf.com/le-kdecherf/2014/10/17/le-poodle-day/
+https://le.kdecherf.com/post/100234701147/use-raid-1-they-said-it-will-be-secure-they-said https://kdecherf.com/le-kdecherf/2014/10/17/use-raid-1-they-said-it-will-be-secure-they-said/
+https://le.kdecherf.com/post/105597152422/cve-2014-9390                                    https://kdecherf.com/le-kdecherf/2014/12/19/cve-2014-9390/
+https://le.kdecherf.com/post/117248453067/le-backup-and-recovery-plan                      https://kdecherf.com/le-kdecherf/2015/04/24/le-backup-and-recovery-plan/
+https://le.kdecherf.com/post/117248670332/le-last-user-windows-xp                          https://kdecherf.com/le-kdecherf/2015/04/24/le-last-user-windows-xp/
+https://le.kdecherf.com/post/117252462317/le-mutt-user-against-the-world                   https://kdecherf.com/le-kdecherf/2015/04/24/le-mutt-user-against-the-world/
+https://le.kdecherf.com/post/137683291147/le-kdecherf-on-forbes                            https://kdecherf.com/le-kdecherf/2016/01/20/le-kdecherf-on-forbes/
+https://le.kdecherf.com/post/137645220657/le-backup-storage-is-full                        https://kdecherf.com/le-kdecherf/2016/01/19/le-backup-storage-is-full/
+
+# le.kdecherf.com redirect rules
+https://le.kdecherf.com     https://kdecherf.com/le-kdecherf/
+https://le.kdecherf.com/*   https://kdecherf.com/le-kdecherf/:splat
+https://le.kdecherf.com/rss https://kdecherf.com/le-kdecherf/index.xml
