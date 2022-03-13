@@ -1,3 +1,3 @@
-{{- if not .Site.IsServer -}}
+{{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
    {{ partial "umami.html" . }}
 {{- end -}}
