@@ -6,7 +6,7 @@ tags:
 draft: true
 ---
 
-This post is the first of a series about Wallabag and the dirty things I do
+This post is the first of a series about wallabag and the dirty things I do
 with it.
 
 It has been mostly 6 years since I started to use wallabag as my main tool to
@@ -41,8 +41,7 @@ saving pages, I came accross several interesting ones:
 
 They both save the content of the page locally and do it well; but WebScrapBook
 has a feature that attracted my attention: the support of a backend to store
-the saved content remotely. I found a working backend implementation in Python,
-available [here][:pywebscrapbook].
+the saved content remotely. I found a [working backend implementation in Python][:pywebscrapbook].
 
 A few hours later I had a very limited but working WebScrapBook backend API
 support in wallabag. It basically relies on the import mechanism and
@@ -96,7 +95,7 @@ the server side.
 
 _Enjoy!_
 
-[:wallabag]: https://github.com/wallabag/wallabagger
+[:wallabagger]: https://github.com/wallabag/wallabagger
 [:webscrapbook]: https://github.com/danny0838/webscrapbook
 [:singlefile]: https://github.com/gildas-lormeau/SingleFile
 [:pywebscrapbook]: https://github.com/danny0838/PyWebScrapBook
