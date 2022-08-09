@@ -1,7 +1,3 @@
-/atom.xml                   /blog/index.xml
-/feeds/blog.atom.xml        /blog/index.xml
-/feeds/le-kdecherf.atom.xml /le-kdecherf/index.xml
-
 # blog.kdecherf.com redirect rules
 https://blog.kdecherf.com/archives   https://kdecherf.com/blog/
 https://blog.kdecherf.com/about-blog https://kdecherf.com/disclaimer/
@@ -38,3 +34,7 @@ https://le.kdecherf.com/post/137645220657/le-backup-storage-is-full             
 https://le.kdecherf.com     https://kdecherf.com/le-kdecherf/
 https://le.kdecherf.com/*   https://kdecherf.com/le-kdecherf/:splat
 https://le.kdecherf.com/rss https://kdecherf.com/le-kdecherf/index.xml
+
+/atom.xml                   /blog/index.xml
+/feeds/blog.atom.xml        /blog/index.xml
+/feeds/le-kdecherf.atom.xml /le-kdecherf/index.xml
