@@ -25,6 +25,13 @@ params:
       enabled: true
       title: Kevin Decherf
       subtitle: Site Reliability Engineering
+      buttons:
+        - name: Blog
+          url: "/blog/"
+        - name: About
+          url: "/about/"
+        - name: Links
+          url: "https://links.kdecherf.com"
    socialIcons:
       - name: matrix
         url: "https://matrix.to/#/@kdecherf:matrix.org"
