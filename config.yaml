@@ -26,22 +26,20 @@ params:
       title: Kevin Decherf
       subtitle: Site Reliability Engineering
    socialIcons:
-      - name: twitter
-        url: "https://twitter.com/Kdecherf"
-      - name: github
-        url: "https://github.com/Kdecherf"
-      - name: linkedin
-        url: "https://www.linkedin.com/in/kdecherf"
-      - name: flickr
-        url: "https://www.flickr.com/photos/Kdecherf"
       - name: matrix
         url: "https://matrix.to/#/@kdecherf:matrix.org"
+      - name: telegram
+        url: "https://t.me/kdecherf"
+      - name: github
+        url: "https://github.com/Kdecherf"
       - name: liberapay
         url: "https://liberapay.com/Kdecherf/"
-      - name: serverfault
-        url: "https://serverfault.com/users/95273/kdecherf"
-      - name: stackoverflow
-        url: "https://stackoverflow.com/users/954513/kdecherf"
+      - name: flickr
+        url: "https://www.flickr.com/photos/Kdecherf"
+      - name: linkedin
+        url: "https://www.linkedin.com/in/kdecherf"
+      - name: twitter
+        url: "https://twitter.com/Kdecherf"
    analytics:
       umami:
          Host: "https://u.kdecherf.com"
