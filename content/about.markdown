@@ -27,6 +27,6 @@ sysadmin on [*Le Kdecherf]({{< ref "/le-kdecherf" >}}). I'm quite active on
 [Twitter](https://twitter.com/Kdecherf) too.
 
 You can reach me by email at _kevin @ kdecherf.com_ —and don't hesitate to use
-my GPG key `0x108ABD75A81E6E2F` (which can be found
-[here](https://kdecherf.com/misc/kdecherf.asc)) if you need privacy— or on
+my GPG key `0x108ABD75A81E6E2F` (_which can be found
+[here](https://kdecherf.com/misc/kdecherf.asc)_) if you need privacy— or on
 [Matrix](https://matrix.to/#/@kdecherf:matrix.org).
