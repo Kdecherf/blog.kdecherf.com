@@ -20,7 +20,12 @@ If you have any suggestion, question or comment about this website or its conten
 
 ### Legal notice
 
-This personal website is hosted on a self-managed server provided by:  
+Hosting of this website is provided by:  
+Netlify  
+44 Montgomery Street, Suite 300  
+San Francisco, California 94104
+
+Other websites under this domain are hosted on a server provided by:  
 Scaleway SAS  
 BP 438  
 75366 Paris Cedex 08  
