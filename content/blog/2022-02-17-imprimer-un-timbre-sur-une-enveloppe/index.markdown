@@ -33,7 +33,9 @@ contenu :
 
 Après des recherches infructueuses et des tests, j'ai fini par trouver une
 solution de contournement : personnaliser la taille du papier pour indiquer les
-mêmes dimensions que le papier DL (_110 mm de largeur pour 220 mm de hauteur_).
+mêmes dimensions que le papier DL (_110 mm de largeur pour 220 mm de hauteur_)
+en laissant l'orientation en mode portrait. Dans le panier de l'imprimante
+l'enveloppe semble se charger ouverture vers la doite.
 
 ![](properties-custom.jpg)
 
