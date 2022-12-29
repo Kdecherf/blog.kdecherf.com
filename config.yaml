@@ -30,15 +30,15 @@ params:
           url: "/blog/"
         - name: About
           url: "/about/"
-        - name: Links
-          url: "https://links.kdecherf.com"
    socialIcons:
+      - name: mastodon
+        url: "https://n.kdecherf.com/users/kdecherf"
+      - name: github
+        url: "https://github.com/Kdecherf"
       - name: matrix
         url: "https://matrix.to/#/@kdecherf:matrix.org"
       - name: telegram
         url: "https://t.me/kdecherf"
-      - name: github
-        url: "https://github.com/Kdecherf"
       - name: liberapay
         url: "https://liberapay.com/Kdecherf/"
       - name: flickr
