@@ -5,6 +5,10 @@ tags:
 - Thoughts
 ---
 
+{{< alertbox "info" "UPDATE 2022/12/29" >}}
+  Vous pouvez me retrouver sur le fediverse à cette adresse : <a href="https://n.kdecherf.com/users/kdecherf">@kdecherf@n.kdecherf.com</a>.
+{{< /alertbox >}}
+
 Il y a une dizaine d'années j'arrêtais d'aller sur Facebook et je supprimais
 l'application de mon téléphone. À l'époque déjà je trouvais que mon utilisation
 du réseau avait une tendance à devenir toxique.
