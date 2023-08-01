@@ -16,7 +16,7 @@ Basic and anonymous statistics are collected through a self-hosted [umami](https
 
 ### Contact
 
-If you have any suggestion, question or comment about this website or its content you can contact me by email, on IRC or also on Twitter by using contact details found on the About page.
+If you have any suggestion, question or comment about this website or its content you can contact me by email or on Matrix by using contact details found on the About page.
 
 ### Legal notice
 
