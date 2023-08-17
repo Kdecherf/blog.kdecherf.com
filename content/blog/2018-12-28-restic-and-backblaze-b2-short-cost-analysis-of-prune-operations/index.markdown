@@ -102,7 +102,7 @@ The Backblaze IPv4 ranges can be found here:
 _Enjoy!_
 
 [1]: https://restic.net/
-[2]: https://www.backblaze.com/b2/cloud-storage.html
+[2]: https://www.backblaze.com/cloud-storage
 
 [^1]: This repository is not the larger that I have but I wanted to give a try
   with a small one before playing with the other repositories.
