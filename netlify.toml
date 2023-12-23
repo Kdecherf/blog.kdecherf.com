@@ -1,5 +1,5 @@
 [build.environment]
-  HUGO_VERSION = "0.114.0"
+  HUGO_VERSION = "0.120.3"
 
 [context.deploy-preview]
   command = "hugo --buildDrafts --buildFuture -e preview -b $DEPLOY_PRIME_URL"
