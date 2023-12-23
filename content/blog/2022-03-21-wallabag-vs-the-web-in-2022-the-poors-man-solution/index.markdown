@@ -57,6 +57,8 @@ on [a recent change][:graby] that landed in Graby.
 
 Here is the raw patch:
 
+{{< collapse summary="Click to expand" >}}
+
 ``` diff
 diff --git a/src/Wallabag/CoreBundle/Helper/ContentProxy.php b/src/Wallabag/CoreBundle/Helper/ContentProxy.php
 index ed706680b..1c990c47c 100644
@@ -413,6 +415,7 @@ index d824da4ab..5a7895e07 100644
          class: Wallabag\ImportBundle\Command\ImportCommand
          tags: ['console.command']
 ```
+{{< /collapse >}}
 
 As you can see, there is a hardcoded token which acts as a password for
 WebScrapBook. It also means that this only works for single-user instances.
