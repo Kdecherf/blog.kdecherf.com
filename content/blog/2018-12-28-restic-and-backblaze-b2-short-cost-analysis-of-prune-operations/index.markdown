@@ -6,10 +6,15 @@ tags:
 - restic
 ---
 
-<div class="alert-info">
-  <strong>UDPATE 2019/10/13:</strong> added a third prune example with a larger
-  repository
-</div>
+{{< alertbox "info" "UPDATE 2024/05/16" >}}
+  As of October 3, 2023, Backblaze started to offer free egress up to three
+  times the amount of data you store. This should let you run prune operations
+  almost without extra egress cost. See <a href="https://www.backblaze.com/blog/2023-product-announcement/">their product announcement</a>
+{{< /alertbox >}}
+
+{{< alertbox "info" "UPDATE 2019/10/13" >}}
+  Added a third prune example with a large repository
+{{< /alertbox >}}
 
 After Crashplan shutted down its consumer backup plan I moved to [restic][1]
 and [Backblaze B2][2] for backing up my computers and servers. restic provides
@@ -103,6 +108,7 @@ _Enjoy!_
 
 [1]: https://restic.net/
 [2]: https://www.backblaze.com/cloud-storage
+[3]:
 
 [^1]: This repository is not the larger that I have but I wanted to give a try
   with a small one before playing with the other repositories.
