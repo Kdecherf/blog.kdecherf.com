@@ -2,6 +2,7 @@
 https://blog.kdecherf.com/archives   https://kdecherf.com/blog/
 https://blog.kdecherf.com/about-blog https://kdecherf.com/disclaimer/
 https://blog.kdecherf.com/*          https://kdecherf.com/:splat
+https://blog.kdecherf.com            https://kdecherf.com/
 
 # tumblr legacy redirect rules
 https://le.kdecherf.com/post/21207105768/le-me-installing-jdk-on-three-servers             https://kdecherf.com/le-kdecherf/2012/04/16/le-me-installing-jdk-on-three-servers/
