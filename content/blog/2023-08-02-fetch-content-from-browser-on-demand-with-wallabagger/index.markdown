@@ -51,7 +51,7 @@ enabled:
 In short, when you're on a page you want to save on wallabag, use `Alt+W` to
 fetch content from browser, otherwise use `Alt+Shift+W`.
 
-Follow [these instructions] to change these shortcuts on Firefox. I guess
+Follow [these instructions][4] to change these shortcuts on Firefox. I guess
 there's a similar way to change them on Chrome-based browsers.
 
 _Enjoy_
