@@ -1,7 +1,7 @@
 let
-  # From https://lazamar.co.uk/nix-versions/?channel=nixos-24.05&package=hugo
+  # From https://lazamar.co.uk/nix-versions/?channel=nixpkgs-unstable&package=hugo
   pkgs = import (builtins.fetchTarball {
-        url = "https://github.com/NixOS/nixpkgs/archive/0c19708cf035f50d28eb4b2b8e7a79d4dc52f6bb.tar.gz";
+        url = "https://github.com/NixOS/nixpkgs/archive/e6f23dc08d3624daab7094b701aa3954923c6bbb.tar.gz";
       }) {};
 in
 
