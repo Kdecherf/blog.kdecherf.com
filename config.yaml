@@ -45,8 +45,6 @@ params:
         url: "https://www.flickr.com/photos/Kdecherf"
       - name: linkedin
         url: "https://www.linkedin.com/in/kdecherf"
-      - name: twitter
-        url: "https://twitter.com/Kdecherf"
    analytics:
       umami:
          Host: "https://u.kdecherf.com"
