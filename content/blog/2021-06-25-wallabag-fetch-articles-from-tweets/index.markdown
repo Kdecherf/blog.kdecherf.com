@@ -23,7 +23,7 @@ article that was originally in this tweet.
 
 We'll take the following tweet for the illustration:
 
-{{< tweet user="Kdecherf" id="1394723094183428101" >}}
+![Screenshot of a tweet](tweet-screenshot.png)
 
 It would be perfect if wallabag was able to directly fetch the linked article.
 
