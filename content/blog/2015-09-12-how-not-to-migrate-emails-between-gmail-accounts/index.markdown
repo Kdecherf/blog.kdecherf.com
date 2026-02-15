@@ -46,7 +46,7 @@ We note that offlineimap is parsing filenames to extract some metadata like... U
 > Returns a messages file name components
 > 
 > Receives the file name (without path) of a msg.  Usual format is  
-> '<%d_%d.%d.%s>,U=<%d>,FMD5=<%s>:2,<FLAGS>' (pointy brackets  
+> `<%d_%d.%d.%s>,U=<%d>,FMD5=<%s>:2,<FLAGS>` (pointy brackets  
 > denoting the various components).
 
 `U=` represents the UID of the message on the remote side and `FMD5` is the md5 hash of the folder name. For example the FMD5 of `[Gmail].All Mail` (_the `/` becomes a `.` on the local side_) is `844bb96d088d057aa1b32ac1fbc67b56`.

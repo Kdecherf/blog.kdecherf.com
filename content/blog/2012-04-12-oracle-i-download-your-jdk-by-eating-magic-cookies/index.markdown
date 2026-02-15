@@ -13,7 +13,7 @@ tags:
   As noted by <em>frog end</em> and <em>Kip</em> in comments, wget 1.12 (<em>mainly on CentOS systems</em>) is unable to handle SAN SSL certificates (<em>Subject Alternative Name</em>) and will fail on <code>edelivery.oracle.com</code>. Use <code>--no-check-certificate</code> to avoid this issue.
 {{< /alertbox >}}
 
-Today, I had to install the <span style="text-decoration:line-through;">Sun</span>Oracle JDK on some servers, so I visited the [JDK download page](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) to retrieve the direct download link for `wget` on each server:
+Today, I had to install the ~~Sun~~Oracle JDK on some servers, so I visited the [JDK download page](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) to retrieve the direct download link for `wget` on each server:
 ```
 $ wget http://download.oracle.com/otn-pub/java/jdk/7u65-b17/jdk-7u65-linux-x64.tar.gz
 ```
@@ -59,7 +59,7 @@ Saving to: ‘jdk-7u65-linux-x64.tar.gz’
 Fuck Yea.
 
 According to the [OTN BCL document for Java SE](http://www.oracle.com/technetwork/java/javase/terms/license/index.html):
-> BY SELECTING THE "ACCEPT LICENSE AGREEMENT" (OR THE EQUIVALENT) BUTTON AND/<strong>OR BY USING THE SOFTWARE YOU ACKNOWLEDGE THAT YOU HAVE READ THE TERMS AND AGREE TO THEM</strong>.
+> BY SELECTING THE "ACCEPT LICENSE AGREEMENT" (OR THE EQUIVALENT) BUTTON AND/**OR BY USING THE SOFTWARE YOU ACKNOWLEDGE THAT YOU HAVE READ THE TERMS AND AGREE TO THEM**.
 
 
 _Enjoy it!_
