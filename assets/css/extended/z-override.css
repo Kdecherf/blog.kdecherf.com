@@ -87,6 +87,8 @@ body {
 
 /* Keep images centered, and allow images wider than the main
    text column to break out. */
+/* NOTE It may be possible to move on image centering in content
+   https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#centering-image-in-markdown */
 .post-content span.md__image {
     display: flex;
     justify-content: center;
