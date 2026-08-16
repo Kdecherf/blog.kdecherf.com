@@ -1,0 +1,17 @@
+{{/* From: https://npf.io/2014/08/making-it-a-series/ */}}
+{{/* From: https://github.com/adityatelange/hugo-PaperMod/issues/464 */}}
+{{- if .Params.series}}
+{{- $name := index .Params.series 0 }}
+<p><a href="" id="series"></a>Part of the <em>{{$name}}</em> series:</p>
+{{- $nameLower := $name | lower }}
+{{- $series := index .Site.Taxonomies.series $nameLower }}
+<pre></pre>
+<ol reversed class="post-content md-content">
+  {{- range $series.Pages }}
+  <li>
+    <a href="{{.Permalink}}">{{.LinkTitle}}</a>,&#32; {{ .Date | time.Format
+    (default ":date_long" .Site.Params.DateFormat) }}
+  </li>
+  {{- end }}
+</ol>
+{{- end }}
