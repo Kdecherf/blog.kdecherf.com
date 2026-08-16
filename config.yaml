@@ -19,17 +19,14 @@ params:
    disableSpecial1stPost: true
    ShowBreadCrumbs: true
    disableFingerprinting: true
+   ShowRssButtonInSectionTermList: true
    assets:
       disableHLJS: true
-   profileMode:
-      enabled: true
+   homeInfoParams:
       title: Kevin Decherf
-      subtitle: Site Reliability Engineering
-      buttons:
-        - name: Blog
-          url: "/blog/"
-        - name: About
-          url: "/about/"
+      Content: Site Reliability Engineering
+   mainSections:
+      - blog
    socialIcons:
       - name: mastodon
         url: "https://n.kdecherf.com/users/kdecherf"
