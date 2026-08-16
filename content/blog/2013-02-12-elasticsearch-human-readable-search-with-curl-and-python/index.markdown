@@ -1,5 +1,4 @@
 ---
-title: "xrandr+udev: hotplug an external screen no matter which output it is"
 title: "ElasticSearch: Human readable search with cURL and Python"
 date: 2013-02-12T14:25:00+01:00
 tags:
