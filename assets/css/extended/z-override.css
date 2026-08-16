@@ -62,8 +62,8 @@ body {
      }
 
 .post-content code {
-   font-family: Courier, monospace;
-   font-size: .95rem;
+   font-size: .85rem;
+   letter-spacing: 0.025rem;
    font-variant-ligatures: none;
 }
 
